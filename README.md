@@ -1,37 +1,37 @@
 # Beyond Random-Split Accuracy in Crop Disease Recognition
 
-Reproducibility release for **Beyond Random-Split Accuracy: Distribution-Shift, Calibration, and Robustness Evaluation of Crop Disease Recognition**.
+Reproducibility materials for **Beyond Random-Split Accuracy: Distribution-Shift, Calibration, and Robustness Evaluation of Crop Disease Recognition**.
 
-## Contents
+This repository contains the executed experiment code, the configuration used for the main run, raw run logs, result files, figures, and selected model/prediction artifacts. The manuscript reports the reviewer-requested duplicate-leakage sensitivity analysis, unseen-corruption evaluation, calibration rerun, and training-history curves.
 
-- `code/kaggle_kernels/`: original executed Kaggle kernel sources and metadata for the experiment phases.
-- `artifacts/metadata/`: downloaded reports and raw execution logs.
-- `artifacts/figures/`: generated figures used by the manuscript.
-- `manuscript/`: manuscript source and expanded bibliography.
-- `configs/`: training configuration used for the Phase 58 primary training-history run.
-- `environment/`: dependency specification.
-- `provenance/execution_environment.json`: environment fields recovered from the original logs.
+## Repository layout
+
+- `code/kaggle_kernels/` — Kaggle scripts and kernel metadata used for the experiments.
+- `artifacts/metadata/` — downloaded JSON results and execution logs.
+- `artifacts/figures/` — figures used in the manuscript.
+- `artifacts/metadata/phase21_paired_output/phase21_per_sample_predictions.json` — retained per-sample prediction output where available.
+- `artifacts/metadata/*.pth` — retained model checkpoints.
+- `manuscript/` — manuscript source and bibliography.
+- `configs/` — training configuration for the primary training-history run.
+- `environment/` — dependency specification.
+- `provenance/` — execution-environment information recovered from the original logs.
 
 ## Data
 
-The original PlantVillage, PlantDoc, and Cassava datasets are not redistributed. The reports and scripts identify the source datasets and expected split sizes. Dataset manifests and derived artifacts are included where available. Provider terms remain applicable.
+The PlantVillage, PlantDoc, and Cassava datasets are not redistributed. They remain available from their original providers under their respective terms. The scripts, manifests, split sizes, and result files needed to identify the data used in the experiments are included here.
 
-## Prediction outputs and model checkpoints
+## Environment record
 
-Prediction arrays and model checkpoints were not present in the downloaded original artifacts and are therefore not fabricated or represented as deposited. The retained reports contain aggregate metrics and diagnostic summaries. Where prediction outputs are permissible and available from the original run, they can be added under `artifacts/predictions/` with provenance and hashes.
+The Phase 58 log records execution on CUDA. The original log does not record the GPU model, GPU memory, CPU model, system memory, operating system, Python version, or CUDA runtime version. Those fields are explicitly marked as not captured in `provenance/execution_environment.json`; no hardware details are inferred.
 
-## Execution environment boundary
-
-Phase 58's original log explicitly recorded `device: cuda`, but did not print the GPU model, GPU memory, CPU model, system memory, operating system, Python version, or CUDA runtime version. These fields are marked `NOT_CAPTURED_IN_ORIGINAL_LOG` in `provenance/execution_environment.json`. The executed install command recorded `torch==2.3.1` and `torchvision==0.18.1`; this is not a substitute for a full runtime inventory.
+The executed installation command records PyTorch 2.3.1 and torchvision 0.18.1. See `environment/requirements.txt` and `configs/phase58_training.yaml` for the primary run settings.
 
 ## Reproduction
 
 1. Obtain the datasets from their original providers.
 2. Install `environment/requirements.txt`.
-3. Review `configs/phase58_training.yaml`.
-4. Run the relevant kernel source from `code/kaggle_kernels/` in an authorized Kaggle environment with the corresponding dataset inputs.
-5. Compare generated reports with the retained reports using the recorded split sizes, protocol, and metrics.
+3. Review the relevant kernel metadata and configuration.
+4. Run the corresponding script in an authorized Kaggle environment with the required dataset inputs.
+5. Compare the generated JSON reports and figures with the retained artifacts.
 
-## License
-
-No repository license is asserted by this release. Dataset and third-party code terms remain applicable.
+The repository does not claim to reproduce provider datasets or external services. It preserves what was actually executed and downloaded from the recorded runs.
