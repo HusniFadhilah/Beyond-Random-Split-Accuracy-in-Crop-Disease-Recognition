@@ -1,0 +1,98 @@
+[{"stream_name":"stdout","time":12.213626575,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 780.4/780.4 MB 2.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":15.126731249,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.3/7.3 MB 112.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":15.50437209,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 80.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":15.728937307,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 46.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":16.126241608,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 90.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":22.783142554,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 664.8/664.8 MB 2.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":29.37085467,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 4.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":32.688709481,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 6.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":33.837149332,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 34.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":36.387232839,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 6.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":39.074467775,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 9.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":42.250870444,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.7/188.7 MB 6.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":43.071263285,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 5.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":45.6326839,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 209.6/209.6 MB 7.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":48.634066913,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 53.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":163.331104106,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":163.331145118,"data":"torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.5.0+cu121 which is incompatible.\n"}
+,{"stream_name":"stdout","time":170.094692422,"data":"device: cuda\n"}
+,{"stream_name":"stderr","time":247.298938857,"data":"Downloading: \"https://download.pytorch.org/models/resnet50-11ad3fa6.pth\" to /root/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth\n"}
+,{"stream_name":"stderr","time":247.814478199,"data":"\r  0%|          | 0.00/97.8M [00:00\u003c?, ?B/s]\r 17%|█▋        | 17.0M/97.8M [00:00\u003c00:00, 178MB/s]\r 42%|████▏     | 41.1M/97.8M [00:00\u003c00:00, 222MB/s]\r 66%|██████▌   | 64.5M/97.8M [00:00\u003c00:00, 232MB/s]\r 90%|█████████ | 88.4M/97.8M [00:00\u003c00:00, 239MB/s]\r100%|██████████| 97.8M/97.8M [00:00\u003c00:00, 233MB/s]\n"}
+,{"stream_name":"stdout","time":249.638972883,"data":"ep1 batch0/679 loss=3.6687\n"}
+,{"stream_name":"stdout","time":280.000076284,"data":"ep1 batch100/679 loss=0.2207\n"}
+,{"stream_name":"stdout","time":310.358554583,"data":"ep1 batch200/679 loss=0.1610\n"}
+,{"stream_name":"stdout","time":340.713181259,"data":"ep1 batch300/679 loss=0.1230\n"}
+,{"stream_name":"stdout","time":371.070923588,"data":"ep1 batch400/679 loss=0.0626\n"}
+,{"stream_name":"stdout","time":401.430672569,"data":"ep1 batch500/679 loss=0.0492\n"}
+,{"stream_name":"stdout","time":431.78689835,"data":"ep1 batch600/679 loss=0.0523\n"}
+,{"stream_name":"stdout","time":455.460985531,"data":"epoch 1: train_acc=0.9360\n"}
+,{"stream_name":"stdout","time":456.079325502,"data":"ep2 batch0/679 loss=0.0467\n"}
+,{"stream_name":"stdout","time":486.436393126,"data":"ep2 batch100/679 loss=0.0209\n"}
+,{"stream_name":"stdout","time":516.800652543,"data":"ep2 batch200/679 loss=0.0720\n"}
+,{"stream_name":"stdout","time":547.165906914,"data":"ep2 batch300/679 loss=0.0248\n"}
+,{"stream_name":"stdout","time":577.529452676,"data":"ep2 batch400/679 loss=0.0206\n"}
+,{"stream_name":"stdout","time":607.891252557,"data":"ep2 batch500/679 loss=0.0059\n"}
+,{"stream_name":"stdout","time":638.250831999,"data":"ep2 batch600/679 loss=0.1678\n"}
+,{"stream_name":"stdout","time":661.928668967,"data":"epoch 2: train_acc=0.9826\n"}
+,{"stream_name":"stdout","time":661.928855399,"data":"PlantVillage explainability\n"}
+,{"stream_name":"stdout","time":690.597522882,"data":"{'n': 50, 'mean_confidence': 0.996, 'accuracy_if_labels_compatible': 1.0, 'gradcam_center_mass_mean': 0.3907, 'gradcam_border_mass_mean': 0.6093, 'occlusion_max_drop_mean': 0.0144, 'occlusion_center_drop_mean': 0.0039, 'occlusion_border_drop_mean': 0.0021, 'occlusion_center_minus_border': 0.0018}\n"}
+,{"stream_name":"stdout","time":690.597568392,"data":"PlantDoc explainability\n"}
+,{"stream_name":"stdout","time":698.151925272,"data":"{'n': 50, 'mean_confidence': 0.7361, 'accuracy_if_labels_compatible': None, 'gradcam_center_mass_mean': 0.3219, 'gradcam_border_mass_mean': 0.6781, 'occlusion_max_drop_mean': 0.2145, 'occlusion_center_drop_mean': 0.0167, 'occlusion_border_drop_mean': 0.0058, 'occlusion_center_minus_border': 0.0109}\n"}
+,{"stream_name":"stdout","time":698.151968648,"data":"Cassava explainability\n"}
+,{"stream_name":"stdout","time":734.883569346,"data":"{'n': 50, 'mean_confidence': 0.8043, 'accuracy_if_labels_compatible': None, 'gradcam_center_mass_mean': 0.2435, 'gradcam_border_mass_mean': 0.7565, 'occlusion_max_drop_mean': 0.2186, 'occlusion_center_drop_mean': 0.0629, 'occlusion_border_drop_mean': 0.048, 'occlusion_center_minus_border': 0.0149}\n"}
+,{"stream_name":"stdout","time":734.88421244,"data":"{\n"}
+,{"stream_name":"stdout","time":734.88422503,"data":"  \"phase\": \"18_explainability\",\n"}
+,{"stream_name":"stdout","time":734.884229716,"data":"  \"captured_at_utc\": \"2026-07-26T05:19:14Z\",\n"}
+,{"stream_name":"stdout","time":734.88423377,"data":"  \"protocol\": {\n"}
+,{"stream_name":"stdout","time":734.884237646,"data":"    \"seed\": 42,\n"}
+,{"stream_name":"stdout","time":734.884241534,"data":"    \"training_epochs\": 2,\n"}
+,{"stream_name":"stdout","time":734.884245492,"data":"    \"samples_per_domain\": 50,\n"}
+,{"stream_name":"stdout","time":734.884261938,"data":"    \"occlusion_grid\": \"3x3\",\n"}
+,{"stream_name":"stdout","time":734.88426506,"data":"    \"lesion_masks_available\": false\n"}
+,{"stream_name":"stdout","time":734.884268114,"data":"  },\n"}
+,{"stream_name":"stdout","time":734.884270892,"data":"  \"domains\": {\n"}
+,{"stream_name":"stdout","time":734.884273851,"data":"    \"plantvillage\": {\n"}
+,{"stream_name":"stdout","time":734.88427673,"data":"      \"n\": 50,\n"}
+,{"stream_name":"stdout","time":734.884279567,"data":"      \"mean_confidence\": 0.996,\n"}
+,{"stream_name":"stdout","time":734.884282515,"data":"      \"accuracy_if_labels_compatible\": 1.0,\n"}
+,{"stream_name":"stdout","time":734.884285545,"data":"      \"gradcam_center_mass_mean\": 0.3907,\n"}
+,{"stream_name":"stdout","time":734.884288486,"data":"      \"gradcam_border_mass_mean\": 0.6093,\n"}
+,{"stream_name":"stdout","time":734.884291424,"data":"      \"occlusion_max_drop_mean\": 0.0144,\n"}
+,{"stream_name":"stdout","time":734.884294377,"data":"      \"occlusion_center_drop_mean\": 0.0039,\n"}
+,{"stream_name":"stdout","time":734.884297331,"data":"      \"occlusion_border_drop_mean\": 0.0021,\n"}
+,{"stream_name":"stdout","time":734.884300221,"data":"      \"occlusion_center_minus_border\": 0.0018\n"}
+,{"stream_name":"stdout","time":734.884303227,"data":"    },\n"}
+,{"stream_name":"stdout","time":734.88430602,"data":"    \"plantdoc\": {\n"}
+,{"stream_name":"stdout","time":734.884308965,"data":"      \"n\": 50,\n"}
+,{"stream_name":"stdout","time":734.884311787,"data":"      \"mean_confidence\": 0.7361,\n"}
+,{"stream_name":"stdout","time":734.884314684,"data":"      \"accuracy_if_labels_compatible\": null,\n"}
+,{"stream_name":"stdout","time":734.884317606,"data":"      \"gradcam_center_mass_mean\": 0.3219,\n"}
+,{"stream_name":"stdout","time":734.884320712,"data":"      \"gradcam_border_mass_mean\": 0.6781,\n"}
+,{"stream_name":"stdout","time":734.884323569,"data":"      \"occlusion_max_drop_mean\": 0.2145,\n"}
+,{"stream_name":"stdout","time":734.884326417,"data":"      \"occlusion_center_drop_mean\": 0.0167,\n"}
+,{"stream_name":"stdout","time":734.884329323,"data":"      \"occlusion_border_drop_mean\": 0.0058,\n"}
+,{"stream_name":"stdout","time":734.884332167,"data":"      \"occlusion_center_minus_border\": 0.0109\n"}
+,{"stream_name":"stdout","time":734.884335088,"data":"    },\n"}
+,{"stream_name":"stdout","time":734.884337881,"data":"    \"cassava\": {\n"}
+,{"stream_name":"stdout","time":734.884341368,"data":"      \"n\": 50,\n"}
+,{"stream_name":"stdout","time":734.884344409,"data":"      \"mean_confidence\": 0.8043,\n"}
+,{"stream_name":"stdout","time":734.884347144,"data":"      \"accuracy_if_labels_compatible\": null,\n"}
+,{"stream_name":"stdout","time":734.884349994,"data":"      \"gradcam_center_mass_mean\": 0.2435,\n"}
+,{"stream_name":"stdout","time":734.884352884,"data":"      \"gradcam_border_mass_mean\": 0.7565,\n"}
+,{"stream_name":"stdout","time":734.884355819,"data":"      \"occlusion_max_drop_mean\": 0.2186,\n"}
+,{"stream_name":"stdout","time":734.884358628,"data":"      \"occlusion_center_drop_mean\": 0.0629,\n"}
+,{"stream_name":"stdout","time":734.884361464,"data":"      \"occlusion_border_drop_mean\": 0.048,\n"}
+,{"stream_name":"stdout","time":734.884364397,"data":"      \"occlusion_center_minus_border\": 0.0149\n"}
+,{"stream_name":"stdout","time":734.884367376,"data":"    }\n"}
+,{"stream_name":"stdout","time":734.884370152,"data":"  },\n"}
+,{"stream_name":"stdout","time":734.884373103,"data":"  \"interpretation_boundary\": \"Without lesion masks, Grad-CAM/occlusion values are attribution diagnostics only; center/border concentration is not lesion localization or causal evidence. External-domain labels are not mapped to PlantVillage classes.\",\n"}
+,{"stream_name":"stdout","time":734.884379289,"data":"  \"elapsed_sec\": 564.86,\n"}
+,{"stream_name":"stdout","time":734.884382241,"data":"  \"sha256_self\": \"7e31691ca004d11645bb075027ca190929c4edb9604c2d0c1540a9e6f0004a38\"\n"}
+,{"stream_name":"stdout","time":734.884385463,"data":"}\n"}
+,{"stream_name":"stderr","time":738.065235924,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":738.065267127,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":738.27675189,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":738.276782281,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":738.876860361,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":740.055156689,"data":"[NbConvertApp] Writing 318786 bytes to __results__.html\n"}
+]

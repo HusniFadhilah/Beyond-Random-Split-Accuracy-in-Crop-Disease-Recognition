@@ -1,0 +1,91 @@
+{
+  "phase": "27_external_ood_final_model",
+  "captured_at_utc": "2026-08-09T12:22:59Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "mode": "full_finetune",
+    "augmentation": "strong_without_hue",
+    "epochs": 8,
+    "seed": 42,
+    "checkpoint": "best validation macro_f1",
+    "label_mapper": "none; external labels are not compared to PV classes"
+  },
+  "split_sizes": {
+    "pv_train": 43444,
+    "pv_val": 5430,
+    "pv_test": 5431
+  },
+  "pv_test": {
+    "accuracy": 0.993187,
+    "balanced_accuracy": 0.990781,
+    "macro_f1": 0.98934
+  },
+  "plantdoc": {
+    "n": 252,
+    "n_classes": 27,
+    "max_conf_mean": 0.750164,
+    "max_conf_sd": 0.233183,
+    "entropy_mean": 0.839698,
+    "entropy_sd": 0.707937,
+    "top_predicted_pv_classes": [
+      {
+        "class": "Strawberry___Leaf_scorch",
+        "n": 49
+      },
+      {
+        "class": "Tomato___Late_blight",
+        "n": 29
+      },
+      {
+        "class": "Tomato___Early_blight",
+        "n": 27
+      },
+      {
+        "class": "Blueberry___healthy",
+        "n": 18
+      },
+      {
+        "class": "Grape___healthy",
+        "n": 16
+      }
+    ]
+  },
+  "cassava": {
+    "n": 21397,
+    "n_classes": 5,
+    "max_conf_mean": 0.708448,
+    "max_conf_sd": 0.237022,
+    "entropy_mean": 1.244015,
+    "entropy_sd": 0.839452,
+    "top_predicted_pv_classes": [
+      {
+        "class": "Strawberry___Leaf_scorch",
+        "n": 18967
+      },
+      {
+        "class": "Tomato___Early_blight",
+        "n": 627
+      },
+      {
+        "class": "Grape___Esca_(Black_Measles)",
+        "n": 505
+      },
+      {
+        "class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+        "n": 467
+      },
+      {
+        "class": "Pepper,_bell___Bacterial_spot",
+        "n": 430
+      }
+    ]
+  },
+  "ood_auroc": {
+    "plantdoc_vs_pv": 0.962086,
+    "cassava_vs_pv": 0.984756
+  },
+  "best_val_macro_f1": 0.990815,
+  "best_epoch": 4,
+  "elapsed_sec": 1830.97,
+  "sha256_self": "65f92fc4b390743a0dc1b861412ebceea6dcd671f4953a4665dbae0a633d2c9a"
+}

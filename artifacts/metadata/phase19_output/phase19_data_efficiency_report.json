@@ -1,0 +1,113 @@
+{
+  "phase": "19_data_efficiency",
+  "captured_at_utc": "2026-07-26T05:35:31Z",
+  "protocol": {
+    "seed": 42,
+    "backbone": "ResNet-50 ImageNet pretrained frozen features",
+    "head": "linear softmax classifier",
+    "head_epochs": 10,
+    "fractions": [
+      0.01,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ]
+  },
+  "n_split": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431,
+    "n_classes": 38,
+    "feature_dim": 2048
+  },
+  "results": [
+    {
+      "fraction": 0.01,
+      "n_train": 434,
+      "val": {
+        "accuracy": 0.8168,
+        "balanced_accuracy": 0.7059,
+        "macro_f1": 0.7226
+      },
+      "test": {
+        "accuracy": 0.8181,
+        "balanced_accuracy": 0.7042,
+        "macro_f1": 0.7193
+      }
+    },
+    {
+      "fraction": 0.05,
+      "n_train": 2169,
+      "val": {
+        "accuracy": 0.916,
+        "balanced_accuracy": 0.8589,
+        "macro_f1": 0.8718
+      },
+      "test": {
+        "accuracy": 0.9151,
+        "balanced_accuracy": 0.864,
+        "macro_f1": 0.8789
+      }
+    },
+    {
+      "fraction": 0.1,
+      "n_train": 4344,
+      "val": {
+        "accuracy": 0.9344,
+        "balanced_accuracy": 0.8903,
+        "macro_f1": 0.9022
+      },
+      "test": {
+        "accuracy": 0.935,
+        "balanced_accuracy": 0.9026,
+        "macro_f1": 0.9128
+      }
+    },
+    {
+      "fraction": 0.25,
+      "n_train": 10857,
+      "val": {
+        "accuracy": 0.9591,
+        "balanced_accuracy": 0.9347,
+        "macro_f1": 0.9411
+      },
+      "test": {
+        "accuracy": 0.9591,
+        "balanced_accuracy": 0.9391,
+        "macro_f1": 0.9438
+      }
+    },
+    {
+      "fraction": 0.5,
+      "n_train": 21719,
+      "val": {
+        "accuracy": 0.9722,
+        "balanced_accuracy": 0.9557,
+        "macro_f1": 0.9597
+      },
+      "test": {
+        "accuracy": 0.9705,
+        "balanced_accuracy": 0.9587,
+        "macro_f1": 0.9602
+      }
+    },
+    {
+      "fraction": 1.0,
+      "n_train": 43444,
+      "val": {
+        "accuracy": 0.9779,
+        "balanced_accuracy": 0.9672,
+        "macro_f1": 0.9698
+      },
+      "test": {
+        "accuracy": 0.9757,
+        "balanced_accuracy": 0.9638,
+        "macro_f1": 0.9668
+      }
+    }
+  ],
+  "elapsed_sec": 190.71,
+  "sha256_self": "31c6450c77a4c8c0a0b2d7fea908ffdbb861b71b2fa252889770d176b1705914"
+}

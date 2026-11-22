@@ -1,0 +1,179 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage[numbers,square,sort&compress]{natbib}
+\setstretch{2}
+\linenumbers
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}
+\title{Beyond Random-Split Accuracy: Distribution-Shift, Calibration, and Robustness Evaluation of Crop Disease Recognition}
+\author{\small Husni Fadhilah\\Department of Informatics, Faculty of Science and Mathematics\\Diponegoro University\\\texttt{husnifadhilah62@\allowbreak gmail.com}}
+\date{}
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+\textbf{Short title:} Distribution-shift-aware crop disease recognition
+
+\textbf{Corresponding author:} Husni Fadhilah\\
+\textbf{Email:} \texttt{husnifadhilah62@\allowbreak gmail.com}.
+
+\section*{Abstract}
+Plant disease classifiers can obtain high scores under random image splits while remaining unreliable under distribution shift. This study evaluated ImageNet-pretrained classifiers using PlantVillage as an in-domain reference and PlantDoc and Cassava as external field-style or distribution-shift datasets. The EfficientNet-B0 basic-augmentation protocol achieved test macro-F1 0.997141 and balanced accuracy 0.996853. Under the same protocol, mean maximum confidence was 0.7862 on PlantDoc and 0.8818 on Cassava, while maximum-confidence OOD AUROC was 0.9621 and 0.9394, respectively. Temperature scaling produced test ECE 0.000876 with a fitted temperature of 0.517563. A three-seed confirmation produced mean test macro-F1 0.997042 (SD 0.000522). A full audit found seven exact duplicate groups crossing the reconstructed split boundaries and involving five test images, so the random-split estimate may be slightly optimistic. In a paired synthetic-corruption comparison, blur-aware training increased motion-blur macro-F1 from 0.4287 to 0.9013 but reduced macro-F1 under square occlusion and red-channel color shift. These results characterize in-domain performance, distribution shift, calibration, and corruption-specific robustness. They do not establish farm-level validation, early-disease detection, causal feature importance, hardware-noise robustness, or universal model superiority.
+
+\textbf{Keywords:} crop disease recognition; distribution shift; out-of-distribution detection; calibration; selective prediction; PlantVillage; PlantDoc; Cassava
+
+\section{Introduction}
+Image-based crop disease recognition is often evaluated with random image splits. Such splits provide an interpolation reference, but they do not isolate changes in farm, cultivar, season, camera, illumination, or acquisition environment. A model can therefore obtain a strong random-split score while remaining uncertain or unreliable when the image distribution changes. The PlantVillage repository enabled early development of image-based plant-health models, but its laboratory-style imagery does not by itself establish performance in field conditions \citep{hughes2015}. PlantDoc was designed to represent more varied visual conditions and provides a relevant external distribution-shift resource \citep{singh2020}.
+
+Distribution-shift evaluation requires more than reporting top-1 accuracy. Confidence calibration, out-of-distribution (OOD) detection, selective prediction, and controlled corruption tests can reveal failure modes that are hidden by a single random-split metric. Temperature scaling is a standard post-hoc calibration method \citep{guo2017}, while energy-based scores provide one established approach to OOD detection \citep{liu2020}. These measures, however, remain conditional on the data and protocol used to estimate them.
+
+This study evaluated a PlantVillage-trained reference model using separate analyses of in-domain recognition, external distribution shift, calibration, selective prediction, data efficiency, model-family comparison, and synthetic corruption robustness. PlantDoc and Cassava labels are not treated as directly comparable disease-class labels in the transfer analysis. Because the available records do not provide farm, cultivar, season, or severity information, the study does not evaluate farm-level or severity-stratified generalization.
+
+The objectives were to: (1) establish a reproducible in-domain reference; (2) quantify confidence and OOD behavior on external datasets; (3) evaluate calibration and selective prediction; (4) assess seed sensitivity and model-family efficiency; and (5) characterize sensitivity to controlled image corruptions and the effect of corruption-aware augmentation.
+
+\section{Related Work}
+\subsection{Plant disease recognition datasets and domain shift}
+Early plant-disease recognition studies often relied on controlled leaf images, which are useful for benchmarking but can overstate performance relative to field imagery \citep{hughes2015,singh2020}. PlantVillage remains an important reference dataset, whereas PlantDoc and other field-oriented collections broaden variation in background, illumination, viewpoint, and symptom presentation \citep{singh2020,crossref46,crossref32}. Recent crop-disease studies have explored transfer learning, residual architectures, and augmentation \citep{crossref6,crossref10,crossref25}. Other work has addressed long-tailed recognition, lightweight or attention-based models, and spectral/RGB imagery \citep{crossref13,crossref28,crossref43}. These studies motivate the present separation between a laboratory-style reference and external distribution-shift diagnostics.
+
+\subsection{Transfer learning and augmentation}
+Transfer learning can improve performance when labeled agricultural images are limited, but augmentation choices can alter the learned invariances and may help one shift while harming another \citep{crossref6,crossref29}. Prior work has examined geometric transformations, test-time training, and synthetic image translation for plant-disease recognition \citep{crossref6,crossref11,crossref36}. Other studies have addressed generative balancing and long-tailed recognition \citep{crossref13,crossref20}. The current study therefore treats basic and corruption-aware augmentation as distinct protocols rather than assuming that one augmentation policy is universally preferable.
+
+\subsection{Calibration, uncertainty, and OOD detection}
+High accuracy does not imply reliable probabilities \citep{guo2017}. Temperature scaling and related post-hoc methods address confidence calibration, while OOD methods evaluate whether a classifier can distinguish in-domain from external inputs \citep{liu2020,crossref22}. Calibration and OOD ranking must be interpreted jointly with the operating threshold: a high AUROC can coexist with an impractical in-domain false-positive rate \citep{liu2020,crossref47}. This motivates reporting both ranking metrics and threshold-specific behavior.
+
+\subsection{Robustness and explainability}
+Controlled corruption benchmarks provide diagnostic views of model behavior \citep{crossref7}, while explainability methods describe model outputs rather than replacing independent field validation \citep{crossref28,crossref44}. Robustness studies have considered image corruption, test-time adaptation, post-hoc pruning, and calibration under perturbation \citep{crossref7,crossref11,crossref22}. Plant-disease studies have reported explainable or attention-based architectures \citep{crossref28,crossref44}. The present work focuses on measurable robustness and uncertainty outcomes and does not claim causal feature importance from model outputs.
+
+\section{Materials and Methods}
+\subsection{Study design}
+This was a retrospective computational evaluation of publicly available image datasets. The analyses addressed in-domain performance, external distribution shift, calibration, selective prediction, efficiency, and corruption robustness separately rather than as a single pooled benchmark. Basic augmentation, calibration, frozen-feature, and corruption-aware training used different experimental settings. Model selection and temperature fitting used the validation set before test evaluation. External label matching was not interpreted as external disease-class accuracy when label spaces were non-overlapping.
+
+\subsection{Datasets and split}
+PlantVillage was used as the in-domain reference following the dataset description of Hughes and Salathé \citep{hughes2015}. The verified color subset contained 38 classes and was split into 43,444 training, 5,430 validation, and 5,431 test images. PlantDoc was used as an external field-style distribution-shift dataset \citep{singh2020}. In the Kaggle copy used in this study, only the `test/` directory was available, yielding 252 images across 27 classes; no train/validation directory was present. Therefore PlantDoc was used only as an external diagnostic and was neither sampled for training nor filtered to create a classification benchmark. Cassava was represented by the Makerere University AI Lab Kaggle competition record \citep{makerere2020}. The external datasets were not used to claim directly comparable class accuracy because their label spaces and acquisition conditions differ from PlantVillage.
+
+\subsection{Exploratory data analysis}
+The dataset EDA was performed before model training using the distribution report and duplicate audit. For PlantVillage, all 38 class directories were enumerated and 50 images per class were sampled for image-level profiling. The profile recorded class count, median width and height, channel-wise mean intensity, and median edge density. PlantVillage contained 54,305 images; class counts ranged from 152 (Potato healthy) to 5,507 (Orange huanglongbing), giving an observed class-imbalance ratio of 36.23. The sampled PlantVillage images had a median spatial size of 256$\times$256 pixels across the recorded classes. The corresponding dataset inventories contained 252 PlantDoc images across 27 classes and 21,397 Cassava images across 5 classes. These external counts describe the evaluated mirrors and should not be generalized to other releases of the datasets.
+
+The EDA also characterized acquisition context and label availability. PlantVillage images were predominantly laboratory-style, whereas PlantDoc and Cassava represented field or internet-scraped/field-oriented imagery in the dataset metadata. None of the three primary mirrors supplied the farm, cultivar, session, device, or severity metadata required for group-aware or severity-stratified analysis. The duplicate audit covered all 54,305 images under the PlantVillage `color/` directory. It identified 21 MD5 duplicate groups involving 42 images, 22 exact perceptual-hash groups involving 44 images, and 383 perceptual-hash pairs with Hamming distance at most 4. The audit found no unreadable image files. Reconstructing the primary stratified seed-42 split showed seven MD5 groups and seven exact perceptual-hash groups crossing split boundaries: two train--validation groups, two validation--test groups, and three train--test groups. Five test images belonged to these cross-split groups. A sensitivity run removed the 14 images in the seven cross-split MD5 groups from their respective splits, retrained the same EfficientNet-B0 protocol, and evaluated 5,426 unaffected test images. The resulting macro-F1 was 0.996191, compared with 0.997141 for the primary analysis. This difference is descriptive because both the training data and evaluated test set changed, but it indicates that the duplicate issue has a small, non-zero effect on the reported estimate. These file-level matches do not establish whether images depict the same biological subject, and the dataset does not provide plant, farm, cultivar, or session identifiers.
+
+The available records did not contain farm, cultivar, season, or severity metadata for the evaluated protocol. Consequently, no farm-disjoint, cultivar-disjoint, severity-stratified, early-disease, or prospective field-validation claim is made.
+
+\subsection{Primary model and training protocol}
+The primary model was an ImageNet-pretrained EfficientNet-B0 with full fine-tuning. Images were processed at 224 pixels with basic resize, crop, and horizontal-flip augmentation. Optimization used AdamW, cross-entropy with label smoothing of 0.1, cosine scheduling, and learning rate 0.0003 with weight decay 0.0001. The checkpoint was selected by validation macro-F1. The primary calibrated analysis used validation-only negative-log-likelihood fitting for temperature scaling, followed by evaluation on the test set.
+
+Seed sensitivity was assessed in three independent runs with seeds 7, 42, and 123, using the same fixed train/validation/test split and identical hyperparameters. Only the random seed varied across these runs. Earlier ResNet-50 random-split and frozen-feature model-family experiments were reported as efficiency analyses and were not pooled with the primary full-fine-tuning result.
+
+\subsection{External distribution shift and OOD scoring}
+For the basic-augmentation EfficientNet-B0 analysis, external images were passed through the model without treating external predictions as disease-class ground truth. Mean maximum softmax confidence and entropy were recorded. OOD AUROC was calculated by using negative temperature-scaled maximum confidence, with external images as the positive class and PlantVillage test images as the in-domain reference. The corruption-aware OOD experiment used the same conceptual separation but a separately trained model with additional blur and Gaussian-noise augmentation.
+
+\subsection{Calibration and selective prediction}
+Expected calibration error (ECE) was evaluated on the in-domain data. Temperature was fitted using validation NLL only and then applied to the test set. Selective prediction ranked test samples by confidence and reported coverage and performance among accepted samples. These measures describe the evaluated in-domain distribution and do not establish safe abstention under new farms, cultivars, cameras, or seasons.
+
+\subsection{Data efficiency, model family, and paired comparison}
+The data-efficiency experiment trained a linear head on frozen ResNet-50 features using 1\%, 5\%, 10\%, 25\%, 50\%, and 100\% of the training data. The frozen-feature model-family comparison used identical indices for ResNet-50, MobileNetV3-Large, and EfficientNet-B0. Paired bootstrap resampling with 1,000 replicates estimated 95\% intervals for accuracy differences. These frozen-feature results were not treated as a fair comparison with the full-fine-tuning primary protocol.
+
+\subsection{Synthetic corruption and corruption-aware augmentation}
+The basic-augmentation model was evaluated on fixed Gaussian noise, brightness, contrast, and blur perturbations. A separately trained corruption-aware EfficientNet-B0 protocol added random blur with probability 0.30 and Gaussian noise with probability 0.30 and standard deviation 0.05 during training. A further paired evaluation trained a basic model and a blur-aware model on the same split and compared both on JPEG compression, motion blur, square occlusion, and a red-channel color shift; the blur-aware run used Gaussian blur with probability 0.30 but did not add Gaussian noise. None of these four test transformations was used as a named evaluation target during that paired training. The three-run uncertainty summary combined runs with different split random states. Its 95\% t intervals are exploratory summaries of training and split variation with two degrees of freedom, not population-level confidence intervals.
+
+\subsection{Reproducibility and statistical interpretation}
+All reported values were read from the experiment reports and logs. Seed-level means and standard deviations are descriptive. Paired bootstrap intervals quantify variation over paired test examples and do not replace independent external validation or population-level inference. No hypothesis of universal backbone superiority was prespecified or supported by the paired intervals.
+
+\section{Results}
+\subsection{Evaluation workflow}
+The evaluation workflow is summarized in Fig.~\ref{fig:workflow}. It separates the in-domain reference, validation-based model selection, calibration, external OOD diagnostics, and corruption tests. This separation prevents a result from one protocol being silently used to support a claim belonging to another protocol.
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.95\textwidth]{manuscript/figures/fig1_workflow.pdf}
+\caption{Evaluation workflow. External OOD and synthetic corruption are diagnostic branches rather than direct field-validation stages.}
+\label{fig:workflow}
+\end{figure}
+\clearpage
+
+\subsection{Dataset composition and EDA}
+The EDA identified three properties relevant to interpretation of the downstream metrics. First, the in-domain reference was class-imbalanced: the largest PlantVillage class contained 5,507 images and the smallest contained 152, while the fixed train/validation/test split preserved the overall 38-class task. Second, the image profiles were not homogeneous across datasets: the PlantVillage sample montage shows predominantly isolated leaves on controlled backgrounds, whereas the PlantDoc and Cassava montages contain more varied backgrounds, viewpoints, and field-style acquisition. Third, the full file-level audit found duplicate and near-duplicate matches, including seven exact duplicate groups that crossed the reconstructed train/validation/test boundaries and involved five test images. The deduplicated sensitivity retraining used 5,426 unaffected test images and produced macro-F1 0.996191, versus 0.997141 in the primary analysis. Because the sensitivity run changed both training and test membership, the difference is descriptive rather than a direct causal estimate of leakage inflation. These observations motivate reporting balanced accuracy and macro-F1 alongside accuracy and treating external evaluation as distribution-shift/OOD diagnosis rather than directly comparable disease-class testing. The dataset inventories and representative EDA samples are summarized in Fig.~\ref{fig:eda}.
+\begin{figure}[p]\centering\includegraphics[width=0.72\textwidth,height=0.78\textheight,keepaspectratio]{manuscript/figures/fig9_dataset_eda.pdf}\caption{Exploratory dataset analysis and representative image samples. The panels are drawn from the EDA outputs for PlantVillage, PlantDoc, and Cassava. The montage is qualitative; class counts, image dimensions, channel summaries, edge-density profiles, and duplicate-audit results were computed from the study data and analysis outputs rather than inferred from the displayed samples.}\label{fig:eda}\end{figure}\clearpage
+\begin{figure}[p]\centering\includegraphics[width=0.92\textwidth]{manuscript/figures/fig10_dataset_counts.pdf}\caption{Dataset size and class-count distributions. The left panel shows the fixed PlantVillage train, validation, and test split sizes; the right panel shows the 38 PlantVillage class counts used in the distribution analysis.}\label{fig:datasetcounts}\end{figure}\clearpage
+
+\subsection{In-domain performance and external distribution shift}
+The EfficientNet-B0 basic-augmentation analysis achieved test accuracy 0.997975, balanced accuracy 0.996853, and macro-F1 0.997141. Mean maximum confidence was 0.786229 for PlantDoc and 0.881762 for Cassava. The corresponding OOD AUROCs were 0.962139 and 0.939383. Because the external label spaces were not mapped to PlantVillage disease classes, these are distribution-shift and OOD diagnostics rather than external classification accuracy. The primary in-domain metrics are shown in Fig.~\ref{fig:indomain} and the external confidence/AUROC diagnostics in Fig.~\ref{fig:ood}.
+\begin{figure}[p]\centering\includegraphics[width=0.72\textwidth]{manuscript/figures/fig2_indomain_metrics.pdf}\caption{EfficientNet-B0 in-domain test performance. Scores are calculated on the fixed PlantVillage test split after validation-based checkpoint selection.}\label{fig:indomain}\end{figure}\clearpage
+\begin{figure}[p]\centering\includegraphics[width=0.88\textwidth]{manuscript/figures/fig12_training_history.pdf}\caption{Complete primary EfficientNet-B0 training history. The left panel reports train and validation cross-entropy loss; the right panel reports train and validation accuracy for all six epochs. Checkpoint selection used validation macro-F1, not the final epoch by default.}\label{fig:traininghistory}\end{figure}\clearpage
+\begin{figure}[p]\centering\includegraphics[width=0.90\textwidth]{manuscript/figures/fig3_external_ood.pdf}\caption{External distribution-shift diagnostics for the basic-augmentation EfficientNet-B0 protocol. External confidence is not external disease-class accuracy.}\label{fig:ood}\end{figure}\clearpage
+\subsection{Calibration and selective prediction}
+The locked primary report used for the main manuscript gives T=0.517563 and test ECE 0.000876. A reproducibility rerun under the same documented protocol gave T=0.517405 and test ECE 0.000878. In that rerun, test ECE decreased from 0.092371 to 0.000878, test NLL from 0.102458 to 0.007684, and test Brier score from 0.011559 to 0.002896; validation ECE, NLL, and Brier score changed from 0.092125, 0.101887, and 0.011589 to 0.000893, 0.007191, and 0.002558, respectively. The small difference between 0.000876 and 0.000878 reflects run-specific optimization and reporting provenance; the primary headline value remains 0.000876. The rerun reliability bins are shown in Fig.~\ref{fig:reliability} and are distribution-specific rather than evidence of field calibration.
+\begin{figure}[p]\centering\includegraphics[width=0.62\textwidth]{manuscript/figures/fig8_calibration.pdf}\caption{In-domain ECE after validation-only temperature fitting. The primary headline value is the locked-report test ECE 0.000876; the independent rerun yielded 0.000878.}\label{fig:calibration}\end{figure}\clearpage
+\begin{figure}[p]\centering\includegraphics[width=0.70\textwidth]{manuscript/figures/fig11_reliability_after_scaling.pdf}\caption{Test reliability bins after validation-only temperature scaling in the calibration rerun. Marker size is proportional to the number of test observations in the bin.}\label{fig:reliability}\end{figure}\clearpage
+At confidence thresholds 0.50, 0.80, 0.90, 0.95, and 0.99, the observed test coverages were 1.000000, 0.998711, 0.998159, 0.996686, and 0.994108, respectively. The corresponding accepted-sample macro-F1 values were 0.997141, 0.998523, 0.998689, 0.999650, and 0.999848. These threshold--coverage--performance points are reported instead of an AURC because the available results include threshold summaries rather than the per-sample confidence/performance curve needed to reconstruct AURC.
+
+\subsection{Seed sensitivity}
+The three-seed basic-augmentation confirmation produced mean test accuracy 0.998159 (SD 0.000184), balanced accuracy 0.996725 (SD 0.000469), and macro-F1 0.997042 (SD 0.000522). These results indicate low variation across the three recorded seeds on the fixed split. They do not address group leakage, farm-level generalization, or population-level uncertainty. Per-seed macro-F1 values are shown in Fig.~\ref{fig:seeds}.
+\begin{figure}[p]\centering\includegraphics[width=0.72\textwidth]{manuscript/figures/fig4_seed_sensitivity.pdf}\caption{Three-seed basic-augmentation confirmation. The dashed line denotes the descriptive mean; the plot does not represent a population-level confidence interval.}\label{fig:seeds}\end{figure}\clearpage
+\subsection{OOD detection and model-family comparison}
+The PlantDoc and Cassava AUROCs of 0.962139 and 0.939383 came from the EfficientNet-B0 analysis using negative temperature-scaled maximum confidence. They should not be compared directly with an earlier energy-versus-MSP diagnostic, which used a two-epoch seed-42 checkpoint, calibration and evaluation halves of each external dataset, and different scores. In that separate analysis, energy AUROC was 0.8682 and MSP AUROC was 0.8429, with energy OOD TPR 0.9496 and in-domain FPR 0.5113. The different checkpoint, calibration procedure, score, and evaluation partition explain the numerical difference; neither experiment measures external disease-class accuracy.
+
+In the frozen-feature model-family benchmark, test macro-F1 was 0.9708 for ResNet-50, 0.9702 for MobileNetV3-Large, and 0.9714 for EfficientNet-B0. The paired accuracy intervals included zero for every comparison: ResNet-50 versus MobileNetV3-Large, [-0.001846, 0.006813]; ResNet-50 versus EfficientNet-B0, [-0.004235, 0.004055]; and MobileNetV3-Large versus EfficientNet-B0, [-0.007001, 0.001841]. The results support a descriptive parameter-efficiency trade-off, not statistically established superiority. Figure~\ref{fig:family} shows the descriptive macro-F1 comparison.
+\begin{figure}[p]\centering\includegraphics[width=0.80\textwidth]{manuscript/figures/fig7_model_family.pdf}\caption{Frozen-feature model-family comparison. The descriptive differences should not be interpreted as statistically established superiority.}\label{fig:family}\end{figure}\clearpage
+\subsection{Data efficiency}
+Test macro-F1 was 0.7193 with 1\%, 0.8789 with 5\%, 0.9128 with 10\%, 0.9438 with 25\%, 0.9602 with 50\%, and 0.9668 with 100\% of the training data in the frozen-feature protocol. The largest absolute increase occurred between 1\% and 5\% (0.1596), followed by 5\% to 10\% (0.0339). The increase from 10\% to 100\% was smaller (0.0540), as shown in Fig.~\ref{fig:dataeff}.
+\begin{figure}[p]\centering\includegraphics[width=0.72\textwidth]{manuscript/figures/fig6_data_efficiency.pdf}\caption{Data-efficiency curve for the frozen ResNet-50 feature protocol. The logarithmic horizontal axis emphasizes the low-data region.}\label{fig:dataeff}\end{figure}\clearpage
+\subsection{Synthetic corruption diagnostic}
+The paired unseen-corruption comparison showed a more specific pattern. The basic and blur-aware models achieved clean macro-F1 values of 0.998250 and 0.993473, respectively. On JPEG compression, macro-F1 was 0.970985 for the basic model and 0.973621 for the blur-aware model. Motion-blur macro-F1 increased from 0.428671 to 0.901282 with blur-aware training. In contrast, square-occlusion macro-F1 decreased from 0.981667 to 0.965052, and red-channel color-shift macro-F1 decreased from 0.672191 to 0.625801. Thus, the additional paired experiment supports transfer from blur augmentation to motion blur, with only a small JPEG improvement; it does not support a claim of general robustness across all unseen transformations.
+
+The corruption-aware single-run model had clean-test macro-F1 0.996473, compared with 0.997141 for the basic model. Under the matched Gaussian-noise and blur tests, it achieved macro-F1 0.991162 and 0.994484 in the single reported run; across three exploratory runs, the corresponding means were 0.992783 and 0.993981. The clean-test difference was 0.000668. The different corruption protocols and their metrics are consolidated in Table~\ref{tab:corruption_protocols}; values should not be pooled because the training augmentations, checkpoints, or evaluation transformations differ.
+\begin{table}[p]\centering\small\resizebox{\textwidth}{!}{\begin{tabular}{lrrrrrrr}\toprule
+Protocol & Clean & Gaussian noise & Matched blur & JPEG & Motion blur & Occlusion & Color shift\\\midrule
+Primary basic & 0.997141 & 0.405714 & 0.470702 & -- & -- & -- & --\\
+Matched corruption-aware & 0.996473 & 0.991162 & 0.994484 & -- & -- & -- & --\\
+Paired basic & 0.998250 & -- & -- & 0.970985 & 0.428671 & 0.981667 & 0.672191\\
+Paired blur-aware & 0.993473 & -- & -- & 0.973621 & 0.901282 & 0.965052 & 0.625801\\
+Additional basic evaluation & -- & -- & -- & 0.972729 & 0.445200 & 0.978276 & 0.665723\\\bottomrule
+\end{tabular}}\caption{Macro-F1 across corruption protocols. Dashes indicate transformations not evaluated in that protocol. The additional basic evaluation used a separate run from the paired experiment, explaining its different values.}\label{tab:corruption_protocols}\end{table}\clearpage
+
+\begin{figure}[p]\centering\includegraphics[width=0.90\textwidth]{manuscript/figures/fig5_corruption.pdf}\caption{Synthetic corruption robustness diagnostic. Basic and corruption-aware results use separate training protocols; the corruption-aware multi-run bars are descriptive means.}\label{fig:corruption}\end{figure}\clearpage
+\section{Discussion}
+The central result is a contrast between near-perfect PlantVillage performance and less predictable behavior outside that distribution. EfficientNet-B0 achieved macro-F1 0.997141 on the PlantVillage test split, but confidence and OOD scores changed on PlantDoc and Cassava. The external datasets cannot be used to assess disease-class transfer because their label spaces were not aligned.
+
+Calibration and selective prediction add useful information to accuracy. The low in-domain ECE and the thresholded coverage results describe this test distribution; they do not show that abstention would be safe on new farms, cameras, or seasons.
+
+The corruption diagnostic exposes a distinct failure mode. Basic training was highly sensitive to severe synthetic noise and blur, while corruption-aware training was substantially more stable under the matched perturbations. The controlled tests also include JPEG compression, motion blur, square occlusion, and a red-channel color shift, but they do not establish robustness to sensor-specific noise, weather, natural occlusion patterns, or real field acquisition conditions. The corruption-aware OOD result also comes from a separate training protocol and should not be pooled with the basic model.
+
+The frozen-feature model-family comparison suggests that smaller backbones can achieve comparable in-domain performance under a constrained transfer protocol. EfficientNet-B0 had the highest descriptive macro-F1 in that benchmark, but the paired intervals do not support a superiority claim.
+
+\section{Conclusions}
+This study evaluated crop-disease recognition with in-domain accuracy, calibration, selective prediction, OOD detection, data efficiency, and synthetic corruption tests. The results show why a near-perfect random-split score is not sufficient evidence of reliable performance under changed image distributions. Future work should use farm- or cultivar-disjoint data, severity labels, matched external observations, and independently verified field cohorts.
+
+\section*{Acknowledgments}
+No non-author contributors are listed at this stage. Any person named in the final submission must have agreed to be acknowledged.
+
+\section*{Data Availability}
+The study used publicly available PlantVillage, PlantDoc, and Cassava dataset mirrors. Dataset manifests, derived reports, and analysis outputs are available from the corresponding author on reasonable request, subject to the terms of the original dataset providers.
+
+\section*{Code Availability}
+The analysis code and environment specification are available from the corresponding author on reasonable request.
+
+\section*{Supporting Information Captions}
+Supporting-information files, if used, should provide the detailed protocols, dataset inventories, and supplementary tables needed to reproduce the analyses. The manuscript does not list internal experiment identifiers.
+
+\section*{Funding}
+This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
+
+\section*{Competing Interests}
+The author has declared that no competing interests exist.
+
+\begin{thebibliography}{47}
+\bibitem{hughes2015} Hughes DP, Salathé M. An open access repository of images on plant health to enable the development of mobile disease diagnostics through machine learning and crowdsourcing. arXiv [Preprint]. 2015. doi:10.48550/arXiv.1511.08060.
+\bibitem{singh2020} Singh D, Jain N, Jain P, Kayal P, Kumawat S, Batra N. PlantDoc: A dataset for visual plant disease detection. In: Proceedings of the 7th ACM IKDD CoDS and 25th COMAD. 2020. p. 249--253. doi:10.1145/3371158.3371196.
+\bibitem{makerere2020} Makerere University AI Lab. Cassava Leaf Disease Classification [Internet]. Kaggle; 2020. Available from: \url{https://www.kaggle.com/competitions/cassava-leaf-disease-classification}.
+\bibitem{guo2017} Guo C, Pleiss G, Sun Y, Weinberger KQ. On calibration of modern neural networks. In: Proceedings of the 34th International Conference on Machine Learning. 2017. p. 1321--1330.
+\bibitem{liu2020} Liu W, Wang X, Owens J, Li Y. Energy-based out-of-distribution detection. In: Advances in Neural Information Processing Systems. 2020. vol. 33.
+\input{manuscript/expanded_bibliography_items.tex}
+\end{thebibliography}
+\end{document}

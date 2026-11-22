@@ -1,0 +1,44 @@
+{
+  "phase": "6_baseline_resnet50",
+  "captured_at_utc": "2026-07-26T01:42:31Z",
+  "history": [
+    {
+      "epoch": 1,
+      "tr_loss": 0.2752,
+      "tr_acc": 0.9359,
+      "va_loss": 0.0886,
+      "va_f1_macro": 0.9563,
+      "va_balanced_acc": 0.9734,
+      "elapsed_sec": 226.05
+    },
+    {
+      "epoch": 2,
+      "tr_loss": 0.0638,
+      "tr_acc": 0.9816,
+      "va_loss": 0.0522,
+      "va_f1_macro": 0.9829,
+      "va_balanced_acc": 0.9846,
+      "elapsed_sec": 215.16
+    },
+    {
+      "epoch": 3,
+      "tr_loss": 0.0399,
+      "tr_acc": 0.9881,
+      "va_loss": 0.0651,
+      "va_f1_macro": 0.9638,
+      "va_balanced_acc": 0.9817,
+      "elapsed_sec": 216.21
+    }
+  ],
+  "test_metrics": {
+    "loss": 0.0532,
+    "f1_macro": 0.9848,
+    "balanced_accuracy": 0.9866,
+    "n_test": 5431
+  },
+  "n_train": 43444,
+  "n_val": 5430,
+  "n_classes": 38,
+  "elapsed_sec": 800.14,
+  "sha256_self": "368d6afead2f04314a0ceb6b9aedd763e489489ea03141ff6fd4fc16db6c9ae4"
+}

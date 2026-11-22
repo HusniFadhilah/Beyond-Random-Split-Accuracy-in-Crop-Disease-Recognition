@@ -1,0 +1,151 @@
+{
+  "phase": "28_loss_optimizer_ablation",
+  "captured_at_utc": "2026-08-09T14:19:35Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "mode": "full_finetune",
+    "augmentation": "strong_no_hue",
+    "configs": [
+      {
+        "name": "adamw_ce_cosine",
+        "loss": "ce",
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "label_smoothing": 0,
+        "weighted": false
+      },
+      {
+        "name": "adamw_label_smoothing",
+        "loss": "ce",
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "label_smoothing": 0.1,
+        "weighted": false
+      },
+      {
+        "name": "adamw_focal",
+        "loss": "focal",
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "label_smoothing": 0,
+        "weighted": false
+      },
+      {
+        "name": "adamw_weighted_ce",
+        "loss": "ce",
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "label_smoothing": 0,
+        "weighted": true
+      },
+      {
+        "name": "sgd_ce",
+        "loss": "ce",
+        "optimizer": "sgd",
+        "scheduler": "cosine",
+        "label_smoothing": 0,
+        "weighted": false
+      }
+    ],
+    "epochs": 6,
+    "selection": "validation macro_f1",
+    "test_policy": "test only locked winner"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "screening": [
+    {
+      "config": {
+        "name": "adamw_label_smoothing",
+        "loss": "ce",
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "label_smoothing": 0.1,
+        "weighted": false
+      },
+      "best_val_macro_f1": 0.997066,
+      "best_epoch": 5,
+      "trainable_params": 4056226,
+      "locked_test": {
+        "accuracy": 0.997606,
+        "balanced_accuracy": 0.996949,
+        "macro_f1": 0.99625
+      }
+    },
+    {
+      "config": {
+        "name": "adamw_ce_cosine",
+        "loss": "ce",
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "label_smoothing": 0,
+        "weighted": false
+      },
+      "best_val_macro_f1": 0.996225,
+      "best_epoch": 6,
+      "trainable_params": 4056226
+    },
+    {
+      "config": {
+        "name": "adamw_weighted_ce",
+        "loss": "ce",
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "label_smoothing": 0,
+        "weighted": true
+      },
+      "best_val_macro_f1": 0.995406,
+      "best_epoch": 6,
+      "trainable_params": 4056226
+    },
+    {
+      "config": {
+        "name": "adamw_focal",
+        "loss": "focal",
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "label_smoothing": 0,
+        "weighted": false
+      },
+      "best_val_macro_f1": 0.994259,
+      "best_epoch": 4,
+      "trainable_params": 4056226
+    },
+    {
+      "config": {
+        "name": "sgd_ce",
+        "loss": "ce",
+        "optimizer": "sgd",
+        "scheduler": "cosine",
+        "label_smoothing": 0,
+        "weighted": false
+      },
+      "best_val_macro_f1": 0.990192,
+      "best_epoch": 5,
+      "trainable_params": 4056226
+    }
+  ],
+  "locked_winner": {
+    "config": {
+      "name": "adamw_label_smoothing",
+      "loss": "ce",
+      "optimizer": "adamw",
+      "scheduler": "cosine",
+      "label_smoothing": 0.1,
+      "weighted": false
+    },
+    "best_val_macro_f1": 0.997066,
+    "best_epoch": 5,
+    "trainable_params": 4056226,
+    "locked_test": {
+      "accuracy": 0.997606,
+      "balanced_accuracy": 0.996949,
+      "macro_f1": 0.99625
+    }
+  },
+  "elapsed_sec": 6103.18,
+  "sha256_self": "dae841ddb6da6ce17577f371a07a786577f94e9f634cdf530baadea1411d6717"
+}

@@ -1,0 +1,17 @@
+{
+  "source": "Kaggle Phase 58 original execution log",
+  "run_status": "COMPLETE",
+  "device_observed": "cuda",
+  "gpu_model": "NOT_CAPTURED_IN_ORIGINAL_LOG",
+  "gpu_memory": "NOT_CAPTURED_IN_ORIGINAL_LOG",
+  "cpu_model": "NOT_CAPTURED_IN_ORIGINAL_LOG",
+  "system_memory": "NOT_CAPTURED_IN_ORIGINAL_LOG",
+  "operating_system": "NOT_CAPTURED_IN_ORIGINAL_LOG",
+  "python_version": "NOT_CAPTURED_IN_ORIGINAL_LOG",
+  "pytorch_version": "not independently printed; pip install command records 2.3.1",
+  "torchvision_version": "not independently printed; pip install command records 0.18.1",
+  "cuda_runtime_version": "NOT_CAPTURED_IN_ORIGINAL_LOG",
+  "execution_log": "artifacts/metadata/phase58_training_curves.log",
+  "result_report": "artifacts/metadata/phase58_training_curves_report.json",
+  "note": "No hardware/version values are inferred where the original run log did not print them."
+}

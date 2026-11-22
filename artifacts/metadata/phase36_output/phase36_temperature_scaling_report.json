@@ -1,0 +1,30 @@
+{
+  "phase": "36_temperature_scaling",
+  "captured_at_utc": "2026-08-13T19:52:30Z",
+  "protocol": {
+    "model": "resnet50",
+    "resolution": 224,
+    "selection": "validation macro_f1",
+    "temperature_fit": "validation NLL only",
+    "test_policy": "test evaluated after checkpoint and temperature are locked",
+    "ece_bins": 15
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "best_val_macro_f1": 0.995598,
+  "temperature": 0.523752,
+  "validation_ece_before": 0.098359,
+  "validation_ece_after": 0.001323,
+  "test_ece_before": 0.098892,
+  "test_ece_after": 0.001429,
+  "test_metrics": {
+    "accuracy": 0.997975,
+    "balanced_accuracy": 0.996817,
+    "macro_f1": 0.99688
+  },
+  "elapsed_sec": 1421.58,
+  "sha256_self": "af768bc4616a2658a72a633581dc68ea333bafdde377db1bc8198be9936341a3"
+}

@@ -1,0 +1,36 @@
+[{"stream_name":"stdout","time":3.255995943,"data":"  plantvillage: 38 classes -\u003e /kaggle/working/eda_plantvillage.png (1096128 bytes)\n"}
+,{"stream_name":"stdout","time":4.750860876,"data":"  plantdoc: 27 classes -\u003e /kaggle/working/eda_plantdoc.png (666692 bytes)\n"}
+,{"stream_name":"stdout","time":5.0841591919999995,"data":"  cassava: 5 classes -\u003e /kaggle/working/eda_cassava.png (148046 bytes)\n"}
+,{"stream_name":"stdout","time":5.084598178,"data":"{\n"}
+,{"stream_name":"stdout","time":5.08461148,"data":"  \"phase\": \"5_eda\",\n"}
+,{"stream_name":"stdout","time":5.084616609,"data":"  \"captured_at_utc\": \"2026-07-26T01:34:58Z\",\n"}
+,{"stream_name":"stdout","time":5.084621829,"data":"  \"dataset_paths\": {\n"}
+,{"stream_name":"stdout","time":5.084626626,"data":"    \"plantvillage\": \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color\",\n"}
+,{"stream_name":"stdout","time":5.084631344,"data":"    \"plantdoc\": \"/kaggle/input/datasets/nirmalsankalana/plantdoc-dataset/test\",\n"}
+,{"stream_name":"stdout","time":5.084636498,"data":"    \"cassava\": \"/kaggle/input/datasets/nirmalsankalana/cassava-leaf-disease-classification/data\"\n"}
+,{"stream_name":"stdout","time":5.084641283,"data":"  },\n"}
+,{"stream_name":"stdout","time":5.08464554,"data":"  \"plantvillage\": {\n"}
+,{"stream_name":"stdout","time":5.084650189,"data":"    \"classes\": 38,\n"}
+,{"stream_name":"stdout","time":5.084654521,"data":"    \"png_bytes\": 1096128,\n"}
+,{"stream_name":"stdout","time":5.08465916,"data":"    \"path\": \"/kaggle/working/eda_plantvillage.png\"\n"}
+,{"stream_name":"stdout","time":5.08466408,"data":"  },\n"}
+,{"stream_name":"stdout","time":5.084668406,"data":"  \"plantdoc\": {\n"}
+,{"stream_name":"stdout","time":5.084672756,"data":"    \"classes\": 27,\n"}
+,{"stream_name":"stdout","time":5.084677506,"data":"    \"png_bytes\": 666692,\n"}
+,{"stream_name":"stdout","time":5.084681965,"data":"    \"path\": \"/kaggle/working/eda_plantdoc.png\"\n"}
+,{"stream_name":"stdout","time":5.084686476,"data":"  },\n"}
+,{"stream_name":"stdout","time":5.084690734,"data":"  \"cassava\": {\n"}
+,{"stream_name":"stdout","time":5.084695439,"data":"    \"classes\": 5,\n"}
+,{"stream_name":"stdout","time":5.084700117,"data":"    \"png_bytes\": 148046,\n"}
+,{"stream_name":"stdout","time":5.084704709,"data":"    \"path\": \"/kaggle/working/eda_cassava.png\"\n"}
+,{"stream_name":"stdout","time":5.08470921,"data":"  },\n"}
+,{"stream_name":"stdout","time":5.084713349,"data":"  \"elapsed_sec\": 4.19,\n"}
+,{"stream_name":"stdout","time":5.084718107,"data":"  \"sha256_self\": \"f93c98ccce79963378e675001fe7378c3eb7ee3d8dc345f97283f380d263ab7e\"\n"}
+,{"stream_name":"stdout","time":5.084722849,"data":"}\n"}
+,{"stream_name":"stderr","time":7.9025592190000005,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":7.902620932,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":8.263733537,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":8.263769309,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":9.884369656,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":11.545983427,"data":"[NbConvertApp] Writing 289758 bytes to __results__.html\n"}
+]

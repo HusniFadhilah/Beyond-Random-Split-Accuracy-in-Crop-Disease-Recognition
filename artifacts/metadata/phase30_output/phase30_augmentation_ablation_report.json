@@ -1,0 +1,136 @@
+{
+  "phase": "30_augmentation_ablation",
+  "captured_at_utc": "2026-08-09T22:58:34Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "mode": "full_finetune",
+    "optimizer": "adamw",
+    "loss": "cross_entropy",
+    "label_smoothing": 0.1,
+    "scheduler": "cosine",
+    "configs": [
+      {
+        "name": "no_aug",
+        "transform": "no_aug",
+        "mix_mode": "standard"
+      },
+      {
+        "name": "basic",
+        "transform": "basic",
+        "mix_mode": "standard"
+      },
+      {
+        "name": "strong",
+        "transform": "strong",
+        "mix_mode": "standard"
+      },
+      {
+        "name": "randaugment",
+        "transform": "randaugment",
+        "mix_mode": "standard"
+      },
+      {
+        "name": "mixup",
+        "transform": "mixup",
+        "mix_mode": "mixup"
+      },
+      {
+        "name": "cutmix",
+        "transform": "cutmix",
+        "mix_mode": "cutmix"
+      }
+    ],
+    "epochs": 6,
+    "selection": "validation macro_f1",
+    "test_policy": "test only locked winner"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "screening": [
+    {
+      "config": {
+        "name": "basic",
+        "transform": "basic",
+        "mix_mode": "standard"
+      },
+      "best_val_macro_f1": 0.99744,
+      "best_epoch": 6,
+      "trainable_params": 4056226,
+      "locked_test": {
+        "accuracy": 0.997975,
+        "balanced_accuracy": 0.996853,
+        "macro_f1": 0.997141
+      }
+    },
+    {
+      "config": {
+        "name": "strong",
+        "transform": "strong",
+        "mix_mode": "standard"
+      },
+      "best_val_macro_f1": 0.997066,
+      "best_epoch": 5,
+      "trainable_params": 4056226
+    },
+    {
+      "config": {
+        "name": "no_aug",
+        "transform": "no_aug",
+        "mix_mode": "standard"
+      },
+      "best_val_macro_f1": 0.996889,
+      "best_epoch": 5,
+      "trainable_params": 4056226
+    },
+    {
+      "config": {
+        "name": "randaugment",
+        "transform": "randaugment",
+        "mix_mode": "standard"
+      },
+      "best_val_macro_f1": 0.996599,
+      "best_epoch": 6,
+      "trainable_params": 4056226
+    },
+    {
+      "config": {
+        "name": "cutmix",
+        "transform": "cutmix",
+        "mix_mode": "cutmix"
+      },
+      "best_val_macro_f1": 0.995745,
+      "best_epoch": 6,
+      "trainable_params": 4056226
+    },
+    {
+      "config": {
+        "name": "mixup",
+        "transform": "mixup",
+        "mix_mode": "mixup"
+      },
+      "best_val_macro_f1": 0.993522,
+      "best_epoch": 6,
+      "trainable_params": 4056226
+    }
+  ],
+  "locked_winner": {
+    "config": {
+      "name": "basic",
+      "transform": "basic",
+      "mix_mode": "standard"
+    },
+    "best_val_macro_f1": 0.99744,
+    "best_epoch": 6,
+    "trainable_params": 4056226,
+    "locked_test": {
+      "accuracy": 0.997975,
+      "balanced_accuracy": 0.996853,
+      "macro_f1": 0.997141
+    }
+  },
+  "elapsed_sec": 6532.0,
+  "sha256_self": "055672d396184fceb7035c6dfab2fa2d016b6b84c93e61ceed49ce267229d55c"
+}

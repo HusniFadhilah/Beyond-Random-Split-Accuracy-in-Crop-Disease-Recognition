@@ -1,0 +1,69 @@
+[{"stream_name":"stdout","time":0.754757593,"data":"Installing GPU torch + albumentations...\n"}
+,{"stream_name":"stdout","time":188.011178764,"data":"device: cuda\n"}
+,{"stream_name":"stdout","time":246.880308031,"data":"train=43444, test=5431\n"}
+,{"stream_name":"stderr","time":260.626284304,"data":"Downloading: \"https://download.pytorch.org/models/resnet50-11ad3fa6.pth\" to /root/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth\n"}
+,{"stream_name":"stderr","time":261.107017151,"data":"\r  0%|          | 0.00/97.8M [00:00\u003c?, ?B/s]\r 20%|██        | 19.8M/97.8M [00:00\u003c00:00, 206MB/s]\r 44%|████▍     | 42.9M/97.8M [00:00\u003c00:00, 227MB/s]\r 67%|██████▋   | 65.8M/97.8M [00:00\u003c00:00, 233MB/s]\r 91%|█████████ | 89.0M/97.8M [00:00\u003c00:00, 237MB/s]\r100%|██████████| 97.8M/97.8M [00:00\u003c00:00, 234MB/s]\n"}
+,{"stream_name":"stdout","time":263.049761604,"data":"  ep1 batch0/679 loss=3.6687\n"}
+,{"stream_name":"stdout","time":293.426487362,"data":"  ep1 batch100/679 loss=0.1464\n"}
+,{"stream_name":"stdout","time":323.799779254,"data":"  ep1 batch200/679 loss=0.1808\n"}
+,{"stream_name":"stdout","time":354.179903647,"data":"  ep1 batch300/679 loss=0.1036\n"}
+,{"stream_name":"stdout","time":384.556001325,"data":"  ep1 batch400/679 loss=0.0465\n"}
+,{"stream_name":"stdout","time":414.932726299,"data":"  ep1 batch500/679 loss=0.0551\n"}
+,{"stream_name":"stdout","time":445.313288771,"data":"  ep1 batch600/679 loss=0.0444\n"}
+,{"stream_name":"stdout","time":469.019253987,"data":"epoch 1: train acc=0.9372 (208s)\n"}
+,{"stream_name":"stdout","time":469.670477386,"data":"  ep2 batch0/679 loss=0.0300\n"}
+,{"stream_name":"stdout","time":500.056131665,"data":"  ep2 batch100/679 loss=0.0536\n"}
+,{"stream_name":"stdout","time":530.446709104,"data":"  ep2 batch200/679 loss=0.0384\n"}
+,{"stream_name":"stdout","time":560.834615223,"data":"  ep2 batch300/679 loss=0.1357\n"}
+,{"stream_name":"stdout","time":591.228294966,"data":"  ep2 batch400/679 loss=0.0125\n"}
+,{"stream_name":"stdout","time":621.612959606,"data":"  ep2 batch500/679 loss=0.0127\n"}
+,{"stream_name":"stdout","time":652.010145929,"data":"  ep2 batch600/679 loss=0.0889\n"}
+,{"stream_name":"stdout","time":675.717441245,"data":"epoch 2: train acc=0.9825 (207s)\n"}
+,{"stream_name":"stdout","time":675.726767039,"data":"Test set: 5431 images\n"}
+,{"stream_name":"stdout","time":675.727754929,"data":"Subsampled to 1000 for corruption test\n"}
+,{"stream_name":"stdout","time":675.72784419,"data":"Loading test images into memory...\n"}
+,{"stream_name":"stdout","time":681.560544439,"data":"Loaded 1000 images, labels: 1000 total\n"}
+,{"stream_name":"stdout","time":681.560588526,"data":"\n"}
+,{"stream_name":"stdout","time":681.560594624,"data":"=== Baseline (no corruption) ===\n"}
+,{"stream_name":"stderr","time":681.74872668,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":681.748779257,"data":"  File \"/kaggle/src/script.py\", line 280, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":681.749063732,"data":"    base_acc, base_f1, base_probs = evaluate_batch(imgs, labels_arr, model)\n"}
+,{"stream_name":"stderr","time":681.749274387,"data":"                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":681.749347355,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n"}
+,{"stream_name":"stderr","time":681.749514168,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":681.74956115,"data":"           ^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":681.749593803,"data":"  File \"/kaggle/src/script.py\", line 269, in evaluate_batch\n"}
+,{"stream_name":"stderr","time":681.749872106,"data":"    out = model(x)\n"}
+,{"stream_name":"stderr","time":681.749882678,"data":"          ^^^^^^^^\n"}
+,{"stream_name":"stderr","time":681.749886744,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1736, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":681.750399275,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":681.750446538,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":681.750481341,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1747, in _call_impl\n"}
+,{"stream_name":"stderr","time":681.750890965,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":681.750924833,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":681.750963353,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torchvision/models/resnet.py\", line 285, in forward\n"}
+,{"stream_name":"stderr","time":681.751209854,"data":"    return self._forward_impl(x)\n"}
+,{"stream_name":"stderr","time":681.751285849,"data":"           ^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":681.751297854,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torchvision/models/resnet.py\", line 268, in _forward_impl\n"}
+,{"stream_name":"stderr","time":681.751523102,"data":"    x = self.conv1(x)\n"}
+,{"stream_name":"stderr","time":681.751543298,"data":"        ^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":681.751559497,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1736, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":681.751993799,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":681.752076033,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":681.75210575,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1747, in _call_impl\n"}
+,{"stream_name":"stderr","time":681.752577823,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":681.752659952,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":681.752671172,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/conv.py\", line 554, in forward\n"}
+,{"stream_name":"stderr","time":681.752935617,"data":"    return self._conv_forward(input, self.weight, self.bias)\n"}
+,{"stream_name":"stderr","time":681.753051331,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":681.753063764,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/conv.py\", line 549, in _conv_forward\n"}
+,{"stream_name":"stderr","time":681.75337448,"data":"    return F.conv2d(\n"}
+,{"stream_name":"stderr","time":681.753386432,"data":"           ^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":681.753389967,"data":"RuntimeError: Input type (torch.cuda.DoubleTensor) and weight type (torch.cuda.FloatTensor) should be the same\n"}
+,{"stream_name":"stderr","time":685.224904397,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":685.224938136,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":685.447258567,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":685.447331663,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":686.096436423,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":687.401055119,"data":"[NbConvertApp] Writing 355291 bytes to __results__.html\n"}
+]

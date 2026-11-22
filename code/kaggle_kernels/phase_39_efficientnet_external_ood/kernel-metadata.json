@@ -1,0 +1,11 @@
+{
+ "id": "husnifadhilahdhiya/crop-disease-phase39-efficientnet-external-ood",
+ "title": "Crop Disease Phase39 EfficientNet External OOD",
+ "code_file": "kernel.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_internet": true,
+ "dataset_sources": ["abdallahalidev/plantvillage-dataset", "nirmalsankalana/plantdoc-dataset", "nirmalsankalana/cassava-leaf-disease-classification"]
+}

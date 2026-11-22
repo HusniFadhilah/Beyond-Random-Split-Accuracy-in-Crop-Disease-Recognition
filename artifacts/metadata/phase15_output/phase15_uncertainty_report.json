@@ -1,0 +1,48 @@
+{
+  "phase": "15_uncertainty",
+  "captured_at_utc": "2026-07-26T03:32:31Z",
+  "protocol": {
+    "seed": 42,
+    "mc_passes": 4,
+    "dropout_p": 0.3,
+    "training_epochs": 2
+  },
+  "ood_auroc": {
+    "predictive_entropy": 0.7325,
+    "mutual_information": 0.7224,
+    "variation_ratio": 0.5297
+  },
+  "results": {
+    "plantvillage_test": {
+      "n": 5431,
+      "predictive_entropy_mean": 0.1239,
+      "predictive_entropy_std": 0.2618,
+      "expected_entropy_mean": 0.1196,
+      "mutual_information_mean": 0.0043,
+      "variation_ratio_mean": 0.0092,
+      "max_conf_mean": 0.9604,
+      "accuracy": 0.961,
+      "ece": 0.005
+    },
+    "plantdoc_ood": {
+      "n": 252,
+      "predictive_entropy_mean": 1.2239,
+      "predictive_entropy_std": 0.838,
+      "expected_entropy_mean": 1.1997,
+      "mutual_information_mean": 0.0242,
+      "variation_ratio_mean": 0.0714,
+      "max_conf_mean": 0.6431
+    },
+    "cassava_ood": {
+      "n": 21397,
+      "predictive_entropy_mean": 0.6039,
+      "predictive_entropy_std": 0.7893,
+      "expected_entropy_mean": 0.591,
+      "mutual_information_mean": 0.0128,
+      "variation_ratio_mean": 0.0283,
+      "max_conf_mean": 0.8355
+    }
+  },
+  "elapsed_sec": 1209.43,
+  "sha256_self": "bffbec5f45e2536785fc2a8fb9d69d3730953eeb9cc745f54d9ba17a6acc7afc"
+}

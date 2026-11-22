@@ -1,0 +1,232 @@
+{
+  "phase": "1",
+  "captured_at_utc": "2026-07-26T06:50:00Z",
+  "policy": "metadata-only discovery; no dataset downloaded to local server",
+  "datasets": {
+    "plantvillage": {
+      "kaggle_ref": "abdallahalidev/plantvillage-dataset",
+      "dataset_id": 277323,
+      "size_bytes": 4371949460,
+      "size_human": "4.07 GB",
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "commercial_use": "NO (NC)",
+      "share_alike": "YES (SA)",
+      "metadata_file": "data/metadata/plantvillage-metadata.json",
+      "acquisition_environment": "lab",
+      "geographic_origin": "Crowdsourced; US/Europe images",
+      "has_severity_labels": false,
+      "has_farm_metadata": false,
+      "has_cultivar_metadata": false,
+      "has_device_metadata": false,
+      "has_session_metadata": false,
+      "evidence_strength": "high (verifiable via kaggle datasets metadata)",
+      "usable_for": [
+        "in-domain training",
+        "lab baseline",
+        "cross-dataset transfer -> PlantDoc/Cassava"
+      ],
+      "actual_image_count": 54305,
+      "actual_class_count": 38,
+      "actual_imbalance_ratio": 36.23,
+      "actual_audit_kernel": "remahankecil/crop-disease-phase02-v7",
+      "actual_audit_sha256": "1346aeca350f49332288c5a1552df73ffaa829c5cd8b89770bc4e56bc3ad78ba"
+    },
+    "plantdoc": {
+      "kaggle_ref": "nirmalsankalana/plantdoc-dataset",
+      "dataset_id": 3923798,
+      "size_bytes": 939047363,
+      "size_human": "895 MB",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "commercial_use": "YES",
+      "share_alike": "NO",
+      "metadata_file": "data/metadata/plantdoc-metadata.json",
+      "acquisition_environment": "field/internet-scraped",
+      "geographic_origin": "India",
+      "has_severity_labels": false,
+      "has_farm_metadata": false,
+      "has_cultivar_metadata": false,
+      "has_device_metadata": false,
+      "has_session_metadata": false,
+      "evidence_strength": "high (peer-reviewed at ACM CoDS-COMAD 2020)",
+      "usable_for": [
+        "external field test target only (no train split in this mirror)"
+      ],
+      "actual_image_count": 252,
+      "actual_class_count": 27,
+      "actual_imbalance_ratio": 3.75,
+      "actual_split_available": "test/ ONLY (no train/val)",
+      "actual_audit_kernel": "remahankecil/crop-disease-phase02-v7",
+      "actual_audit_sha256": "1346aeca350f49332288c5a1552df73ffaa829c5cd8b89770bc4e56bc3ad78ba"
+    },
+    "cassava": {
+      "kaggle_ref": "nirmalsankalana/cassava-leaf-disease-classification",
+      "dataset_id": 4207557,
+      "size_bytes": 2561676357,
+      "size_human": "2.39 GB",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "commercial_use": "YES",
+      "share_alike": "NO",
+      "metadata_file": "data/metadata/cassava-metadata.json",
+      "acquisition_environment": "field (low-end smartphone, farmer-submitted)",
+      "geographic_origin": "Uganda",
+      "has_severity_labels": false,
+      "has_farm_metadata": false,
+      "has_cultivar_metadata": false,
+      "has_device_metadata": false,
+      "has_session_metadata": false,
+      "evidence_strength": "high (Kaggle competition by Makerere AI Lab)",
+      "usable_for": [
+        "field test target",
+        "cross-crop species transfer",
+        "OOD experiments"
+      ],
+      "actual_image_count": 21397,
+      "actual_class_count": 5,
+      "actual_imbalance_ratio": 12.1,
+      "actual_audit_kernel": "remahankecil/crop-disease-phase02-v7",
+      "actual_audit_sha256": "1346aeca350f49332288c5a1552df73ffaa829c5cd8b89770bc4e56bc3ad78ba"
+    },
+    "rocole": {
+      "kaggle_ref": "nirmalsankalana/rocole-a-robusta-coffee-leaf-images-dataset",
+      "dataset_id": null,
+      "title": "RoCoLe: A Robusta Coffee Leaf Images Dataset",
+      "license": "MIT",
+      "size_bytes": 406000000,
+      "size_human": "~406 MB",
+      "acquisition_environment": "field (smartphone, real-world, diverse lighting/background)",
+      "geographic_origin": "Robusta coffee (likely South America or Africa)",
+      "has_severity_labels": false,
+      "has_farm_metadata": false,
+      "has_cultivar_metadata": "single species (Robusta coffee)",
+      "has_device_metadata": "smartphone (single type)",
+      "has_session_metadata": false,
+      "evidence_strength": "medium (only 1560 images, metadata descriptive)",
+      "usable_for": [
+        "auxiliary crop for cross-crop transfer",
+        "OOD experiments"
+      ],
+      "license_url": "https://opensource.org/licenses/MIT",
+      "metadata_file": "data/metadata/rocole-metadata.json",
+      "decision": "auxiliary OOD dataset, not primary"
+    },
+    "potato_viral": {
+      "kaggle_ref": "nirmalsankalana/potato-viral-disease-dataset",
+      "dataset_id": null,
+      "title": "Potato Viral Disease Dataset",
+      "license": "MIT",
+      "size_bytes": 838000000,
+      "size_human": "~838 MB",
+      "acquisition_environment": "mixed: field (UAS Dharwad) + lab (ICAR-CPRI Shimla, black background)",
+      "geographic_origin": "India",
+      "has_severity_labels": true,
+      "severity_granularity": "3 levels",
+      "has_farm_metadata": false,
+      "has_cultivar_metadata": "suspected (uncertified vs certified seeds)",
+      "has_device_metadata": false,
+      "has_session_metadata": false,
+      "evidence_strength": "medium (description comprehensive but no peer-reviewed publication cited)",
+      "usable_for": [
+        "severity stratification",
+        "multi-source domain shift (field + lab)"
+      ],
+      "license_url": "https://opensource.org/licenses/MIT",
+      "metadata_file": "data/metadata/potato_viral-metadata.json",
+      "decision": "secondary severity dataset \u2014 needs deeper inspection in Phase 1c"
+    },
+    "tomato_severity": {
+      "kaggle_ref": "janiruwalisingha/tomato-leaf-disease-severity-dataset",
+      "dataset_id": null,
+      "title": "Tomato Leaf Disease Severity Dataset",
+      "license": "UNKNOWN",
+      "size_bytes": 1160000000,
+      "size_human": "~1.16 GB",
+      "acquisition_environment": "UNKNOWN (metadata description does not specify field vs lab)",
+      "geographic_origin": "UNKNOWN",
+      "has_severity_labels": true,
+      "severity_granularity": "3 levels",
+      "has_farm_metadata": false,
+      "has_cultivar_metadata": false,
+      "has_device_metadata": false,
+      "has_session_metadata": false,
+      "evidence_strength": "weak (license unknown, no peer-reviewed citation, no provenance)",
+      "usable_for": [
+        "severity stratification IF license + provenance verified"
+      ],
+      "license_url": "UNKNOWN",
+      "metadata_file": "data/metadata/tomato_severity-metadata.json",
+      "decision": "DEFERRED \u2014 license UNKNOWN, NOT included in primary set until provenance verified"
+    }
+  },
+  "early_disease_policy": {
+    "claim_allowed": false,
+    "rationale": "No severity labels in any of the three primary mirrors; rule 35 forbids claiming early detection without defensible evidence.",
+    "alternative_wording": [
+      "mild-symptom recognition",
+      "low-severity disease classification",
+      "early-warning-oriented disease assessment"
+    ]
+  },
+  "grouping_policy": {
+    "plant_blocked": "impossible (no plant_id metadata)",
+    "farm_blocked": "impossible (no farm metadata)",
+    "region_blocked": "impossible at image level (dataset-level region: PV=crowdsourced, PD=India, Cassava=Uganda)",
+    "cultivar_blocked": "impossible (no cultivar metadata)",
+    "device_blocked": "impossible (no device metadata)",
+    "session_blocked": "impossible (no session metadata)",
+    "dataset_blocked": "POSSIBLE \u2014 train on dataset A, test on dataset B (cross-dataset transfer)"
+  },
+  "next_actions": [
+    "Phase 1b: search for an additional dataset with severity labels (Embrapa WGISD, CDSL, PlantWild).",
+    "Phase 2: run integrity audit (corrupt files, duplicates, label inspect) on Kaggle GPU kernel \u2014 NOT on local server.",
+    "Phase 4: impute plant proxy groups via perceptual hashing (Hamming distance on pHash) when duplicate audit runs."
+  ],
+  "candidates_under_evaluation": {
+    "tomato_severity": {
+      "reason": "license and provenance unknown; if verified, becomes primary severity dataset",
+      "verification_needed": [
+        "license file content",
+        "image-exif metadata",
+        "original publication"
+      ]
+    },
+    "embrapa_wgisd": {
+      "reason": "metadata description empty; usability 0.125 (very low); EMBRAPA WGISD is a real grape dataset but mirror may be incomplete",
+      "verification_needed": [
+        "file listing",
+        "total image count",
+        "license"
+      ]
+    },
+    "plantwild": {
+      "reason": "CC-BY-NC-ND 4.0; description empty; usability 0.312; original PestTrap-Net/PlantWild paper but mirror may differ",
+      "verification_needed": [
+        "file listing",
+        "severity label file",
+        "license"
+      ]
+    }
+  },
+  "decision_on_severity_dataset": {
+    "phase_1b_outcome": "no severity-labelled dataset with verifiable license + provenance found in Phase 1 search",
+    "primary_set_unchanged": [
+      "plantvillage",
+      "plantdoc",
+      "cassava"
+    ],
+    "secondary_severity_candidate": "potato_viral (MIT, has mild/medium/severe labels, but needs file inspection in Phase 1c)",
+    "ood_auxiliary": "rocole (MIT, small, smartphone, field)",
+    "defensible_wording": "Cross-domain CV (no severity stratification) + severity exploration on potato_viral as auxiliary"
+  },
+  "phase2_status": {
+    "complete": true,
+    "kernel_id": "remahankecil/crop-disease-phase02-v7",
+    "elapsed_sec": 103.62,
+    "sha256": "1346aeca350f49332288c5a1552df73ffaa829c5cd8b89770bc4e56bc3ad78ba",
+    "total_images_3_datasets": 75954,
+    "no_local_download": true,
+    "all_evidence_in": "data/metadata/phase2_v7_report.json"
+  }
+}

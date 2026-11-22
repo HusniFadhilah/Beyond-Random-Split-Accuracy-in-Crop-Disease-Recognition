@@ -1,0 +1,11 @@
+{
+  "id": "researchhusni/crop-disease-phase25-fine-tune-ablation",
+  "title": "Crop Disease Phase25 Fine Tune Ablation",
+  "code_file": "kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["abdallahalidev/plantvillage-dataset"]
+}

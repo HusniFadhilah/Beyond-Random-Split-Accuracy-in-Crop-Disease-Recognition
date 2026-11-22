@@ -1,0 +1,85 @@
+{
+  "phase": "45_corruption_aware_sensitivity_aggregate",
+  "source_phases": [
+    42,
+    44,
+    45
+  ],
+  "note": "descriptive aggregate across runs with different training/split random states; not pure initialization-only variance",
+  "runs": [
+    {
+      "phase": "42_corruption_aware_training_efficientnet_b0",
+      "seed": 42,
+      "split_sizes": {
+        "train": 43444,
+        "val": 5430,
+        "test": 5431
+      }
+    },
+    {
+      "phase": "44_corruption_aware_training_efficientnet_b0_seed123",
+      "seed": 123,
+      "split_sizes": {
+        "train": 43444,
+        "val": 5430,
+        "test": 5431
+      }
+    },
+    {
+      "phase": "45_corruption_aware_training_efficientnet_b0_seed7",
+      "seed": 7,
+      "split_sizes": {
+        "train": 43444,
+        "val": 5430,
+        "test": 5431
+      }
+    }
+  ],
+  "aggregate": {
+    "clean_test": {
+      "macro_f1_mean": 0.996463,
+      "macro_f1_sd": 0.0009,
+      "values": [
+        0.996473,
+        0.995558,
+        0.997358
+      ]
+    },
+    "gaussian_noise": {
+      "macro_f1_mean": 0.992783,
+      "macro_f1_sd": 0.002414,
+      "values": [
+        0.991162,
+        0.99163,
+        0.995557
+      ]
+    },
+    "brightness": {
+      "macro_f1_mean": 0.970658,
+      "macro_f1_sd": 0.007768,
+      "values": [
+        0.979326,
+        0.968322,
+        0.964327
+      ]
+    },
+    "contrast": {
+      "macro_f1_mean": 0.959332,
+      "macro_f1_sd": 0.011451,
+      "values": [
+        0.965396,
+        0.966476,
+        0.946125
+      ]
+    },
+    "blur": {
+      "macro_f1_mean": 0.993981,
+      "macro_f1_sd": 0.001508,
+      "values": [
+        0.994484,
+        0.992286,
+        0.995172
+      ]
+    }
+  }
+}

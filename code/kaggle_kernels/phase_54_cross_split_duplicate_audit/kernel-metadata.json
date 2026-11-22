@@ -1,0 +1,11 @@
+{
+ "id": "remahankecil/crop-disease-phase54-cross-split-duplicate-audit",
+ "title": "Crop Disease Phase54 Cross Split Duplicate Audit",
+ "code_file": "kernel.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": false,
+ "enable_internet": false,
+ "dataset_sources": ["abdallahalidev/plantvillage-dataset"]
+}

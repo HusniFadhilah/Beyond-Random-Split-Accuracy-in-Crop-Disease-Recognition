@@ -1,0 +1,111 @@
+[{"stream_name":"stdout","time":13.247073183,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 779.1/779.1 MB 2.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":13.824750493,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 12.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":19.410551121,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 4.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":19.579638943,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 81.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":19.841299948,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 65.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":19.875225287,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 45.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":30.217212008,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 731.7/731.7 MB 2.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":32.923856199,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 5.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":33.572540024,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 32.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":35.00991778,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 14.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":38.117554189,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 5.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":40.036900041,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 176.2/176.2 MB 10.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":40.062443119,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 7.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":140.887990522,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":140.888053574,"data":"torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.3.1 which is incompatible.\n"}
+,{"stream_name":"stdout","time":149.565670078,"data":"device: cuda\n"}
+,{"stream_name":"stderr","time":249.550273774,"data":"Downloading: \"https://download.pytorch.org/models/resnet50-11ad3fa6.pth\" to /root/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth\n"}
+,{"stream_name":"stderr","time":250.060849829,"data":"\r  0%|          | 0.00/97.8M [00:00\u003c?, ?B/s]\r 15%|█▌        | 14.8M/97.8M [00:00\u003c00:00, 154MB/s]\r 39%|███▉      | 38.6M/97.8M [00:00\u003c00:00, 210MB/s]\r 64%|██████▍   | 62.6M/97.8M [00:00\u003c00:00, 229MB/s]\r 89%|████████▊ | 86.6M/97.8M [00:00\u003c00:00, 238MB/s]\r100%|██████████| 97.8M/97.8M [00:00\u003c00:00, 229MB/s]\n"}
+,{"stream_name":"stdout","time":475.653718922,"data":"epoch 1 val_macro_f1 0.9856920090151632\n"}
+,{"stream_name":"stdout","time":684.75209691,"data":"epoch 2 val_macro_f1 0.9867572733465337\n"}
+,{"stream_name":"stdout","time":893.16425391,"data":"epoch 3 val_macro_f1 0.9888450522389075\n"}
+,{"stream_name":"stdout","time":1101.310175615,"data":"epoch 4 val_macro_f1 0.9934042743886768\n"}
+,{"stream_name":"stdout","time":1309.886446271,"data":"epoch 5 val_macro_f1 0.9960889830564428\n"}
+,{"stream_name":"stdout","time":1518.564262931,"data":"epoch 6 val_macro_f1 0.9952945557291336\n"}
+,{"stream_name":"stdout","time":1552.432589492,"data":"{\n"}
+,{"stream_name":"stdout","time":1552.432627996,"data":"  \"phase\": \"37_calibrated_selective_resnet50\",\n"}
+,{"stream_name":"stdout","time":1552.432634402,"data":"  \"captured_at_utc\": \"2026-08-14T06:28:39Z\",\n"}
+,{"stream_name":"stdout","time":1552.432640136,"data":"  \"protocol\": {\n"}
+,{"stream_name":"stdout","time":1552.432646088,"data":"    \"model\": \"resnet50\",\n"}
+,{"stream_name":"stdout","time":1552.43265181,"data":"    \"resolution\": 224,\n"}
+,{"stream_name":"stdout","time":1552.432657271,"data":"    \"selection\": \"validation macro_f1\",\n"}
+,{"stream_name":"stdout","time":1552.432663308,"data":"    \"temperature_fit\": \"validation NLL only\",\n"}
+,{"stream_name":"stdout","time":1552.432668735,"data":"    \"selective_scores\": \"temperature-scaled test probabilities\",\n"}
+,{"stream_name":"stdout","time":1552.432674318,"data":"    \"test_policy\": \"test evaluated after checkpoint and temperature are locked\",\n"}
+,{"stream_name":"stdout","time":1552.43267969,"data":"    \"ece_bins\": 15\n"}
+,{"stream_name":"stdout","time":1552.432685534,"data":"  },\n"}
+,{"stream_name":"stdout","time":1552.432690819,"data":"  \"split_sizes\": {\n"}
+,{"stream_name":"stdout","time":1552.432696205,"data":"    \"train\": 43444,\n"}
+,{"stream_name":"stdout","time":1552.432701846,"data":"    \"val\": 5430,\n"}
+,{"stream_name":"stdout","time":1552.432707547,"data":"    \"test\": 5431\n"}
+,{"stream_name":"stdout","time":1552.432713614,"data":"  },\n"}
+,{"stream_name":"stdout","time":1552.432719078,"data":"  \"best_val_macro_f1\": 0.996089,\n"}
+,{"stream_name":"stdout","time":1552.432724202,"data":"  \"temperature\": 0.524805,\n"}
+,{"stream_name":"stdout","time":1552.432728783,"data":"  \"validation_ece_after\": 0.000808,\n"}
+,{"stream_name":"stdout","time":1552.432733319,"data":"  \"test_ece_after\": 0.001312,\n"}
+,{"stream_name":"stdout","time":1552.432738632,"data":"  \"test_metrics\": {\n"}
+,{"stream_name":"stdout","time":1552.432743548,"data":"    \"accuracy\": 0.997422,\n"}
+,{"stream_name":"stdout","time":1552.432748357,"data":"    \"balanced_accuracy\": 0.996227,\n"}
+,{"stream_name":"stdout","time":1552.43275376,"data":"    \"macro_f1\": 0.996576\n"}
+,{"stream_name":"stdout","time":1552.432759261,"data":"  },\n"}
+,{"stream_name":"stdout","time":1552.43276447,"data":"  \"selective_test\": [\n"}
+,{"stream_name":"stdout","time":1552.432768913,"data":"    {\n"}
+,{"stream_name":"stdout","time":1552.432773705,"data":"      \"threshold\": 0.5,\n"}
+,{"stream_name":"stdout","time":1552.432778725,"data":"      \"coverage\": 0.999816,\n"}
+,{"stream_name":"stdout","time":1552.432783903,"data":"      \"n_accepted\": 5430,\n"}
+,{"stream_name":"stdout","time":1552.432788933,"data":"      \"accuracy_on_accepted\": 0.997606,\n"}
+,{"stream_name":"stdout","time":1552.432793579,"data":"      \"macro_f1_on_accepted\": 0.99667\n"}
+,{"stream_name":"stdout","time":1552.432798319,"data":"    },\n"}
+,{"stream_name":"stdout","time":1552.432803067,"data":"    {\n"}
+,{"stream_name":"stdout","time":1552.432819472,"data":"      \"threshold\": 0.6,\n"}
+,{"stream_name":"stdout","time":1552.432823309,"data":"      \"coverage\": 0.999263,\n"}
+,{"stream_name":"stdout","time":1552.432827003,"data":"      \"n_accepted\": 5427,\n"}
+,{"stream_name":"stdout","time":1552.432831212,"data":"      \"accuracy_on_accepted\": 0.997789,\n"}
+,{"stream_name":"stdout","time":1552.432836056,"data":"      \"macro_f1_on_accepted\": 0.996797\n"}
+,{"stream_name":"stdout","time":1552.43284003,"data":"    },\n"}
+,{"stream_name":"stdout","time":1552.432843874,"data":"    {\n"}
+,{"stream_name":"stdout","time":1552.43284761,"data":"      \"threshold\": 0.7,\n"}
+,{"stream_name":"stdout","time":1552.432851354,"data":"      \"coverage\": 0.998711,\n"}
+,{"stream_name":"stdout","time":1552.432854811,"data":"      \"n_accepted\": 5424,\n"}
+,{"stream_name":"stdout","time":1552.432861322,"data":"      \"accuracy_on_accepted\": 0.997788,\n"}
+,{"stream_name":"stdout","time":1552.432865295,"data":"      \"macro_f1_on_accepted\": 0.996792\n"}
+,{"stream_name":"stdout","time":1552.432869787,"data":"    },\n"}
+,{"stream_name":"stdout","time":1552.432873315,"data":"    {\n"}
+,{"stream_name":"stdout","time":1552.43287766,"data":"      \"threshold\": 0.8,\n"}
+,{"stream_name":"stdout","time":1552.432881925,"data":"      \"coverage\": 0.99779,\n"}
+,{"stream_name":"stdout","time":1552.432885956,"data":"      \"n_accepted\": 5419,\n"}
+,{"stream_name":"stdout","time":1552.432890743,"data":"      \"accuracy_on_accepted\": 0.998155,\n"}
+,{"stream_name":"stdout","time":1552.432894887,"data":"      \"macro_f1_on_accepted\": 0.997166\n"}
+,{"stream_name":"stdout","time":1552.432899217,"data":"    },\n"}
+,{"stream_name":"stdout","time":1552.432903248,"data":"    {\n"}
+,{"stream_name":"stdout","time":1552.432906819,"data":"      \"threshold\": 0.9,\n"}
+,{"stream_name":"stdout","time":1552.432910599,"data":"      \"coverage\": 0.996133,\n"}
+,{"stream_name":"stdout","time":1552.43291595,"data":"      \"n_accepted\": 5410,\n"}
+,{"stream_name":"stdout","time":1552.432919368,"data":"      \"accuracy_on_accepted\": 0.998521,\n"}
+,{"stream_name":"stdout","time":1552.432923159,"data":"      \"macro_f1_on_accepted\": 0.99773\n"}
+,{"stream_name":"stdout","time":1552.432928851,"data":"    },\n"}
+,{"stream_name":"stdout","time":1552.432932274,"data":"    {\n"}
+,{"stream_name":"stdout","time":1552.432936661,"data":"      \"threshold\": 0.95,\n"}
+,{"stream_name":"stdout","time":1552.432940746,"data":"      \"coverage\": 0.994844,\n"}
+,{"stream_name":"stdout","time":1552.432944993,"data":"      \"n_accepted\": 5403,\n"}
+,{"stream_name":"stdout","time":1552.432949141,"data":"      \"accuracy_on_accepted\": 0.998519,\n"}
+,{"stream_name":"stdout","time":1552.432952781,"data":"      \"macro_f1_on_accepted\": 0.997696\n"}
+,{"stream_name":"stdout","time":1552.432957215,"data":"    },\n"}
+,{"stream_name":"stdout","time":1552.432961161,"data":"    {\n"}
+,{"stream_name":"stdout","time":1552.432964949,"data":"      \"threshold\": 0.99,\n"}
+,{"stream_name":"stdout","time":1552.432968811,"data":"      \"coverage\": 0.989136,\n"}
+,{"stream_name":"stdout","time":1552.432973331,"data":"      \"n_accepted\": 5372,\n"}
+,{"stream_name":"stdout","time":1552.432977558,"data":"      \"accuracy_on_accepted\": 0.999069,\n"}
+,{"stream_name":"stdout","time":1552.432981314,"data":"      \"macro_f1_on_accepted\": 0.998461\n"}
+,{"stream_name":"stdout","time":1552.43298603,"data":"    }\n"}
+,{"stream_name":"stdout","time":1552.432989889,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1552.432993745,"data":"  \"elapsed_sec\": 1402.9,\n"}
+,{"stream_name":"stdout","time":1552.433007999,"data":"  \"sha256_self\": \"7098f11fa5af9e7274a3667a2f4ba5280aad0356027773312df3bcd313c9618b\"\n"}
+,{"stream_name":"stdout","time":1552.433012628,"data":"}\n"}
+,{"stream_name":"stderr","time":1555.540601013,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1555.540630731,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1555.793689638,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1555.793727561,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1556.510405269,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1557.695370276,"data":"[NbConvertApp] Writing 310085 bytes to __results__.html\n"}
+]

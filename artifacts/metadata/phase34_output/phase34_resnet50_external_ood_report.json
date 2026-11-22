@@ -1,0 +1,95 @@
+{
+  "phase": "34_resnet50_external_ood",
+  "captured_at_utc": "2026-08-13T12:24:35Z",
+  "protocol": {
+    "model": "resnet50",
+    "mode": "full_finetune",
+    "augmentation": "basic_resize_crop_flip",
+    "optimizer": "adamw",
+    "loss": "cross_entropy",
+    "label_smoothing": 0.1,
+    "scheduler": "cosine",
+    "epochs": 6,
+    "seed": 42,
+    "checkpoint": "best validation macro_f1",
+    "label_mapper": "none; external labels are not compared to PV classes"
+  },
+  "split_sizes": {
+    "pv_train": 43444,
+    "pv_val": 5430,
+    "pv_test": 5431
+  },
+  "pv_test": {
+    "accuracy": 0.99779,
+    "balanced_accuracy": 0.996647,
+    "macro_f1": 0.996858
+  },
+  "plantdoc": {
+    "n": 252,
+    "n_classes": 27,
+    "max_conf_mean": 0.562241,
+    "max_conf_sd": 0.234676,
+    "entropy_mean": 1.888941,
+    "entropy_sd": 0.773253,
+    "top_predicted_pv_classes": [
+      {
+        "class": "Tomato___Late_blight",
+        "n": 43
+      },
+      {
+        "class": "Strawberry___Leaf_scorch",
+        "n": 32
+      },
+      {
+        "class": "Tomato___Septoria_leaf_spot",
+        "n": 16
+      },
+      {
+        "class": "Tomato___Early_blight",
+        "n": 16
+      },
+      {
+        "class": "Apple___healthy",
+        "n": 13
+      }
+    ]
+  },
+  "cassava": {
+    "n": 21397,
+    "n_classes": 5,
+    "max_conf_mean": 0.741972,
+    "max_conf_sd": 0.210155,
+    "entropy_mean": 1.297338,
+    "entropy_sd": 0.744029,
+    "top_predicted_pv_classes": [
+      {
+        "class": "Strawberry___Leaf_scorch",
+        "n": 19469
+      },
+      {
+        "class": "Pepper,_bell___Bacterial_spot",
+        "n": 735
+      },
+      {
+        "class": "Tomato___Late_blight",
+        "n": 250
+      },
+      {
+        "class": "Tomato___Early_blight",
+        "n": 186
+      },
+      {
+        "class": "Potato___Early_blight",
+        "n": 154
+      }
+    ]
+  },
+  "ood_auroc": {
+    "plantdoc_vs_pv": 0.929703,
+    "cassava_vs_pv": 0.863429
+  },
+  "best_val_macro_f1": 0.996276,
+  "best_epoch": 6,
+  "elapsed_sec": 1649.92,
+  "sha256_self": "e45e9ff53ed41e31916b6a7475356a77c58d2a4d6cfe0aaec498efdf151ade8d"
+}

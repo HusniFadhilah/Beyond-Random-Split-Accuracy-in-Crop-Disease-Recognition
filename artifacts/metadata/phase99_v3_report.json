@@ -1,0 +1,28 @@
+{
+  "phase": "99_dryrun_v2",
+  "captured_at_utc": "2026-07-26T00:10:03Z",
+  "python": "3.12.13",
+  "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+  "torch": "2.10.0+cpu",
+  "cuda_available": false,
+  "kaggle_input_entries": [
+    "datasets"
+  ],
+  "first5_datasets": [
+    "abdallahalidev"
+  ],
+  "cwd": "/kaggle/working",
+  "home_contents": [
+    "huggingface",
+    "input",
+    "lib",
+    "nbdev",
+    "src",
+    "working"
+  ],
+  "pv_root": "MISSING",
+  "pv_root_found": "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color",
+  "pd_root": "MISSING",
+  "elapsed_sec": 4.46,
+  "sha256_self": "99b5b4820ebc3130dbba7bcdc4be160b572ba7db801e91f568453ceecee1bd94"
+}

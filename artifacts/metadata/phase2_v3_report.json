@@ -1,0 +1,86 @@
+{
+  "phase": "2_integrity_v2",
+  "captured_at_utc": "2026-07-26T00:56:29Z",
+  "python": "3.12.13",
+  "dataset_paths": {
+    "plantvillage": "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset",
+    "cassava": "/kaggle/input/datasets/nirmalsankalana/cassava-leaf-disease-classification"
+  },
+  "plantvillage": {
+    "total_files": 54305,
+    "image_files": 54305,
+    "non_image_files": 0,
+    "classes": {
+      "Tomato___Late_blight": 1909,
+      "Tomato___healthy": 1591,
+      "Grape___healthy": 423,
+      "Orange___Haunglongbing_(Citrus_greening)": 5507,
+      "Soybean___healthy": 5090,
+      "Squash___Powdery_mildew": 1835,
+      "Potato___healthy": 152,
+      "Corn_(maize)___Northern_Leaf_Blight": 985,
+      "Tomato___Early_blight": 1000,
+      "Tomato___Septoria_leaf_spot": 1771,
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 513,
+      "Strawberry___Leaf_scorch": 1109,
+      "Peach___healthy": 360,
+      "Apple___Apple_scab": 630,
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 5357,
+      "Tomato___Bacterial_spot": 2127,
+      "Apple___Black_rot": 621,
+      "Blueberry___healthy": 1502,
+      "Cherry_(including_sour)___Powdery_mildew": 1052,
+      "Peach___Bacterial_spot": 2297,
+      "Apple___Cedar_apple_rust": 275,
+      "Tomato___Target_Spot": 1404,
+      "Pepper,_bell___healthy": 1478,
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": 1076,
+      "Potato___Late_blight": 1000,
+      "Tomato___Tomato_mosaic_virus": 373,
+      "Strawberry___healthy": 456,
+      "Apple___healthy": 1645,
+      "Grape___Black_rot": 1180,
+      "Potato___Early_blight": 1000,
+      "Cherry_(including_sour)___healthy": 854,
+      "Corn_(maize)___Common_rust_": 1192,
+      "Grape___Esca_(Black_Measles)": 1383,
+      "Raspberry___healthy": 371,
+      "Tomato___Leaf_Mold": 952,
+      "Tomato___Spider_mites Two-spotted_spider_mite": 1676,
+      "Pepper,_bell___Bacterial_spot": 997,
+      "Corn_(maize)___healthy": 1162
+    },
+    "largest_class": [
+      "Orange___Haunglongbing_(Citrus_greening)",
+      5507
+    ],
+    "smallest_class": [
+      "Potato___healthy",
+      152
+    ],
+    "imbalance_ratio": 36.23
+  },
+  "cassava": {
+    "total_files": 21397,
+    "image_files": 21397,
+    "non_image_files": 0,
+    "classes": {
+      "Cassava___mosaic_disease": 13158,
+      "Cassava___brown_streak_disease": 2189,
+      "Cassava___bacterial_blight": 1087,
+      "Cassava___green_mottle": 2386,
+      "Cassava___healthy": 2577
+    },
+    "largest_class": [
+      "Cassava___mosaic_disease",
+      13158
+    ],
+    "smallest_class": [
+      "Cassava___bacterial_blight",
+      1087
+    ],
+    "imbalance_ratio": 12.1
+  },
+  "elapsed_sec": 82.9,
+  "sha256_self": "61f04a049f51d7c40ce3592fb4a31baa50ca8e488592da6238f06809999ec96c"
+}

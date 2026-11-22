@@ -1,0 +1,147 @@
+{
+  "phase": "14_calibration",
+  "captured_at_utc": "2026-07-26T02:20:08Z",
+  "results": {
+    "in_domain_test_T_scaled": {
+      "ece": 0.0056,
+      "brier": 0.0239,
+      "nll": 0.0493,
+      "acc": 0.9853,
+      "f1_macro": 0.9774,
+      "n_samples": 5431,
+      "n_classes": 38,
+      "temperature": 0.8,
+      "bin_data_sample": [
+        {
+          "bin": "(0.00,0.07]",
+          "n": 0,
+          "acc": null,
+          "conf": null
+        },
+        {
+          "bin": "(0.07,0.13]",
+          "n": 0,
+          "acc": null,
+          "conf": null
+        },
+        {
+          "bin": "(0.13,0.20]",
+          "n": 1,
+          "acc": 0.0,
+          "conf": 0.1831
+        },
+        {
+          "bin": "(0.20,0.27]",
+          "n": 1,
+          "acc": 0.0,
+          "conf": 0.2117
+        },
+        {
+          "bin": "(0.27,0.33]",
+          "n": 0,
+          "acc": null,
+          "conf": null
+        }
+      ]
+    },
+    "in_domain_test_raw": {
+      "ece": 0.0083,
+      "brier": 0.0247,
+      "nll": 0.0516,
+      "acc": 0.9853,
+      "f1_macro": 0.9774,
+      "n_samples": 5431,
+      "n_classes": 38,
+      "temperature": 1.0,
+      "bin_data_sample": [
+        {
+          "bin": "(0.00,0.07]",
+          "n": 0,
+          "acc": null,
+          "conf": null
+        },
+        {
+          "bin": "(0.07,0.13]",
+          "n": 0,
+          "acc": null,
+          "conf": null
+        },
+        {
+          "bin": "(0.13,0.20]",
+          "n": 2,
+          "acc": 0.0,
+          "conf": 0.1553
+        },
+        {
+          "bin": "(0.20,0.27]",
+          "n": 0,
+          "acc": null,
+          "conf": null
+        },
+        {
+          "bin": "(0.27,0.33]",
+          "n": 2,
+          "acc": 1.0,
+          "conf": 0.3078
+        }
+      ]
+    },
+    "plantdoc_OOD_conf": {
+      "n": 252,
+      "max_conf_mean": 0.6202,
+      "max_conf_std": 0.2664,
+      "top5_sum_mean": 0.8864
+    },
+    "cassava_OOD_conf": {
+      "n": 21397,
+      "max_conf_mean": 0.4097,
+      "max_conf_std": 0.2335,
+      "top5_sum_mean": 0.7292
+    },
+    "plantdoc_T_vs_raw": {
+      "n": 252,
+      "raw_max_conf_mean": 0.6202,
+      "T_max_conf_mean": 0.6933,
+      "raw_pred_frac_changing_after_T": 0.0,
+      "raw_pred_top5_within_T_top5": 1.0
+    },
+    "cassava_T_vs_raw": {
+      "n": 21397,
+      "raw_max_conf_mean": 0.4097,
+      "T_max_conf_mean": 0.4995,
+      "raw_pred_frac_changing_after_T": 0.0,
+      "raw_pred_top5_within_T_top5": 1.0
+    },
+    "best_temperature": 0.8,
+    "val_nll_per_T": {
+      "T=0.50": 0.0572,
+      "T=0.60": 0.0517,
+      "T=0.70": 0.0487,
+      "T=0.80": 0.0476,
+      "T=0.90": 0.0478,
+      "T=1.00": 0.0493,
+      "T=1.10": 0.0519,
+      "T=1.20": 0.0557,
+      "T=1.30": 0.0608,
+      "T=1.40": 0.0671,
+      "T=1.50": 0.0749,
+      "T=1.60": 0.0843,
+      "T=1.70": 0.0953,
+      "T=1.80": 0.1081,
+      "T=1.90": 0.1227,
+      "T=2.00": 0.1392,
+      "T=2.10": 0.1576,
+      "T=2.20": 0.1779,
+      "T=2.30": 0.2001,
+      "T=2.40": 0.2241,
+      "T=2.50": 0.2499,
+      "T=2.60": 0.2773,
+      "T=2.70": 0.3063,
+      "T=2.80": 0.3368,
+      "T=2.90": 0.3685,
+      "T=3.00": 0.4014
+    }
+  },
+  "elapsed_sec": 695.44,
+  "sha256_self": "7d04d9948882f00e89d033e200532d61ec6de7ea030bea5dbad3ed8b328cb9d0"
+}

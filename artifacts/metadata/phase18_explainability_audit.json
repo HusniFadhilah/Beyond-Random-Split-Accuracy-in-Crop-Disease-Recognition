@@ -1,0 +1,15 @@
+{
+  "audit": "phase18_explainability_evidence",
+  "source_report": "data/metadata/phase18_output/phase18_explainability_report.json",
+  "source_report_sha256": "3336bf974d0c38d5e773c4d73304d6f654c430a3dfeb7469a4ccebb292ff6240",
+  "kernel_status": "KernelWorkerStatus.COMPLETE",
+  "integrity": {"internal_sha256_match": true, "log_completed_without_traceback": true},
+  "observed_diagnostics": {
+    "plantvillage": {"n": 50, "gradcam_center_mass": 0.3907, "gradcam_border_mass": 0.6093, "occlusion_center_minus_border": 0.0018},
+    "plantdoc": {"n": 50, "gradcam_center_mass": 0.3219, "gradcam_border_mass": 0.6781, "occlusion_center_minus_border": 0.0109},
+    "cassava": {"n": 50, "gradcam_center_mass": 0.2435, "gradcam_border_mass": 0.7565, "occlusion_center_minus_border": 0.0149}
+  },
+  "interpretation": "Grad-CAM attribution mass was border-dominant in all three bounded samples, while central occlusion caused a slightly larger confidence drop than average border occlusion. This is a shortcut/attribution signal only; no lesion-localization claim is possible without masks.",
+  "limitations": ["50 samples per domain", "two-epoch diagnostic training", "no lesion masks", "no background-only or leaf-only matched control", "external class labels not mapped"],
+  "next_gate": "data-efficiency and model benchmark, with explicit separation of diagnostic versus publication-grade runs"
+}

@@ -1,0 +1,148 @@
+{
+  "phase": "41_classwise_corruption_audit_efficientnet_b0_basic",
+  "captured_at_utc": "2026-08-29T23:41:22Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "mode": "full_finetune",
+    "augmentation": "basic_resize_crop_flip",
+    "corruptions": {
+      "gaussian_noise": "sigma_0.08_pixel_space",
+      "brightness": "factor_0.55",
+      "contrast": "factor_1.8",
+      "blur": "gaussian_kernel_9_sigma_3"
+    },
+    "checkpoint": "best validation macro_f1",
+    "temperature_fit": "validation NLL only",
+    "test_policy": "clean and corrupted test evaluated after checkpoint and temperature are locked",
+    "classwise_summary": "worst 5 class-level F1 per corruption"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "best_val_macro_f1": 0.99744,
+  "temperature": 0.517523,
+  "clean_test": {
+    "accuracy": 0.997975,
+    "balanced_accuracy": 0.996853,
+    "macro_f1": 0.997141,
+    "ece": 0.000877
+  },
+  "corruptions": {
+    "gaussian_noise": {
+      "accuracy": 0.5549622537285951,
+      "balanced_accuracy": 0.42997010742419045,
+      "macro_f1": 0.40616918499274063,
+      "ece": 0.228603,
+      "worst_5_classes": [
+        {
+          "class": "Apple___healthy",
+          "f1": 0.0
+        },
+        {
+          "class": "Grape___Black_rot",
+          "f1": 0.0
+        },
+        {
+          "class": "Tomato___Bacterial_spot",
+          "f1": 0.0
+        },
+        {
+          "class": "Tomato___Target_Spot",
+          "f1": 0.0
+        },
+        {
+          "class": "Tomato___Early_blight",
+          "f1": 0.019802
+        }
+      ]
+    },
+    "brightness": {
+      "accuracy": 0.9812189283741484,
+      "balanced_accuracy": 0.9757416490957563,
+      "macro_f1": 0.977249041975153,
+      "ece": 0.01067,
+      "worst_5_classes": [
+        {
+          "class": "Potato___healthy",
+          "f1": 0.888889
+        },
+        {
+          "class": "Tomato___Target_Spot",
+          "f1": 0.899329
+        },
+        {
+          "class": "Tomato___Septoria_leaf_spot",
+          "f1": 0.900621
+        },
+        {
+          "class": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+          "f1": 0.932039
+        },
+        {
+          "class": "Tomato___Late_blight",
+          "f1": 0.937965
+        }
+      ]
+    },
+    "contrast": {
+      "accuracy": 0.957466396612042,
+      "balanced_accuracy": 0.955375443966735,
+      "macro_f1": 0.9489803331371482,
+      "ece": 0.026825,
+      "worst_5_classes": [
+        {
+          "class": "Tomato___Tomato_mosaic_virus",
+          "f1": 0.61157
+        },
+        {
+          "class": "Tomato___Target_Spot",
+          "f1": 0.723982
+        },
+        {
+          "class": "Tomato___Early_blight",
+          "f1": 0.739623
+        },
+        {
+          "class": "Tomato___Spider_mites Two-spotted_spider_mite",
+          "f1": 0.838488
+        },
+        {
+          "class": "Tomato___Bacterial_spot",
+          "f1": 0.841823
+        }
+      ]
+    },
+    "blur": {
+      "accuracy": 0.5759528631927822,
+      "balanced_accuracy": 0.47570390866176177,
+      "macro_f1": 0.4676591022206416,
+      "ece": 0.290743,
+      "worst_5_classes": [
+        {
+          "class": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+          "f1": 0.0
+        },
+        {
+          "class": "Tomato___Bacterial_spot",
+          "f1": 0.0
+        },
+        {
+          "class": "Tomato___Spider_mites Two-spotted_spider_mite",
+          "f1": 0.035088
+        },
+        {
+          "class": "Grape___Black_rot",
+          "f1": 0.081301
+        },
+        {
+          "class": "Tomato___Septoria_leaf_spot",
+          "f1": 0.104167
+        }
+      ]
+    }
+  },
+  "elapsed_sec": 1138.41,
+  "sha256_self": "b2f23fbea23c6f481a4bf552bc38c5dfe8ef58d2092388346d21ce3ade0b0f36"
+}

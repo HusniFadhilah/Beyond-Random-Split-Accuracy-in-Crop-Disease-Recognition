@@ -1,0 +1,11 @@
+{
+  "id": "dhihaq/crop-disease-phase26-multiseed-finetune",
+  "title": "Crop Disease Phase26 Multiseed Finetune",
+  "code_file": "kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["abdallahalidev/plantvillage-dataset"]
+}

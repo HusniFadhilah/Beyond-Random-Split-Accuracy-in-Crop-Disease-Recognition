@@ -1,0 +1,11 @@
+{
+ "id": "remahankecil/crop-disease-phase57-calibration-rerun",
+ "title": "Crop Disease Phase57 Calibration Rerun",
+ "code_file": "kernel.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_internet": true,
+ "dataset_sources": ["abdallahalidev/plantvillage-dataset","nirmalsankalana/plantdoc-dataset","nirmalsankalana/cassava-leaf-disease-classification"]
+}

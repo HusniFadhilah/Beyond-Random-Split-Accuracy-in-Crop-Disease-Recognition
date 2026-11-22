@@ -1,0 +1,55 @@
+{
+  "phase": "24_tuning_optimization_ablation",
+  "status": "executed_and_verified",
+  "objective": "Select the best model using validation-only tuning, then evaluate exactly once on the untouched fixed test split.",
+  "data_protocol": {
+    "dataset": "PlantVillage color",
+    "n_classes": 38,
+    "split": {"train": 43444, "validation": 5430, "test": 5431, "split_seed": 42, "stratified": true},
+    "test_policy": "test is not read for model or hyperparameter selection"
+  },
+  "stage_1_hyperparameter_tuning": {
+    "selection_metric": "validation macro_f1",
+    "backbones": ["resnet50", "mobilenet_v3_large", "efficientnet_b0"],
+    "backbone_modes": ["frozen_features", "last_block_plus_head"],
+    "optimizer": ["AdamW", "SGD"],
+    "learning_rate": [0.0001, 0.0003, 0.001, 0.003, 0.01],
+    "weight_decay": [0.0, 0.00001, 0.0001, 0.001],
+    "head_dropout": [0.0, 0.2, 0.5],
+    "scheduler": ["none", "cosine", "one_cycle"],
+    "epochs_max": 30,
+    "early_stopping_patience": 5,
+    "budget_policy": "coarse validation-only search followed by local refinement around the best configuration",
+    "seeds_for_screening": [42]
+  },
+  "stage_2_optimization": {
+    "locked_candidate": "best validation macro_f1 from stage 1",
+    "methods": ["AdamW", "SGD", "cosine_decay", "one_cycle", "mixed_precision_if_supported", "gradient_accumulation_if_needed"],
+    "augmentation_variants": ["resize_crop_only", "flip_color_jitter", "flip_color_jitter_randaugment"],
+    "selection_rule": "validation macro_f1 first; balanced_accuracy as tie-breaker; calibration and compute reported separately"
+  },
+  "stage_3_ablations": [
+    "remove_augmentation",
+    "remove_class_weighting_or_sampler",
+    "frozen_backbone_vs_last_block_finetune_vs_full_finetune",
+    "cross_entropy_vs_label_smoothing_vs_focal_loss",
+    "no_scheduler_vs_best_scheduler",
+    "no_calibration_vs_temperature_scaling_fit_on_validation_only",
+    "single_seed_vs_three_seed_repetition"
+  ],
+  "stage_4_confirmation": {
+    "seeds": [7, 42, 123],
+    "report": ["mean", "sample_sd", "per_seed_metrics", "95_percent_bootstrap_ci", "runtime", "parameter_count", "failure_log"],
+    "test_evaluation": "only locked final candidate and baselines, after all choices are frozen"
+  },
+  "evidence_gates": [
+    "owner_and_slug_verified",
+    "kernel_status_complete",
+    "report_downloaded",
+    "raw_metrics_recomputed",
+    "artifact_hashes_recorded",
+    "no test metric used during selection",
+    "failed or inaccessible kernels remain marked unverified"
+  ],
+  "publication_boundary": "Until Phase 24 and confirmation artifacts pass all gates, existing Phase 20/21 numbers remain fixed-protocol benchmark results, not claims of best achievable performance."
+}

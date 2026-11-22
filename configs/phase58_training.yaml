@@ -1,0 +1,19 @@
+model: efficientnet_b0
+mode: full_finetune
+augmentation: basic_resize_crop_flip
+optimizer: AdamW
+loss: cross_entropy
+label_smoothing: 0.1
+scheduler: cosine
+learning_rate: 0.0003
+weight_decay: 0.0001
+resolution: 224
+epochs: 6
+checkpoint_selection: validation_macro_f1
+split: stratified_seed_42
+split_sizes:
+  train: 43444
+  validation: 5430
+  test: 5431
+temperature_fit: validation_NLL_only
+external_evaluation: diagnostic_only

@@ -1,0 +1,20 @@
+[{"stream_name":"stdout","time":117.82059167,"data":"WROTE /kaggle/working/phase2_integrity_v2_report.json\n"}
+,{"stream_name":"stdout","time":117.82067045,"data":"{\n"}
+,{"stream_name":"stdout","time":117.82067537,"data":"  \"dataset_paths\": {\n"}
+,{"stream_name":"stdout","time":117.8206801,"data":"    \"plantvillage\": \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset\",\n"}
+,{"stream_name":"stdout","time":117.82068422,"data":"    \"plantdoc\": \"/kaggle/input/datasets/nirmalsankalana/plantdoc-dataset\",\n"}
+,{"stream_name":"stdout","time":117.82068753,"data":"    \"cassava\": \"/kaggle/input/datasets/nirmalsankalana/cassava-leaf-disease-classification\"\n"}
+,{"stream_name":"stdout","time":117.82069115,"data":"  },\n"}
+,{"stream_name":"stdout","time":117.82069422000001,"data":"  \"elapsed_sec\": 117.04,\n"}
+,{"stream_name":"stdout","time":117.82069728,"data":"  \"sha256_self\": \"c7c61d83c3a38c4edc9517b2b0a9f81b8f2f37e9d740145e5711389e8903bb6b\"\n"}
+,{"stream_name":"stdout","time":117.82070067,"data":"}\n"}
+,{"stream_name":"stdout","time":117.82070381,"data":"  plantvillage: 54305 images, 38 classes, imbalance 36.23\n"}
+,{"stream_name":"stdout","time":117.82070725,"data":"  plantdoc: 252 images, 1 classes, imbalance 1.0\n"}
+,{"stream_name":"stdout","time":117.82071038,"data":"  cassava: 21397 images, 5 classes, imbalance 12.1\n"}
+,{"stream_name":"stderr","time":120.021535344,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":120.021592544,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":120.395524423,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":120.395552883,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":121.851290768,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":123.214295878,"data":"[NbConvertApp] Writing 292687 bytes to __results__.html\n"}
+]

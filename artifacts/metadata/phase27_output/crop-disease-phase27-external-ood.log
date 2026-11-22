@@ -1,0 +1,107 @@
+[{"stream_name":"stdout","time":12.298254698,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 779.1/779.1 MB 2.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.48365237,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 41.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":16.689301811,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 4.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":16.83453196,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 94.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":17.025582575,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 81.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":17.055717286,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 50.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":27.608160438,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 731.7/731.7 MB 1.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":29.262870581,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 8.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":29.797646862,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 35.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":31.0598362,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 15.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":33.287533036,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 8.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":35.703027776,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 176.2/176.2 MB 6.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":35.728465383,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 7.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":127.996087427,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":127.996137468,"data":"torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.3.1 which is incompatible.\n"}
+,{"stream_name":"stdout","time":136.882352131,"data":"device: cuda\n"}
+,{"stream_name":"stderr","time":244.838952217,"data":"Downloading: \"https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth\" to /root/.cache/torch/hub/checkpoints/efficientnet_b0_rwightman-7f5810bc.pth\n"}
+,{"stream_name":"stderr","time":245.117675076,"data":"\r  0%|          | 0.00/20.5M [00:00\u003c?, ?B/s]\r 62%|██████▏   | 12.6M/20.5M [00:00\u003c00:00, 132MB/s]\r100%|██████████| 20.5M/20.5M [00:00\u003c00:00, 158MB/s]\n"}
+,{"stream_name":"stdout","time":508.258135708,"data":"epoch 1 {'accuracy': 0.987109, 'balanced_accuracy': 0.973389, 'macro_f1': 0.977544}\n"}
+,{"stream_name":"stdout","time":662.560392491,"data":"epoch 2 {'accuracy': 0.989319, 'balanced_accuracy': 0.981717, 'macro_f1': 0.98476}\n"}
+,{"stream_name":"stdout","time":830.57498961,"data":"epoch 3 {'accuracy': 0.993554, 'balanced_accuracy': 0.989571, 'macro_f1': 0.989844}\n"}
+,{"stream_name":"stdout","time":994.298275824,"data":"epoch 4 {'accuracy': 0.993923, 'balanced_accuracy': 0.992108, 'macro_f1': 0.990815}\n"}
+,{"stream_name":"stdout","time":1151.636708214,"data":"epoch 5 {'accuracy': 0.992449, 'balanced_accuracy': 0.980766, 'macro_f1': 0.985506}\n"}
+,{"stream_name":"stdout","time":1311.323513148,"data":"epoch 6 {'accuracy': 0.99116, 'balanced_accuracy': 0.98741, 'macro_f1': 0.985409}\n"}
+,{"stream_name":"stdout","time":1471.884199372,"data":"epoch 7 {'accuracy': 0.992449, 'balanced_accuracy': 0.990036, 'macro_f1': 0.989551}\n"}
+,{"stream_name":"stdout","time":1633.22304532,"data":"epoch 8 {'accuracy': 0.99337, 'balanced_accuracy': 0.991021, 'macro_f1': 0.990623}\n"}
+,{"stream_name":"stdout","time":1967.819930938,"data":"{\n"}
+,{"stream_name":"stdout","time":1967.819972823,"data":"  \"phase\": \"27_external_ood_final_model\",\n"}
+,{"stream_name":"stdout","time":1967.819977664,"data":"  \"best_val_macro_f1\": 0.990815,\n"}
+,{"stream_name":"stdout","time":1967.819980948,"data":"  \"pv_test\": {\n"}
+,{"stream_name":"stdout","time":1967.819983906,"data":"    \"accuracy\": 0.993187,\n"}
+,{"stream_name":"stdout","time":1967.819987273,"data":"    \"balanced_accuracy\": 0.990781,\n"}
+,{"stream_name":"stdout","time":1967.819990379,"data":"    \"macro_f1\": 0.98934\n"}
+,{"stream_name":"stdout","time":1967.819993265,"data":"  },\n"}
+,{"stream_name":"stdout","time":1967.819996061,"data":"  \"plantdoc\": {\n"}
+,{"stream_name":"stdout","time":1967.819998978,"data":"    \"n\": 252,\n"}
+,{"stream_name":"stdout","time":1967.820001838,"data":"    \"n_classes\": 27,\n"}
+,{"stream_name":"stdout","time":1967.820004724,"data":"    \"max_conf_mean\": 0.750164,\n"}
+,{"stream_name":"stdout","time":1967.820007617,"data":"    \"max_conf_sd\": 0.233183,\n"}
+,{"stream_name":"stdout","time":1967.820010654,"data":"    \"entropy_mean\": 0.839698,\n"}
+,{"stream_name":"stdout","time":1967.820013488,"data":"    \"entropy_sd\": 0.707937,\n"}
+,{"stream_name":"stdout","time":1967.820016334,"data":"    \"top_predicted_pv_classes\": [\n"}
+,{"stream_name":"stdout","time":1967.820019241,"data":"      {\n"}
+,{"stream_name":"stdout","time":1967.820022114,"data":"        \"class\": \"Strawberry___Leaf_scorch\",\n"}
+,{"stream_name":"stdout","time":1967.82002511,"data":"        \"n\": 49\n"}
+,{"stream_name":"stdout","time":1967.820027954,"data":"      },\n"}
+,{"stream_name":"stdout","time":1967.820030784,"data":"      {\n"}
+,{"stream_name":"stdout","time":1967.820033716,"data":"        \"class\": \"Tomato___Late_blight\",\n"}
+,{"stream_name":"stdout","time":1967.820036604,"data":"        \"n\": 29\n"}
+,{"stream_name":"stdout","time":1967.820039414,"data":"      },\n"}
+,{"stream_name":"stdout","time":1967.820042172,"data":"      {\n"}
+,{"stream_name":"stdout","time":1967.820045339,"data":"        \"class\": \"Tomato___Early_blight\",\n"}
+,{"stream_name":"stdout","time":1967.820048231,"data":"        \"n\": 27\n"}
+,{"stream_name":"stdout","time":1967.820051052,"data":"      },\n"}
+,{"stream_name":"stdout","time":1967.820053804,"data":"      {\n"}
+,{"stream_name":"stdout","time":1967.8200566,"data":"        \"class\": \"Blueberry___healthy\",\n"}
+,{"stream_name":"stdout","time":1967.820059468,"data":"        \"n\": 18\n"}
+,{"stream_name":"stdout","time":1967.820062282,"data":"      },\n"}
+,{"stream_name":"stdout","time":1967.820065078,"data":"      {\n"}
+,{"stream_name":"stdout","time":1967.820075956,"data":"        \"class\": \"Grape___healthy\",\n"}
+,{"stream_name":"stdout","time":1967.820078518,"data":"        \"n\": 16\n"}
+,{"stream_name":"stdout","time":1967.820080726,"data":"      }\n"}
+,{"stream_name":"stdout","time":1967.820082846,"data":"    ]\n"}
+,{"stream_name":"stdout","time":1967.820085005,"data":"  },\n"}
+,{"stream_name":"stdout","time":1967.820087119,"data":"  \"cassava\": {\n"}
+,{"stream_name":"stdout","time":1967.8200893,"data":"    \"n\": 21397,\n"}
+,{"stream_name":"stdout","time":1967.820091508,"data":"    \"n_classes\": 5,\n"}
+,{"stream_name":"stdout","time":1967.820093709,"data":"    \"max_conf_mean\": 0.708448,\n"}
+,{"stream_name":"stdout","time":1967.820095931,"data":"    \"max_conf_sd\": 0.237022,\n"}
+,{"stream_name":"stdout","time":1967.820098123,"data":"    \"entropy_mean\": 1.244015,\n"}
+,{"stream_name":"stdout","time":1967.820100311,"data":"    \"entropy_sd\": 0.839452,\n"}
+,{"stream_name":"stdout","time":1967.820102639,"data":"    \"top_predicted_pv_classes\": [\n"}
+,{"stream_name":"stdout","time":1967.820104846,"data":"      {\n"}
+,{"stream_name":"stdout","time":1967.820106965,"data":"        \"class\": \"Strawberry___Leaf_scorch\",\n"}
+,{"stream_name":"stdout","time":1967.820109208,"data":"        \"n\": 18967\n"}
+,{"stream_name":"stdout","time":1967.820111391,"data":"      },\n"}
+,{"stream_name":"stdout","time":1967.820121405,"data":"      {\n"}
+,{"stream_name":"stdout","time":1967.820123679,"data":"        \"class\": \"Tomato___Early_blight\",\n"}
+,{"stream_name":"stdout","time":1967.820125939,"data":"        \"n\": 627\n"}
+,{"stream_name":"stdout","time":1967.820128137,"data":"      },\n"}
+,{"stream_name":"stdout","time":1967.820130254,"data":"      {\n"}
+,{"stream_name":"stdout","time":1967.820132369,"data":"        \"class\": \"Grape___Esca_(Black_Measles)\",\n"}
+,{"stream_name":"stdout","time":1967.820134706,"data":"        \"n\": 505\n"}
+,{"stream_name":"stdout","time":1967.820136851,"data":"      },\n"}
+,{"stream_name":"stdout","time":1967.820138954,"data":"      {\n"}
+,{"stream_name":"stdout","time":1967.820141059,"data":"        \"class\": \"Tomato___Tomato_Yellow_Leaf_Curl_Virus\",\n"}
+,{"stream_name":"stdout","time":1967.820143418,"data":"        \"n\": 467\n"}
+,{"stream_name":"stdout","time":1967.820145584,"data":"      },\n"}
+,{"stream_name":"stdout","time":1967.820147683,"data":"      {\n"}
+,{"stream_name":"stdout","time":1967.820149782,"data":"        \"class\": \"Pepper,_bell___Bacterial_spot\",\n"}
+,{"stream_name":"stdout","time":1967.820152139,"data":"        \"n\": 430\n"}
+,{"stream_name":"stdout","time":1967.820154293,"data":"      }\n"}
+,{"stream_name":"stdout","time":1967.820156396,"data":"    ]\n"}
+,{"stream_name":"stdout","time":1967.820158489,"data":"  },\n"}
+,{"stream_name":"stdout","time":1967.820160657,"data":"  \"ood_auroc\": {\n"}
+,{"stream_name":"stdout","time":1967.820162882,"data":"    \"plantdoc_vs_pv\": 0.962086,\n"}
+,{"stream_name":"stdout","time":1967.820165131,"data":"    \"cassava_vs_pv\": 0.984756\n"}
+,{"stream_name":"stdout","time":1967.820167378,"data":"  },\n"}
+,{"stream_name":"stdout","time":1967.820169589,"data":"  \"elapsed_sec\": 1830.97\n"}
+,{"stream_name":"stdout","time":1967.820171869,"data":"}\n"}
+,{"stream_name":"stderr","time":1972.192949,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1972.192977968,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1972.444281096,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1972.444305973,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1973.168294293,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1974.321815125,"data":"[NbConvertApp] Writing 311319 bytes to __results__.html\n"}
+]

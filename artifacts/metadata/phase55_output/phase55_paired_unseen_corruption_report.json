@@ -1,0 +1,78 @@
+{
+  "phase": "55_paired_unseen_corruption_basic_vs_corruption_aware",
+  "split": {
+    "train": 43444,
+    "validation": 5430,
+    "test": 5431,
+    "seed": 42
+  },
+  "training": {
+    "basic": "resize-crop-flip",
+    "corruption_aware": "resize-crop-flip plus GaussianBlur p=0.3; this run does not add Gaussian noise"
+  },
+  "unseen_corruptions": [
+    "jpeg_quality_25",
+    "motion_blur_kernel_15_sigma_5_1",
+    "square_occlusion_80px",
+    "red_color_shift"
+  ],
+  "results": {
+    "basic": {
+      "clean": {
+        "accuracy": 0.998895,
+        "balanced_accuracy": 0.9982,
+        "macro_f1": 0.99825
+      },
+      "jpeg": {
+        "accuracy": 0.976063,
+        "balanced_accuracy": 0.969836,
+        "macro_f1": 0.970985
+      },
+      "motion_blur": {
+        "accuracy": 0.566378,
+        "balanced_accuracy": 0.445189,
+        "macro_f1": 0.428671
+      },
+      "occlusion": {
+        "accuracy": 0.985822,
+        "balanced_accuracy": 0.980936,
+        "macro_f1": 0.981667
+      },
+      "color_shift": {
+        "accuracy": 0.672436,
+        "balanced_accuracy": 0.657138,
+        "macro_f1": 0.672191
+      }
+    },
+    "corruption_aware": {
+      "clean": {
+        "accuracy": 0.995765,
+        "balanced_accuracy": 0.993615,
+        "macro_f1": 0.993473
+      },
+      "jpeg": {
+        "accuracy": 0.978089,
+        "balanced_accuracy": 0.972395,
+        "macro_f1": 0.973621
+      },
+      "motion_blur": {
+        "accuracy": 0.916774,
+        "balanced_accuracy": 0.891808,
+        "macro_f1": 0.901282
+      },
+      "occlusion": {
+        "accuracy": 0.973117,
+        "balanced_accuracy": 0.962243,
+        "macro_f1": 0.965052
+      },
+      "color_shift": {
+        "accuracy": 0.704106,
+        "balanced_accuracy": 0.636005,
+        "macro_f1": 0.625801
+      }
+    }
+  },
+  "elapsed_sec": 2080.91,
+  "sha256_self": "a3e42186b64c7deda6e110348f279bc878a81cbe8d383c194b1f7d6448a7241d",
+  "self_hash_verified": true
+}

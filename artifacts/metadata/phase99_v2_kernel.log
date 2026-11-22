@@ -1,0 +1,29 @@
+[{"stream_name":"stderr","time":7.32408075,"data":"/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:435: UserWarning: \n"}
+,{"stream_name":"stderr","time":7.324166153,"data":"    Found GPU0 Tesla P100-PCIE-16GB which is of cuda capability 6.0.\n"}
+,{"stream_name":"stderr","time":7.32417062,"data":"    Minimum and Maximum cuda capability supported by this version of PyTorch is\n"}
+,{"stream_name":"stderr","time":7.324173449,"data":"    (7.0) - (12.0)\n"}
+,{"stream_name":"stderr","time":7.3241757960000005,"data":"    \n"}
+,{"stream_name":"stderr","time":7.32417802,"data":"  queued_call()\n"}
+,{"stream_name":"stderr","time":7.324181365,"data":"/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:435: UserWarning: \n"}
+,{"stream_name":"stderr","time":7.324185265,"data":"    Please install PyTorch with a following CUDA\n"}
+,{"stream_name":"stderr","time":7.324188489,"data":"    configurations:  12.6 following instructions at\n"}
+,{"stream_name":"stderr","time":7.324191555,"data":"    https://pytorch.org/get-started/locally/\n"}
+,{"stream_name":"stderr","time":7.324194331,"data":"    \n"}
+,{"stream_name":"stderr","time":7.324196596,"data":"  queued_call()\n"}
+,{"stream_name":"stderr","time":7.324358378,"data":"/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:435: UserWarning: \n"}
+,{"stream_name":"stderr","time":7.324366738,"data":"Tesla P100-PCIE-16GB with CUDA capability sm_60 is not compatible with the current PyTorch installation.\n"}
+,{"stream_name":"stderr","time":7.324371115,"data":"The current PyTorch install supports CUDA capabilities sm_70 sm_75 sm_80 sm_86 sm_90 sm_100 sm_120.\n"}
+,{"stream_name":"stderr","time":7.3243748459999996,"data":"If you want to use the Tesla P100-PCIE-16GB GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/\n"}
+,{"stream_name":"stderr","time":7.324378728,"data":"\n"}
+,{"stream_name":"stderr","time":7.324381925,"data":"  queued_call()\n"}
+,{"stream_name":"stderr","time":7.326425909,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":7.3264523,"data":"  File \"/kaggle/src/script.py\", line 54, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":7.326553352,"data":"    f.write(report_bytes)\n"}
+,{"stream_name":"stderr","time":7.326563241,"data":"TypeError: write() argument must be str, not bytes\n"}
+,{"stream_name":"stderr","time":11.427689625,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":11.42771279,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":11.717577107,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":11.717606867,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":12.348945743,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":13.648777783,"data":"[NbConvertApp] Writing 282872 bytes to __results__.html\n"}
+]

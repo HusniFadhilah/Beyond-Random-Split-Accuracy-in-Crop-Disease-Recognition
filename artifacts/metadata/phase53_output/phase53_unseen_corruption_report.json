@@ -1,0 +1,42 @@
+{
+  "phase": "53_unseen_corruption_evaluation",
+  "model": "EfficientNet-B0 full fine-tuning",
+  "split": {
+    "train": 43444,
+    "validation": 5430,
+    "test": 5431,
+    "seed": 42
+  },
+  "checkpoint": "best validation macro-F1",
+  "training_corruptions": "basic resize-crop-flip only",
+  "unseen_corruptions": {
+    "jpeg_quality_25": {
+      "accuracy": 0.976063,
+      "balanced_accuracy": 0.969168,
+      "macro_f1": 0.972729
+    },
+    "motion_blur_kernel_15_sigma_5_1": {
+      "accuracy": 0.58295,
+      "balanced_accuracy": 0.471394,
+      "macro_f1": 0.4452
+    },
+    "square_occlusion_80px": {
+      "accuracy": 0.98306,
+      "balanced_accuracy": 0.978185,
+      "macro_f1": 0.978276
+    },
+    "red_color_shift": {
+      "accuracy": 0.66728,
+      "balanced_accuracy": 0.634478,
+      "macro_f1": 0.665723
+    }
+  },
+  "clean_test": {
+    "accuracy": 0.997975,
+    "balanced_accuracy": 0.996853,
+    "macro_f1": 0.997141
+  },
+  "elapsed_sec": 1102.18,
+  "sha256_self": "3086447633c3c94f08850717015d3a6b1ca595335f333cad0516c82cb9795278",
+  "self_hash_verified": true
+}

@@ -1,0 +1,88 @@
+{
+  "phase": "38_calibrated_selective_efficientnet_b0",
+  "captured_at_utc": "2026-08-20T12:17:25Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "mode": "full_finetune",
+    "augmentation": "basic_resize_crop_flip",
+    "optimizer": "adamw",
+    "loss": "cross_entropy",
+    "label_smoothing": 0.1,
+    "scheduler": "cosine",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "resolution": 224,
+    "selection": "validation macro_f1",
+    "temperature_fit": "validation NLL only",
+    "selective_scores": "temperature-scaled test probabilities",
+    "test_policy": "test evaluated after checkpoint and temperature are locked",
+    "ece_bins": 15
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "best_val_macro_f1": 0.99744,
+  "temperature": 0.51739,
+  "validation_ece_after": 0.00101,
+  "test_ece_after": 0.000878,
+  "test_metrics": {
+    "accuracy": 0.997975,
+    "balanced_accuracy": 0.996853,
+    "macro_f1": 0.997141
+  },
+  "selective_test": [
+    {
+      "threshold": 0.5,
+      "coverage": 1.0,
+      "n_accepted": 5431,
+      "accuracy_on_accepted": 0.997975,
+      "macro_f1_on_accepted": 0.997141
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.999632,
+      "n_accepted": 5429,
+      "accuracy_on_accepted": 0.998342,
+      "macro_f1_on_accepted": 0.997485
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.999079,
+      "n_accepted": 5426,
+      "accuracy_on_accepted": 0.998526,
+      "macro_f1_on_accepted": 0.99785
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.998711,
+      "n_accepted": 5424,
+      "accuracy_on_accepted": 0.998894,
+      "macro_f1_on_accepted": 0.998523
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.998159,
+      "n_accepted": 5421,
+      "accuracy_on_accepted": 0.999078,
+      "macro_f1_on_accepted": 0.998689
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.996686,
+      "n_accepted": 5413,
+      "accuracy_on_accepted": 0.999631,
+      "macro_f1_on_accepted": 0.99965
+    },
+    {
+      "threshold": 0.99,
+      "coverage": 0.994108,
+      "n_accepted": 5399,
+      "accuracy_on_accepted": 0.999815,
+      "macro_f1_on_accepted": 0.999848
+    }
+  ],
+  "elapsed_sec": 1045.39,
+  "sha256_self": "82a36107c75f7de356e2a888c52f01ef245d16fa62f18580e935df015b8dcc1b"
+}

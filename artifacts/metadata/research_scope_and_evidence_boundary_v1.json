@@ -1,0 +1,46 @@
+{
+  "audit": "research_scope_and_evidence_boundary",
+  "version": "v1",
+  "captured_at_utc": "2026-07-26T03:13:12Z",
+  "project": "Distribution-Shift-Aware Crop Disease Research",
+  "primary_title_candidate": "Beyond Random Splits: Distribution-Shift-Aware Crop Disease Recognition Across Agricultural Imaging Domains",
+  "verified_dataset_scope": {
+    "plantvillage": {
+      "role": "in_domain_laboratory_reference",
+      "classes": 38,
+      "severity_labels": false,
+      "farm_region_season_cultivar_device_metadata": "not verified/available in selected mirror"
+    },
+    "plantdoc": {
+      "role": "external_field_domain",
+      "usable_split": "test only",
+      "severity_labels": false,
+      "class_space_overlap_with_plantvillage": false
+    },
+    "cassava": {
+      "role": "external_field_and_crop_domain",
+      "classes": 5,
+      "severity_labels": false,
+      "class_space_overlap_with_plantvillage": false
+    }
+  },
+  "completed_evidence_gates": {
+    "integrity_and_distribution": "verified artifacts present",
+    "random_split_baseline": "reference only; not field validation",
+    "cross_dataset_transfer": "verified as external-domain confidence/OOD evidence",
+    "calibration": "verified on PlantVillage validation/test protocol; shifted-domain calibration remains limited",
+    "uncertainty": "Phase 15 submitted and running; results not yet promoted"
+  },
+  "blocked_or_unavailable_claims": [
+    "early-stage detection",
+    "farm-blocked validation",
+    "region-blocked validation",
+    "season/year-blocked validation",
+    "cultivar-blocked validation",
+    "device-blocked validation",
+    "severity-stratified sensitivity",
+    "agronomic, yield, pesticide, economic, or deployment benefit"
+  ],
+  "allowed_claim_boundary": "The current study can quantify random-split reference performance, laboratory-to-external-domain transfer degradation, calibration on the in-domain protocol, and uncertainty/OOD behavior. It cannot establish early-disease sensitivity or farm/season/cultivar generalization without additional traceable datasets and metadata.",
+  "human_review_requirement": true
+}

@@ -1,0 +1,59 @@
+{
+  "phase": "40_corruption_robustness_efficientnet_b0_basic",
+  "captured_at_utc": "2026-08-21T16:09:23Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "mode": "full_finetune",
+    "augmentation": "basic_resize_crop_flip",
+    "corruptions": {
+      "gaussian_noise": "sigma_0.08_pixel_space",
+      "brightness": "factor_0.55",
+      "contrast": "factor_1.8",
+      "blur": "gaussian_kernel_9_sigma_3"
+    },
+    "checkpoint": "best validation macro_f1",
+    "temperature_fit": "validation NLL only",
+    "test_policy": "clean and corrupted test evaluated after checkpoint and temperature are locked"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "best_val_macro_f1": 0.99744,
+  "temperature": 0.517316,
+  "clean_test": {
+    "accuracy": 0.997975,
+    "balanced_accuracy": 0.996853,
+    "macro_f1": 0.997141,
+    "ece": 0.00088
+  },
+  "corruptions": {
+    "gaussian_noise": {
+      "accuracy": 0.5551463818817898,
+      "balanced_accuracy": 0.43020334146932804,
+      "macro_f1": 0.405714094337736,
+      "ece": 0.228294
+    },
+    "brightness": {
+      "accuracy": 0.9812189283741484,
+      "balanced_accuracy": 0.9757416490957563,
+      "macro_f1": 0.977249041975153,
+      "ece": 0.01058
+    },
+    "contrast": {
+      "accuracy": 0.9572822684588473,
+      "balanced_accuracy": 0.9551069155027179,
+      "macro_f1": 0.9485254710958759,
+      "ece": 0.026861
+    },
+    "blur": {
+      "accuracy": 0.5772417602651445,
+      "balanced_accuracy": 0.4789380696087903,
+      "macro_f1": 0.4707018422019348,
+      "ece": 0.28957
+    }
+  },
+  "elapsed_sec": 1051.81,
+  "sha256_self": "4a877d86456a761ee44feee66818decb83d4c155ab9f9ceb80fa2f9893fb56bd"
+}

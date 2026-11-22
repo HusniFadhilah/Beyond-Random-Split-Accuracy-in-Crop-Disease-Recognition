@@ -1,0 +1,747 @@
+{
+  "phase": "24_tuning_optimization_ablation",
+  "captured_at_utc": "2026-07-27T08:00:47Z",
+  "protocol": {
+    "selection_metric": "validation macro_f1",
+    "grid_size": 13,
+    "test_policy": "test evaluated only for locked best configuration",
+    "seed": 42,
+    "models": [
+      "resnet50",
+      "mobilenet_v3_large",
+      "efficientnet_b0"
+    ]
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431,
+    "n_classes": 38
+  },
+  "results": {
+    "resnet50": {
+      "feature_dim": 2048,
+      "tuning_runs": [
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.974793,
+          "best_epoch": 15
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.974793,
+          "best_epoch": 15
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "cosine",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.974735,
+          "best_epoch": 14
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.974621,
+          "best_epoch": 15
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.003,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.974073,
+          "best_epoch": 20
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.2,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.972188,
+          "best_epoch": 16
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.05,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.971722,
+          "best_epoch": 8
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.1,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.970713,
+          "best_epoch": 8
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.001,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.969471,
+          "best_epoch": 20
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.5,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.96706,
+          "best_epoch": 11
+        },
+        {
+          "config": {
+            "optimizer": "SGD",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.929734,
+          "best_epoch": 20
+        },
+        {
+          "config": {
+            "optimizer": "SGD",
+            "lr": 0.003,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.889139,
+          "best_epoch": 20
+        },
+        {
+          "config": {
+            "optimizer": "SGD",
+            "lr": 0.001,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.820746,
+          "best_epoch": 20
+        }
+      ],
+      "locked_best": {
+        "config": {
+          "optimizer": "AdamW",
+          "lr": 0.01,
+          "wd": 0.0001,
+          "dropout": 0.0,
+          "scheduler": "none",
+          "label_smoothing": 0.0,
+          "epochs": 20,
+          "patience": 5,
+          "seed": 42
+        },
+        "best_val_macro_f1": 0.974793,
+        "best_epoch": 15,
+        "test": {
+          "accuracy": 0.978641,
+          "balanced_accuracy": 0.968088,
+          "macro_f1": 0.970043
+        }
+      },
+      "fixed_baseline": {
+        "config": {
+          "optimizer": "AdamW",
+          "lr": 0.01,
+          "wd": 0.0001,
+          "dropout": 0.0,
+          "scheduler": "none",
+          "label_smoothing": 0.0,
+          "epochs": 20,
+          "patience": 5,
+          "seed": 42
+        },
+        "best_val_macro_f1": 0.974793,
+        "best_epoch": 15,
+        "test": {
+          "accuracy": 0.978641,
+          "balanced_accuracy": 0.968088,
+          "macro_f1": 0.970043
+        }
+      },
+      "ablation_delta_macro_f1": 0.0
+    },
+    "mobilenet_v3_large": {
+      "feature_dim": 960,
+      "tuning_runs": [
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "cosine",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.976008,
+          "best_epoch": 14
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.973997,
+          "best_epoch": 12
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.973997,
+          "best_epoch": 12
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.973997,
+          "best_epoch": 12
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.003,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.973303,
+          "best_epoch": 10
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.001,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.972654,
+          "best_epoch": 20
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.05,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.972294,
+          "best_epoch": 12
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.2,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.972197,
+          "best_epoch": 7
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.1,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.969122,
+          "best_epoch": 3
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.5,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.958637,
+          "best_epoch": 7
+        },
+        {
+          "config": {
+            "optimizer": "SGD",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.93319,
+          "best_epoch": 20
+        },
+        {
+          "config": {
+            "optimizer": "SGD",
+            "lr": 0.003,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.892646,
+          "best_epoch": 19
+        },
+        {
+          "config": {
+            "optimizer": "SGD",
+            "lr": 0.001,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.810919,
+          "best_epoch": 20
+        }
+      ],
+      "locked_best": {
+        "config": {
+          "optimizer": "AdamW",
+          "lr": 0.01,
+          "wd": 0.0001,
+          "dropout": 0.0,
+          "scheduler": "cosine",
+          "label_smoothing": 0.0,
+          "epochs": 20,
+          "patience": 5,
+          "seed": 42
+        },
+        "best_val_macro_f1": 0.976008,
+        "best_epoch": 14,
+        "test": {
+          "accuracy": 0.979378,
+          "balanced_accuracy": 0.971364,
+          "macro_f1": 0.97273
+        }
+      },
+      "fixed_baseline": {
+        "config": {
+          "optimizer": "AdamW",
+          "lr": 0.01,
+          "wd": 0.0001,
+          "dropout": 0.0,
+          "scheduler": "none",
+          "label_smoothing": 0.0,
+          "epochs": 20,
+          "patience": 5,
+          "seed": 42
+        },
+        "best_val_macro_f1": 0.973997,
+        "best_epoch": 12,
+        "test": {
+          "accuracy": 0.978641,
+          "balanced_accuracy": 0.971906,
+          "macro_f1": 0.972386
+        }
+      },
+      "ablation_delta_macro_f1": 0.000344
+    },
+    "efficientnet_b0": {
+      "feature_dim": 1280,
+      "tuning_runs": [
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "cosine",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.976466,
+          "best_epoch": 10
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.003,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.976411,
+          "best_epoch": 9
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.001,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.975341,
+          "best_epoch": 19
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.972997,
+          "best_epoch": 3
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.972997,
+          "best_epoch": 3
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.05,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.972675,
+          "best_epoch": 10
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.972624,
+          "best_epoch": 3
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.2,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.971384,
+          "best_epoch": 14
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.1,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.9706,
+          "best_epoch": 2
+        },
+        {
+          "config": {
+            "optimizer": "AdamW",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.5,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.966976,
+          "best_epoch": 10
+        },
+        {
+          "config": {
+            "optimizer": "SGD",
+            "lr": 0.01,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.958664,
+          "best_epoch": 20
+        },
+        {
+          "config": {
+            "optimizer": "SGD",
+            "lr": 0.003,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.939268,
+          "best_epoch": 20
+        },
+        {
+          "config": {
+            "optimizer": "SGD",
+            "lr": 0.001,
+            "wd": 0.0001,
+            "dropout": 0.0,
+            "scheduler": "none",
+            "label_smoothing": 0.0,
+            "epochs": 20,
+            "patience": 5,
+            "seed": 42
+          },
+          "best_val_macro_f1": 0.89178,
+          "best_epoch": 20
+        }
+      ],
+      "locked_best": {
+        "config": {
+          "optimizer": "AdamW",
+          "lr": 0.01,
+          "wd": 0.0001,
+          "dropout": 0.0,
+          "scheduler": "cosine",
+          "label_smoothing": 0.0,
+          "epochs": 20,
+          "patience": 5,
+          "seed": 42
+        },
+        "best_val_macro_f1": 0.976466,
+        "best_epoch": 10,
+        "test": {
+          "accuracy": 0.984165,
+          "balanced_accuracy": 0.978801,
+          "macro_f1": 0.979217
+        }
+      },
+      "fixed_baseline": {
+        "config": {
+          "optimizer": "AdamW",
+          "lr": 0.01,
+          "wd": 0.0001,
+          "dropout": 0.0,
+          "scheduler": "none",
+          "label_smoothing": 0.0,
+          "epochs": 20,
+          "patience": 5,
+          "seed": 42
+        },
+        "best_val_macro_f1": 0.972997,
+        "best_epoch": 3,
+        "test": {
+          "accuracy": 0.978273,
+          "balanced_accuracy": 0.973093,
+          "macro_f1": 0.972725
+        }
+      },
+      "ablation_delta_macro_f1": 0.006492
+    }
+  },
+  "sha256_self": "a6b02cac3f19dbfbd02f9546d173f3984301604002c6c31745b5f3c6d1d5bae2"
+}

@@ -1,0 +1,94 @@
+{
+  "phase": "25_finetune_ablation",
+  "captured_at_utc": "2026-07-28T19:52:57Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "modes": [
+      "frozen",
+      "last_block",
+      "full"
+    ],
+    "augmentations": [
+      "basic",
+      "strong"
+    ],
+    "epochs": 8,
+    "seed": 42,
+    "selection": "validation macro_f1",
+    "test_policy": "test evaluated only once for locked final configuration"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431,
+    "n_classes": 38
+  },
+  "results": [
+    {
+      "mode": "full",
+      "augmentation": "strong",
+      "best_val_macro_f1": 0.994555,
+      "best_epoch": 7,
+      "test": {
+        "accuracy": 0.992635,
+        "balanced_accuracy": 0.988026,
+        "macro_f1": 0.988109
+      },
+      "trainable_params": 4056226
+    },
+    {
+      "mode": "full",
+      "augmentation": "basic",
+      "best_val_macro_f1": 0.993982,
+      "best_epoch": 7,
+      "test": null,
+      "trainable_params": 4056226
+    },
+    {
+      "mode": "last_block",
+      "augmentation": "basic",
+      "best_val_macro_f1": 0.975563,
+      "best_epoch": 8,
+      "test": null,
+      "trainable_params": 460838
+    },
+    {
+      "mode": "last_block",
+      "augmentation": "strong",
+      "best_val_macro_f1": 0.96649,
+      "best_epoch": 8,
+      "test": null,
+      "trainable_params": 460838
+    },
+    {
+      "mode": "frozen",
+      "augmentation": "basic",
+      "best_val_macro_f1": 0.949188,
+      "best_epoch": 5,
+      "test": null,
+      "trainable_params": 48678
+    },
+    {
+      "mode": "frozen",
+      "augmentation": "strong",
+      "best_val_macro_f1": 0.928079,
+      "best_epoch": 6,
+      "test": null,
+      "trainable_params": 48678
+    }
+  ],
+  "locked_final": {
+    "mode": "full",
+    "augmentation": "strong",
+    "best_val_macro_f1": 0.994555,
+    "best_epoch": 7,
+    "test": {
+      "accuracy": 0.992635,
+      "balanced_accuracy": 0.988026,
+      "macro_f1": 0.988109
+    },
+    "trainable_params": 4056226
+  },
+  "elapsed_sec": 10481.52,
+  "sha256_self": "40da6a9b51f7ded297237f4f6f9eea0a545874c43aa4a63d545a5bc0ca85e094"
+}

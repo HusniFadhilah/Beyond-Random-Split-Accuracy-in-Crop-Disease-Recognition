@@ -1,0 +1,63 @@
+{
+  "phase": "42_corruption_aware_training_efficientnet_b0",
+  "captured_at_utc": "2026-08-30T01:07:51Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "mode": "full_finetune",
+    "augmentation": "basic_plus_random_blur_p0.30_plus_gaussian_noise_p0.30_sigma_0.05",
+    "evaluation_corruptions": {
+      "gaussian_noise": "sigma_0.08_pixel_space",
+      "brightness": "factor_0.55",
+      "contrast": "factor_1.8",
+      "blur": "gaussian_kernel_9_sigma_3"
+    },
+    "optimizer": "adamw",
+    "loss": "cross_entropy",
+    "label_smoothing": 0.1,
+    "scheduler": "cosine",
+    "checkpoint": "best validation macro_f1",
+    "temperature_fit": "validation NLL only",
+    "test_policy": "clean and corrupted test evaluated after checkpoint and temperature are locked"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "best_val_macro_f1": 0.99693,
+  "temperature": 0.516431,
+  "clean_test": {
+    "accuracy": 0.997606,
+    "balanced_accuracy": 0.995995,
+    "macro_f1": 0.996473,
+    "ece": 0.001242
+  },
+  "corruptions": {
+    "gaussian_noise": {
+      "accuracy": 0.9939237709445774,
+      "balanced_accuracy": 0.9913025716217764,
+      "macro_f1": 0.9911621298440288,
+      "ece": 0.003211
+    },
+    "brightness": {
+      "accuracy": 0.9817713128337323,
+      "balanced_accuracy": 0.9791030453261266,
+      "macro_f1": 0.9793257180653376,
+      "ece": 0.010162
+    },
+    "contrast": {
+      "accuracy": 0.970171239182471,
+      "balanced_accuracy": 0.9696239250718156,
+      "macro_f1": 0.9653962244572089,
+      "ece": 0.016844
+    },
+    "blur": {
+      "accuracy": 0.9959491806297183,
+      "balanced_accuracy": 0.994350624637708,
+      "macro_f1": 0.9944844652117176,
+      "ece": 0.002113
+    }
+  },
+  "elapsed_sec": 1428.49,
+  "sha256_self": "ca274a6f685d73bfda5dfb15838bbef31106b3de9ba9a3e0aecc947ddd803981"
+}

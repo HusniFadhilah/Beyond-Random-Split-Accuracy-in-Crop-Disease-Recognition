@@ -1,0 +1,56 @@
+{
+  "phase": "39_external_ood_efficientnet_b0_basic",
+  "captured_at_utc": "2026-08-21T15:36:37Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "mode": "full_finetune",
+    "augmentation": "basic_resize_crop_flip",
+    "optimizer": "adamw",
+    "loss": "cross_entropy",
+    "label_smoothing": 0.1,
+    "scheduler": "cosine",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "resolution": 224,
+    "selection": "validation macro_f1",
+    "temperature_fit": "validation NLL only",
+    "ood_score": "negative temperature-scaled max confidence; external=positive class",
+    "test_policy": "test evaluated after checkpoint and temperature are locked"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "best_val_macro_f1": 0.99744,
+  "temperature": 0.517563,
+  "validation_ece_after": 0.001012,
+  "test_ece_after": 0.000876,
+  "test_metrics": {
+    "accuracy": 0.997975,
+    "balanced_accuracy": 0.996853,
+    "macro_f1": 0.997141
+  },
+  "plantdoc": {
+    "n": 252,
+    "n_classes": 27,
+    "max_conf_mean": 0.786229,
+    "max_conf_sd": 0.227459,
+    "entropy_mean": 0.698795,
+    "entropy_sd": 0.669401
+  },
+  "cassava": {
+    "n": 21397,
+    "n_classes": 5,
+    "max_conf_mean": 0.881762,
+    "max_conf_sd": 0.180699,
+    "entropy_mean": 0.48317,
+    "entropy_sd": 0.605023
+  },
+  "ood_auroc": {
+    "plantdoc_vs_pv": 0.962139,
+    "cassava_vs_pv": 0.939383
+  },
+  "elapsed_sec": 1314.7,
+  "sha256_self": "96b98b9e307fc8a16a4d8ada790180f8ade933244b4397951f4b0d66fe02b820"
+}

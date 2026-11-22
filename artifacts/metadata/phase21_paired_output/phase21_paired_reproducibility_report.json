@@ -1,0 +1,115 @@
+{
+  "phase": "21_paired_reproducibility",
+  "captured_at_utc": "2026-07-26T07:20:28Z",
+  "protocol": {
+    "seed": 42,
+    "backbone_mode": "ImageNet pretrained frozen features",
+    "head": "linear classifier",
+    "head_epochs": 10,
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 123,
+    "models": [
+      "resnet50",
+      "mobilenet_v3_large",
+      "efficientnet_b0"
+    ],
+    "paired_test_split": true
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431,
+    "n_classes": 38
+  },
+  "results": {
+    "resnet50": {
+      "val": {
+        "accuracy": 0.98011,
+        "balanced_accuracy": 0.972874,
+        "macro_f1": 0.97296
+      },
+      "test": {
+        "accuracy": 0.979378,
+        "balanced_accuracy": 0.968535,
+        "macro_f1": 0.970782
+      },
+      "test_correct_count": 5319,
+      "test_n": 5431,
+      "feature_dim": 2048
+    },
+    "mobilenet_v3_large": {
+      "val": {
+        "accuracy": 0.980847,
+        "balanced_accuracy": 0.969805,
+        "macro_f1": 0.973876
+      },
+      "test": {
+        "accuracy": 0.9768,
+        "balanced_accuracy": 0.967676,
+        "macro_f1": 0.970156
+      },
+      "test_correct_count": 5305,
+      "test_n": 5431,
+      "feature_dim": 960
+    },
+    "efficientnet_b0": {
+      "val": {
+        "accuracy": 0.979926,
+        "balanced_accuracy": 0.967944,
+        "macro_f1": 0.969946
+      },
+      "test": {
+        "accuracy": 0.979562,
+        "balanced_accuracy": 0.96855,
+        "macro_f1": 0.971424
+      },
+      "test_correct_count": 5320,
+      "test_n": 5431,
+      "feature_dim": 1280
+    }
+  },
+  "paired_bootstrap": [
+    {
+      "a": "resnet50",
+      "b": "mobilenet_v3_large",
+      "accuracy_delta_a_minus_b": 0.002578,
+      "bootstrap_ci95": {
+        "low": -0.001846,
+        "median": 0.002578,
+        "high": 0.006813
+      },
+      "discordant_a_only": 82,
+      "discordant_b_only": 68
+    },
+    {
+      "a": "resnet50",
+      "b": "efficientnet_b0",
+      "accuracy_delta_a_minus_b": -0.000184,
+      "bootstrap_ci95": {
+        "low": -0.004235,
+        "median": 0.0,
+        "high": 0.004055
+      },
+      "discordant_a_only": 73,
+      "discordant_b_only": 74
+    },
+    {
+      "a": "mobilenet_v3_large",
+      "b": "efficientnet_b0",
+      "accuracy_delta_a_minus_b": -0.002762,
+      "bootstrap_ci95": {
+        "low": -0.007001,
+        "median": -0.002762,
+        "high": 0.001841
+      },
+      "discordant_a_only": 75,
+      "discordant_b_only": 90
+    }
+  ],
+  "prediction_alignment": {
+    "labels_sha256": "9c2d5521e9f11cca3b008bf95f06bb82b254c57d548fc89064bba548dbfe7808",
+    "test_indices_sha256": "3f2d910a15687014de0dea763207084beeeda45a975e2a437bcbe472c0ac91c9"
+  },
+  "elapsed_sec": 427.07,
+  "sha256_self": "95581bd6c9a9ee3fde2d8d0a055a305b40f6118338fce6965b4f177143c45cee"
+}

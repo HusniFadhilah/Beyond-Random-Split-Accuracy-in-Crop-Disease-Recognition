@@ -1,0 +1,16 @@
+{
+  "phase": "52_full_plantvillage_duplicate_audit",
+  "dataset_root": "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color",
+  "n_images": 54305,
+  "n_failures": 0,
+  "failures": [],
+  "md5_duplicate_groups": 21,
+  "md5_duplicate_images": 42,
+  "phash_exact_groups": 22,
+  "phash_exact_images": 44,
+  "phash_near_pairs_hamming_le_4": 383,
+  "scope": "all image files under color/",
+  "elapsed_sec": 867.97,
+  "sha256_self": "fe1f6e1a45d1b716efbd7cab4fbb2053c568affe27649e8e1c1e675c146d2ddf",
+  "self_hash_verified": true
+}

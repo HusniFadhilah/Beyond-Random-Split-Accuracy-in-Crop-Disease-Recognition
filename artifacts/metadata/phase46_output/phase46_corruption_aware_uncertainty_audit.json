@@ -1,0 +1,69 @@
+{
+  "phase": "46_corruption_aware_uncertainty_audit",
+  "source_phases": [
+    42,
+    44,
+    45
+  ],
+  "n_runs": 3,
+  "degrees_of_freedom": 2,
+  "interval": "95% t interval, df=2",
+  "interpretation_boundary": "exploratory uncertainty summary; runs use different split random states, so intervals combine training and split variation and are not population-level confidence intervals",
+  "metrics": {
+    "clean_test": {
+      "values": [
+        0.996473,
+        0.995558,
+        0.997358
+      ],
+      "mean": 0.996463,
+      "sd": 0.0009,
+      "ci95_low": 0.994227,
+      "ci95_high": 0.998699
+    },
+    "gaussian_noise": {
+      "values": [
+        0.991162,
+        0.99163,
+        0.995557
+      ],
+      "mean": 0.992783,
+      "sd": 0.002414,
+      "ci95_low": 0.986787,
+      "ci95_high": 0.998779
+    },
+    "brightness": {
+      "values": [
+        0.979326,
+        0.968322,
+        0.964327
+      ],
+      "mean": 0.970658,
+      "sd": 0.007768,
+      "ci95_low": 0.951362,
+      "ci95_high": 0.989954
+    },
+    "contrast": {
+      "values": [
+        0.965396,
+        0.966476,
+        0.946125
+      ],
+      "mean": 0.959332,
+      "sd": 0.011451,
+      "ci95_low": 0.930887,
+      "ci95_high": 0.987778
+    },
+    "blur": {
+      "values": [
+        0.994484,
+        0.992286,
+        0.995172
+      ],
+      "mean": 0.993981,
+      "sd": 0.001508,
+      "ci95_low": 0.990236,
+      "ci95_high": 0.997726
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "phase": "17_ood_detection",
+  "captured_at_utc": "2026-07-26T04:40:34Z",
+  "protocol": {
+    "seed": 42,
+    "training_epochs": 2,
+    "threshold_calibration": "PV validation + 50% of each external dataset",
+    "external_labels_used_for_class_accuracy": false
+  },
+  "split_sizes": {
+    "pv_val": 5430,
+    "pv_test": 5431,
+    "plantdoc_calibration": 126,
+    "plantdoc_evaluation": 126,
+    "cassava_calibration": 10698,
+    "cassava_evaluation": 10699
+  },
+  "methods": {
+    "msp": {
+      "auroc": 0.8429,
+      "auprc": 0.9006,
+      "threshold_at_cal_ood_tpr_0.95": -0.99978,
+      "test_ood_tpr": 0.9485,
+      "test_id_fpr": 0.5415,
+      "detection_error": 0.2965
+    },
+    "entropy": {
+      "auroc": 0.8489,
+      "auprc": 0.9081,
+      "threshold_at_cal_ood_tpr_0.95": 0.002305,
+      "test_ood_tpr": 0.9485,
+      "test_id_fpr": 0.5458,
+      "detection_error": 0.2987
+    },
+    "margin": {
+      "auroc": 0.838,
+      "auprc": 0.8918,
+      "threshold_at_cal_ood_tpr_0.95": -0.999658,
+      "test_ood_tpr": 0.9489,
+      "test_id_fpr": 0.5424,
+      "detection_error": 0.2968
+    },
+    "energy": {
+      "auroc": 0.8682,
+      "auprc": 0.9189,
+      "threshold_at_cal_ood_tpr_0.95": -10.195852,
+      "test_ood_tpr": 0.9496,
+      "test_id_fpr": 0.5113,
+      "detection_error": 0.2809
+    }
+  },
+  "per_domain": {
+    "msp": {
+      "plantdoc_ood_tpr": 0.9841,
+      "cassava_ood_tpr": 0.9479
+    },
+    "entropy": {
+      "plantdoc_ood_tpr": 0.9841,
+      "cassava_ood_tpr": 0.948
+    },
+    "margin": {
+      "plantdoc_ood_tpr": 0.9841,
+      "cassava_ood_tpr": 0.9485
+    },
+    "energy": {
+      "plantdoc_ood_tpr": 0.9603,
+      "cassava_ood_tpr": 0.9494
+    }
+  },
+  "elapsed_sec": 763.15,
+  "sha256_self": "08baef796137cf19e16d64dcf3c8c0c8627c857fb4fae6eeb5b3f9e896f8e5dc"
+}

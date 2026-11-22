@@ -1,0 +1,20 @@
+{
+  "PlantVillage": {
+    "ref": "abdallahalidev/plantvillage-dataset",
+    "rc": 0,
+    "stdout": "Downloaded metadata to /root/research/crop_disease_shift_research/dataset-metadata.json\n",
+    "stderr": ""
+  },
+  "PlantDoc": {
+    "ref": "nirmalsankalana/plantdoc-dataset",
+    "rc": 0,
+    "stdout": "Downloaded metadata to /root/research/crop_disease_shift_research/dataset-metadata.json\n",
+    "stderr": ""
+  },
+  "Cassava": {
+    "ref": "nirmalsankalana/cassava-leaf-disease-classification",
+    "rc": 0,
+    "stdout": "Downloaded metadata to /root/research/crop_disease_shift_research/dataset-metadata.json\n",
+    "stderr": ""
+  }
+}

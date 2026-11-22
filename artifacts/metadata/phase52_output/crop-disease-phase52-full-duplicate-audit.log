@@ -1,0 +1,22 @@
+[{"stream_name":"stdout","time":869.525941174,"data":"{\n"}
+,{"stream_name":"stdout","time":869.526153307,"data":"  \"phase\": \"52_full_plantvillage_duplicate_audit\",\n"}
+,{"stream_name":"stdout","time":869.526163611,"data":"  \"dataset_root\": \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color\",\n"}
+,{"stream_name":"stdout","time":869.526169131,"data":"  \"n_images\": 54305,\n"}
+,{"stream_name":"stdout","time":869.526173931,"data":"  \"n_failures\": 0,\n"}
+,{"stream_name":"stdout","time":869.526178928,"data":"  \"failures\": [],\n"}
+,{"stream_name":"stdout","time":869.526183632,"data":"  \"md5_duplicate_groups\": 21,\n"}
+,{"stream_name":"stdout","time":869.526188347,"data":"  \"md5_duplicate_images\": 42,\n"}
+,{"stream_name":"stdout","time":869.52619291,"data":"  \"phash_exact_groups\": 22,\n"}
+,{"stream_name":"stdout","time":869.526197507,"data":"  \"phash_exact_images\": 44,\n"}
+,{"stream_name":"stdout","time":869.526202097,"data":"  \"phash_near_pairs_hamming_le_4\": 383,\n"}
+,{"stream_name":"stdout","time":869.52620717,"data":"  \"scope\": \"all image files under color/\",\n"}
+,{"stream_name":"stdout","time":869.526211716,"data":"  \"elapsed_sec\": 867.97,\n"}
+,{"stream_name":"stdout","time":869.526216407,"data":"  \"sha256_self\": \"fe1f6e1a45d1b716efbd7cab4fbb2053c568affe27649e8e1c1e675c146d2ddf\"\n"}
+,{"stream_name":"stdout","time":869.526221313,"data":"}\n"}
+,{"stream_name":"stderr","time":873.074160724,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":873.074301365,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":873.582202549,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":873.582232852,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":875.98890593,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":877.851488917,"data":"[NbConvertApp] Writing 288722 bytes to __results__.html\n"}
+]

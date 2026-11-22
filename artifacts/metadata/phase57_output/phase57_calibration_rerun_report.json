@@ -1,0 +1,128 @@
+{
+  "phase": "39_external_ood_efficientnet_b0_basic",
+  "captured_at_utc": "2026-09-10T10:35:22Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "mode": "full_finetune",
+    "augmentation": "basic_resize_crop_flip",
+    "optimizer": "adamw",
+    "loss": "cross_entropy",
+    "label_smoothing": 0.1,
+    "scheduler": "cosine",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "resolution": 224,
+    "selection": "validation macro_f1",
+    "temperature_fit": "validation NLL only",
+    "ood_score": "negative temperature-scaled max confidence; external=positive class",
+    "test_policy": "test evaluated after checkpoint and temperature are locked"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "best_val_macro_f1": 0.99744,
+  "temperature": 0.517405,
+  "calibration_before": {
+    "validation_ece": 0.092125,
+    "test_ece": 0.092371,
+    "validation_nll": 0.101887,
+    "test_nll": 0.102458,
+    "validation_brier": 0.011589,
+    "test_brier": 0.011559
+  },
+  "calibration_after": {
+    "validation_ece": 0.000893,
+    "test_ece": 0.000878,
+    "validation_nll": 0.007191,
+    "test_nll": 0.007684,
+    "validation_brier": 0.002558,
+    "test_brier": 0.002896,
+    "test_reliability_bins": [
+      {
+        "lower": 0.466667,
+        "upper": 0.533333,
+        "n": 1,
+        "mean_confidence": 0.498869,
+        "accuracy": 0.0
+      },
+      {
+        "lower": 0.533333,
+        "upper": 0.6,
+        "n": 1,
+        "mean_confidence": 0.535535,
+        "accuracy": 0.0
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.666667,
+        "n": 3,
+        "mean_confidence": 0.63067,
+        "accuracy": 0.666667
+      },
+      {
+        "lower": 0.666667,
+        "upper": 0.733333,
+        "n": 1,
+        "mean_confidence": 0.720864,
+        "accuracy": 0.0
+      },
+      {
+        "lower": 0.733333,
+        "upper": 0.8,
+        "n": 1,
+        "mean_confidence": 0.7524,
+        "accuracy": 0.0
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.866667,
+        "n": 1,
+        "mean_confidence": 0.834134,
+        "accuracy": 0.0
+      },
+      {
+        "lower": 0.866667,
+        "upper": 0.933333,
+        "n": 8,
+        "mean_confidence": 0.909896,
+        "accuracy": 0.75
+      },
+      {
+        "lower": 0.933333,
+        "upper": 1.0,
+        "n": 5415,
+        "mean_confidence": 0.999453,
+        "accuracy": 0.999446
+      }
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.997975,
+    "balanced_accuracy": 0.996853,
+    "macro_f1": 0.997141
+  },
+  "plantdoc": {
+    "n": 252,
+    "n_classes": 27,
+    "max_conf_mean": 0.786214,
+    "max_conf_sd": 0.227666,
+    "entropy_mean": 0.698313,
+    "entropy_sd": 0.669631
+  },
+  "cassava": {
+    "n": 21397,
+    "n_classes": 5,
+    "max_conf_mean": 0.88186,
+    "max_conf_sd": 0.180654,
+    "entropy_mean": 0.482703,
+    "entropy_sd": 0.604837
+  },
+  "ood_auroc": {
+    "plantdoc_vs_pv": 0.962312,
+    "cassava_vs_pv": 0.939615
+  },
+  "elapsed_sec": 1348.77,
+  "sha256_self": "67aec374611bc229a8777692daf89bfe7fe4a4353c8aa42c6f97fe18c03f2e87"
+}

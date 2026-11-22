@@ -1,0 +1,63 @@
+{
+  "phase": "32_full_finetune_model_family",
+  "captured_at_utc": "2026-08-10T10:45:06Z",
+  "protocol": {
+    "models": [
+      "resnet50",
+      "mobilenet_v3_large",
+      "efficientnet_b0"
+    ],
+    "mode": "full_finetune",
+    "augmentation": "basic_resize_crop_flip",
+    "optimizer": "adamw",
+    "loss": "cross_entropy",
+    "label_smoothing": 0.1,
+    "scheduler": "cosine",
+    "epochs": 6,
+    "selection": "validation macro_f1",
+    "test_policy": "test only locked winner"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "screening": [
+    {
+      "model": "resnet50",
+      "best_val_macro_f1": 0.997664,
+      "best_epoch": 6,
+      "trainable_params": 23585894,
+      "locked_test": {
+        "accuracy": 0.99779,
+        "balanced_accuracy": 0.996331,
+        "macro_f1": 0.996767
+      }
+    },
+    {
+      "model": "efficientnet_b0",
+      "best_val_macro_f1": 0.99744,
+      "best_epoch": 6,
+      "trainable_params": 4056226
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "best_val_macro_f1": 0.996221,
+      "best_epoch": 6,
+      "trainable_params": 4250710
+    }
+  ],
+  "locked_winner": {
+    "model": "resnet50",
+    "best_val_macro_f1": 0.997664,
+    "best_epoch": 6,
+    "trainable_params": 23585894,
+    "locked_test": {
+      "accuracy": 0.99779,
+      "balanced_accuracy": 0.996331,
+      "macro_f1": 0.996767
+    }
+  },
+  "elapsed_sec": 4157.48,
+  "sha256_self": "7de197d09bcbcf9ec9c84081cf9e9e30d636baec882b93d02ac7f440480722f6"
+}

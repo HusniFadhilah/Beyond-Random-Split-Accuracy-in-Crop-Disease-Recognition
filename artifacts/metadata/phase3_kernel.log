@@ -1,0 +1,38 @@
+[{"stream_name":"stdout","time":39.736728345,"data":"WROTE /kaggle/working/phase3_distribution_report.json\n"}
+,{"stream_name":"stdout","time":39.736797968,"data":"{\n"}
+,{"stream_name":"stdout","time":39.736803333,"data":"  \"dataset_paths\": {\n"}
+,{"stream_name":"stdout","time":39.736806453,"data":"    \"plantvillage\": \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color\",\n"}
+,{"stream_name":"stdout","time":39.736809184,"data":"    \"plantdoc\": \"/kaggle/input/datasets/nirmalsankalana/plantdoc-dataset/test\",\n"}
+,{"stream_name":"stdout","time":39.736811746,"data":"    \"cassava\": \"/kaggle/input/datasets/nirmalsankalana/cassava-leaf-disease-classification/data\"\n"}
+,{"stream_name":"stdout","time":39.736814469,"data":"  },\n"}
+,{"stream_name":"stdout","time":39.736816806,"data":"  \"plantvillage_aggregate\": {\n"}
+,{"stream_name":"stdout","time":39.736819234,"data":"    \"n_classes\": 38,\n"}
+,{"stream_name":"stdout","time":39.736821722,"data":"    \"mean_R_across_classes\": 0.4708,\n"}
+,{"stream_name":"stdout","time":39.736824476,"data":"    \"mean_G_across_classes\": 0.4951,\n"}
+,{"stream_name":"stdout","time":39.73682686,"data":"    \"mean_B_across_classes\": 0.4213,\n"}
+,{"stream_name":"stdout","time":39.736829301,"data":"    \"edge_density_median\": 0.054\n"}
+,{"stream_name":"stdout","time":39.736831737,"data":"  },\n"}
+,{"stream_name":"stdout","time":39.736834058,"data":"  \"plantdoc_aggregate\": {\n"}
+,{"stream_name":"stdout","time":39.736836411,"data":"    \"n_classes\": 27,\n"}
+,{"stream_name":"stdout","time":39.73683877,"data":"    \"mean_R_across_classes\": 0.5268,\n"}
+,{"stream_name":"stdout","time":39.736841145,"data":"    \"mean_G_across_classes\": 0.6047,\n"}
+,{"stream_name":"stdout","time":39.736843803,"data":"    \"mean_B_across_classes\": 0.4234,\n"}
+,{"stream_name":"stdout","time":39.736846194,"data":"    \"edge_density_median\": 0.0217\n"}
+,{"stream_name":"stdout","time":39.73684871,"data":"  },\n"}
+,{"stream_name":"stdout","time":39.736851719,"data":"  \"cassava_aggregate\": {\n"}
+,{"stream_name":"stdout","time":39.736854106,"data":"    \"n_classes\": 5,\n"}
+,{"stream_name":"stdout","time":39.736856439,"data":"    \"mean_R_across_classes\": 0.4226,\n"}
+,{"stream_name":"stdout","time":39.736858791,"data":"    \"mean_G_across_classes\": 0.4853,\n"}
+,{"stream_name":"stdout","time":39.736861129,"data":"    \"mean_B_across_classes\": 0.3066,\n"}
+,{"stream_name":"stdout","time":39.736863735,"data":"    \"edge_density_median\": 0.0384\n"}
+,{"stream_name":"stdout","time":39.736866169,"data":"  },\n"}
+,{"stream_name":"stdout","time":39.736868472,"data":"  \"elapsed_sec\": 38.91,\n"}
+,{"stream_name":"stdout","time":39.736870957,"data":"  \"sha256_self\": \"0722163fc82fb03ca0ad67344d7534bc2dae05252715532619a3f4ad959ffa82\"\n"}
+,{"stream_name":"stdout","time":39.736873534,"data":"}\n"}
+,{"stream_name":"stderr","time":42.349125314,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":42.349205921,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":42.688550894,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":42.688578878,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":44.110971483,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":45.664187687,"data":"[NbConvertApp] Writing 298850 bytes to __results__.html\n"}
+]

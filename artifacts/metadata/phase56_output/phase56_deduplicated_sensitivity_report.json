@@ -1,0 +1,31 @@
+{
+  "phase": "56_deduplicated_sensitivity",
+  "seed": 42,
+  "original_split": {
+    "train": 43444,
+    "validation": 5430,
+    "test": 5431
+  },
+  "md5_cross_split_groups": 7,
+  "affected_images_total": 14,
+  "clean_split": {
+    "train": 43439,
+    "validation": 5426,
+    "test": 5426
+  },
+  "excluded_by_split": {
+    "train": 5,
+    "validation": 4,
+    "test": 5
+  },
+  "best_clean_validation_macro_f1": 0.996116,
+  "deduplicated_test_metrics": {
+    "n_images": 5426,
+    "accuracy": 0.997604,
+    "balanced_accuracy": 0.99532,
+    "macro_f1": 0.996191
+  },
+  "protocol": "same seed-42 stratified split; exact MD5 cross-split groups removed; ImageNet-normalized EfficientNet-B0 basic augmentation; six epochs; validation macro-F1 checkpoint",
+  "elapsed_sec": 1562.55,
+  "sha256_self": "36a6e8275bc281db348ed98fd147636e3b131efb0fc919e9d73ae49816811968"
+}

@@ -1,0 +1,18 @@
+[{"stream_name":"stdout","time":93.339751145,"data":"WROTE /kaggle/working/phase2_integrity_v2_report.json\n"}
+,{"stream_name":"stdout","time":93.339837295,"data":"{\n"}
+,{"stream_name":"stdout","time":93.339841385,"data":"  \"dataset_paths\": {\n"}
+,{"stream_name":"stdout","time":93.339843905,"data":"    \"plantvillage\": \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset\",\n"}
+,{"stream_name":"stdout","time":93.339846215,"data":"    \"cassava\": \"/kaggle/input/datasets/nirmalsankalana/cassava-leaf-disease-classification\"\n"}
+,{"stream_name":"stdout","time":93.339848455,"data":"  },\n"}
+,{"stream_name":"stdout","time":93.339850395,"data":"  \"elapsed_sec\": 92.77,\n"}
+,{"stream_name":"stdout","time":93.339852535,"data":"  \"sha256_self\": \"d35550139ce55b1fde2c8acdc339ba0a10fb2562427c5bc2891f89c8b37bb842\"\n"}
+,{"stream_name":"stdout","time":93.339854665,"data":"}\n"}
+,{"stream_name":"stdout","time":93.339856855,"data":"  plantvillage: 54305 images, 38 classes, imbalance 36.23\n"}
+,{"stream_name":"stdout","time":93.339858855,"data":"  cassava: 21397 images, 5 classes, imbalance 12.1\n"}
+,{"stream_name":"stderr","time":95.25622858,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":95.25627863,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":95.531733468,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":95.531757928,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":96.668356764,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":97.754026775,"data":"[NbConvertApp] Writing 294552 bytes to __results__.html\n"}
+]

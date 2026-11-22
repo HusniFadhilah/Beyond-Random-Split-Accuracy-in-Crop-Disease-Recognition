@@ -1,0 +1,11 @@
+{
+ "id": "remahankecil/crop-disease-phase56-deduplicated-sensitivity",
+ "title": "Crop Disease Phase56 Deduplicated Sensitivity",
+ "code_file": "kernel.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_internet": true,
+ "dataset_sources": ["abdallahalidev/plantvillage-dataset"]
+}

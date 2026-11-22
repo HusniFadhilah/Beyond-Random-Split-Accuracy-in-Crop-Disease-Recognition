@@ -1,0 +1,11 @@
+{
+  "id": "husnifadhilahdhiya/crop-disease-phase28-loss-optimizer-ablation",
+  "title": "Crop Disease Phase28 Loss Optimizer Ablation",
+  "code_file": "kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["abdallahalidev/plantvillage-dataset"]
+}

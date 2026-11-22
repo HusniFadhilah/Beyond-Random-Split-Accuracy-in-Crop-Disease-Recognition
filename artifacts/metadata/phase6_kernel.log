@@ -1,0 +1,78 @@
+[{"stream_name":"stdout","time":0.817181804,"data":"Installing PyTorch GPU...\n"}
+,{"stream_name":"stdout","time":165.203772051,"data":"pip install rc: 0\n"}
+,{"stream_name":"stdout","time":165.203816924,"data":"━━━━━━━━━━━━━━━━━━━━━━━━ 188.7/188.7 MB 7.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":165.203823276,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 400.4 kB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":165.203827318,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 209.6/209.6 MB 8.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":165.203830948,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 53.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":165.203834502,"data":"\n"}
+,{"stream_name":"stdout","time":167.45724783,"data":"torch 2.5.0+cu121, cuda available: True\n"}
+,{"stream_name":"stdout","time":167.475431671,"data":"GPU: Tesla P100-PCIE-16GB\n"}
+,{"stream_name":"stdout","time":167.475460376,"data":"GPU mem: 17.1 GB\n"}
+,{"stream_name":"stdout","time":171.451897451,"data":"Loading full PlantVillage dataset...\n"}
+,{"stream_name":"stdout","time":239.839021326,"data":"Total images: 54305, classes: 38\n"}
+,{"stream_name":"stdout","time":239.879178782,"data":"Split: train=43444, val=5430, test=5431\n"}
+,{"stream_name":"stdout","time":288.090912857,"data":"Using device: cuda\n"}
+,{"stream_name":"stderr","time":288.490875343,"data":"Downloading: \"https://download.pytorch.org/models/resnet50-11ad3fa6.pth\" to /root/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth\n"}
+,{"stream_name":"stderr","time":289.135767648,"data":"\r  0%|          | 0.00/97.8M [00:00\u003c?, ?B/s]\r 10%|█         | 10.0M/97.8M [00:00\u003c00:00, 104MB/s]\r 32%|███▏      | 31.2M/97.8M [00:00\u003c00:00, 174MB/s]\r 54%|█████▍    | 52.9M/97.8M [00:00\u003c00:00, 198MB/s]\r 76%|███████▌  | 74.4M/97.8M [00:00\u003c00:00, 208MB/s]\r 98%|█████████▊| 96.1M/97.8M [00:00\u003c00:00, 215MB/s]\r100%|██████████| 97.8M/97.8M [00:00\u003c00:00, 202MB/s]\n"}
+,{"stream_name":"stdout","time":290.802368335,"data":"  ep1 batch0/679 loss=3.6687\n"}
+,{"stream_name":"stdout","time":305.984192194,"data":"  ep1 batch50/679 loss=0.7055\n"}
+,{"stream_name":"stdout","time":321.166232349,"data":"  ep1 batch100/679 loss=0.1696\n"}
+,{"stream_name":"stdout","time":336.348608173,"data":"  ep1 batch150/679 loss=0.1582\n"}
+,{"stream_name":"stdout","time":351.529467668,"data":"  ep1 batch200/679 loss=0.3490\n"}
+,{"stream_name":"stdout","time":366.708292,"data":"  ep1 batch250/679 loss=0.1002\n"}
+,{"stream_name":"stdout","time":381.887718977,"data":"  ep1 batch300/679 loss=0.0924\n"}
+,{"stream_name":"stdout","time":397.067380429,"data":"  ep1 batch350/679 loss=0.0515\n"}
+,{"stream_name":"stdout","time":412.247850767,"data":"  ep1 batch400/679 loss=0.0587\n"}
+,{"stream_name":"stdout","time":427.427670949,"data":"  ep1 batch450/679 loss=0.0736\n"}
+,{"stream_name":"stdout","time":442.608346166,"data":"  ep1 batch500/679 loss=0.0282\n"}
+,{"stream_name":"stdout","time":457.788590173,"data":"  ep1 batch550/679 loss=0.0951\n"}
+,{"stream_name":"stdout","time":472.968896286,"data":"  ep1 batch600/679 loss=0.0684\n"}
+,{"stream_name":"stdout","time":488.148758528,"data":"  ep1 batch650/679 loss=0.0224\n"}
+,{"stream_name":"stdout","time":515.425596565,"data":"epoch 1: tr_loss=0.2752 tr_acc=0.9359 va_f1=0.9563 va_ba=0.9734 (226.05s)\n"}
+,{"stream_name":"stdout","time":516.163386735,"data":"  ep2 batch0/679 loss=0.0806\n"}
+,{"stream_name":"stdout","time":531.350643232,"data":"  ep2 batch50/679 loss=0.2383\n"}
+,{"stream_name":"stdout","time":546.530699029,"data":"  ep2 batch100/679 loss=0.0459\n"}
+,{"stream_name":"stdout","time":561.711570574,"data":"  ep2 batch150/679 loss=0.0348\n"}
+,{"stream_name":"stdout","time":576.895202737,"data":"  ep2 batch200/679 loss=0.0232\n"}
+,{"stream_name":"stdout","time":592.07679491,"data":"  ep2 batch250/679 loss=0.0698\n"}
+,{"stream_name":"stdout","time":607.257891506,"data":"  ep2 batch300/679 loss=0.0139\n"}
+,{"stream_name":"stdout","time":622.435996185,"data":"  ep2 batch350/679 loss=0.0088\n"}
+,{"stream_name":"stdout","time":637.617215531,"data":"  ep2 batch400/679 loss=0.0049\n"}
+,{"stream_name":"stdout","time":652.796173644,"data":"  ep2 batch450/679 loss=0.0325\n"}
+,{"stream_name":"stdout","time":667.973136622,"data":"  ep2 batch500/679 loss=0.0658\n"}
+,{"stream_name":"stdout","time":683.154083285,"data":"  ep2 batch550/679 loss=0.0097\n"}
+,{"stream_name":"stdout","time":698.334537996,"data":"  ep2 batch600/679 loss=0.1169\n"}
+,{"stream_name":"stdout","time":713.517176692,"data":"  ep2 batch650/679 loss=0.0125\n"}
+,{"stream_name":"stdout","time":730.711670033,"data":"epoch 2: tr_loss=0.0638 tr_acc=0.9816 va_f1=0.9829 va_ba=0.9846 (215.16s)\n"}
+,{"stream_name":"stdout","time":731.556958306,"data":"  ep3 batch0/679 loss=0.0963\n"}
+,{"stream_name":"stdout","time":746.741266939,"data":"  ep3 batch50/679 loss=0.0592\n"}
+,{"stream_name":"stdout","time":761.923540716,"data":"  ep3 batch100/679 loss=0.1447\n"}
+,{"stream_name":"stdout","time":777.103559703,"data":"  ep3 batch150/679 loss=0.0233\n"}
+,{"stream_name":"stdout","time":792.288175784,"data":"  ep3 batch200/679 loss=0.0699\n"}
+,{"stream_name":"stdout","time":807.469185007,"data":"  ep3 batch250/679 loss=0.0361\n"}
+,{"stream_name":"stdout","time":822.654727998,"data":"  ep3 batch300/679 loss=0.2243\n"}
+,{"stream_name":"stdout","time":837.838477868,"data":"  ep3 batch350/679 loss=0.0177\n"}
+,{"stream_name":"stdout","time":853.02197948,"data":"  ep3 batch400/679 loss=0.0679\n"}
+,{"stream_name":"stdout","time":868.203957232,"data":"  ep3 batch450/679 loss=0.0177\n"}
+,{"stream_name":"stdout","time":883.386833124,"data":"  ep3 batch500/679 loss=0.0450\n"}
+,{"stream_name":"stdout","time":898.565538842,"data":"  ep3 batch550/679 loss=0.0527\n"}
+,{"stream_name":"stdout","time":913.748851553,"data":"  ep3 batch600/679 loss=0.0111\n"}
+,{"stream_name":"stdout","time":928.928145131,"data":"  ep3 batch650/679 loss=0.0405\n"}
+,{"stream_name":"stdout","time":947.132097963,"data":"epoch 3: tr_loss=0.0399 tr_acc=0.9881 va_f1=0.9638 va_ba=0.9817 (216.21s)\n"}
+,{"stream_name":"stderr","time":947.132324724,"data":"/kaggle/src/script.py:147: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.\n"}
+,{"stream_name":"stderr","time":947.132360653,"data":"  model.load_state_dict(torch.load(\"/kaggle/working/best_resnet50_pv.pth\"))\n"}
+,{"stream_name":"stdout","time":967.614831964,"data":"WROTE /kaggle/working/phase6_baseline_report.json\n"}
+,{"stream_name":"stdout","time":967.614868828,"data":"{\n"}
+,{"stream_name":"stdout","time":967.614874699,"data":"  \"loss\": 0.0532,\n"}
+,{"stream_name":"stdout","time":967.614879588,"data":"  \"f1_macro\": 0.9848,\n"}
+,{"stream_name":"stdout","time":967.614884447,"data":"  \"balanced_accuracy\": 0.9866,\n"}
+,{"stream_name":"stdout","time":967.614889309,"data":"  \"n_test\": 5431\n"}
+,{"stream_name":"stdout","time":967.614894474,"data":"}\n"}
+,{"stream_name":"stdout","time":967.614899092,"data":"Total elapsed: 800.14 sec, sha256=368d6afead2f04314a0ceb6b9aedd763e489489ea03141ff6fd4fc16db6c9ae4\n"}
+,{"stream_name":"stderr","time":970.751524949,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":970.751574,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":970.978558775,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":970.978601743,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":971.616606792,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":972.787448955,"data":"[NbConvertApp] Writing 315697 bytes to __results__.html\n"}
+]

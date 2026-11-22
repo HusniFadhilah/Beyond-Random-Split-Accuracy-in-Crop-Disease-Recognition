@@ -1,0 +1,13 @@
+[{"stream_name":"stdout","time":1.012987932,"data":"WROTE /kaggle/working/phase2_integrity_v2_report.json\n"}
+,{"stream_name":"stdout","time":1.013093275,"data":"{\n"}
+,{"stream_name":"stdout","time":1.013099321,"data":"  \"dataset_paths\": {},\n"}
+,{"stream_name":"stdout","time":1.01310247,"data":"  \"elapsed_sec\": 0.0,\n"}
+,{"stream_name":"stdout","time":1.013105428,"data":"  \"sha256_self\": \"e36eb351a969d68fc08d52adbb4e393641588ac29bc6e7bad34a3fb0ec57c168\"\n"}
+,{"stream_name":"stdout","time":1.013108906,"data":"}\n"}
+,{"stream_name":"stderr","time":4.183666146,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4.183732544,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4.70592361,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4.705961086,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":6.742509257,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":8.504128851,"data":"[NbConvertApp] Writing 294552 bytes to __results__.html\n"}
+]

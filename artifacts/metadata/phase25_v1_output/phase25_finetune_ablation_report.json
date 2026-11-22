@@ -1,0 +1,102 @@
+{
+  "phase": "25_finetune_ablation",
+  "captured_at_utc": "2026-07-28T04:44:58Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "modes": [
+      "frozen",
+      "last_block",
+      "full"
+    ],
+    "augmentations": [
+      "basic",
+      "strong"
+    ],
+    "epochs": 8,
+    "seed": 42,
+    "selection": "validation macro_f1",
+    "test_policy": "test reported only after each configuration training; best selection remains validation-only"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431,
+    "n_classes": 38
+  },
+  "results": [
+    {
+      "mode": "full",
+      "augmentation": "basic",
+      "best_val_macro_f1": 0.995524,
+      "best_epoch": 7,
+      "test": {
+        "accuracy": 0.995213,
+        "balanced_accuracy": 0.993366,
+        "macro_f1": 0.993785
+      },
+      "trainable_params": 4056226
+    },
+    {
+      "mode": "full",
+      "augmentation": "strong",
+      "best_val_macro_f1": 0.992267,
+      "best_epoch": 7,
+      "test": {
+        "accuracy": 0.994476,
+        "balanced_accuracy": 0.992837,
+        "macro_f1": 0.992267
+      },
+      "trainable_params": 4056226
+    },
+    {
+      "mode": "last_block",
+      "augmentation": "basic",
+      "best_val_macro_f1": 0.97625,
+      "best_epoch": 8,
+      "test": {
+        "accuracy": 0.982876,
+        "balanced_accuracy": 0.972806,
+        "macro_f1": 0.975789
+      },
+      "trainable_params": 460838
+    },
+    {
+      "mode": "last_block",
+      "augmentation": "strong",
+      "best_val_macro_f1": 0.96895,
+      "best_epoch": 8,
+      "test": {
+        "accuracy": 0.976616,
+        "balanced_accuracy": 0.970196,
+        "macro_f1": 0.970903
+      },
+      "trainable_params": 460838
+    },
+    {
+      "mode": "frozen",
+      "augmentation": "basic",
+      "best_val_macro_f1": 0.949188,
+      "best_epoch": 5,
+      "test": {
+        "accuracy": 0.95673,
+        "balanced_accuracy": 0.941093,
+        "macro_f1": 0.943911
+      },
+      "trainable_params": 48678
+    },
+    {
+      "mode": "frozen",
+      "augmentation": "strong",
+      "best_val_macro_f1": 0.922829,
+      "best_epoch": 8,
+      "test": {
+        "accuracy": 0.93979,
+        "balanced_accuracy": 0.920634,
+        "macro_f1": 0.923395
+      },
+      "trainable_params": 48678
+    }
+  ],
+  "elapsed_sec": 12130.16,
+  "sha256_self": "35b405fbd452d71a12ca8c259a581c71ceff6dc357971f437f16a0abaf5d047f"
+}

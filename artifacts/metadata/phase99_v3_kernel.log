@@ -1,0 +1,35 @@
+[{"stream_name":"stdout","time":5.302909305,"data":"{\n"}
+,{"stream_name":"stdout","time":5.302995976,"data":"  \"phase\": \"99_dryrun_v2\",\n"}
+,{"stream_name":"stdout","time":5.303003195,"data":"  \"captured_at_utc\": \"2026-07-26T00:10:03Z\",\n"}
+,{"stream_name":"stdout","time":5.303006665,"data":"  \"python\": \"3.12.13\",\n"}
+,{"stream_name":"stdout","time":5.30300964,"data":"  \"platform\": \"Linux-6.12.90+-x86_64-with-glibc2.35\",\n"}
+,{"stream_name":"stdout","time":5.303012624,"data":"  \"torch\": \"2.10.0+cpu\",\n"}
+,{"stream_name":"stdout","time":5.30301646,"data":"  \"cuda_available\": false,\n"}
+,{"stream_name":"stdout","time":5.303021473,"data":"  \"kaggle_input_entries\": [\n"}
+,{"stream_name":"stdout","time":5.303026374,"data":"    \"datasets\"\n"}
+,{"stream_name":"stdout","time":5.30303033,"data":"  ],\n"}
+,{"stream_name":"stdout","time":5.303035593,"data":"  \"first5_datasets\": [\n"}
+,{"stream_name":"stdout","time":5.303041144,"data":"    \"abdallahalidev\"\n"}
+,{"stream_name":"stdout","time":5.303046374,"data":"  ],\n"}
+,{"stream_name":"stdout","time":5.303051356,"data":"  \"cwd\": \"/kaggle/working\",\n"}
+,{"stream_name":"stdout","time":5.303056925,"data":"  \"home_contents\": [\n"}
+,{"stream_name":"stdout","time":5.303062944,"data":"    \"huggingface\",\n"}
+,{"stream_name":"stdout","time":5.303068182,"data":"    \"input\",\n"}
+,{"stream_name":"stdout","time":5.303072904,"data":"    \"lib\",\n"}
+,{"stream_name":"stdout","time":5.303077988,"data":"    \"nbdev\",\n"}
+,{"stream_name":"stdout","time":5.303083066,"data":"    \"src\",\n"}
+,{"stream_name":"stdout","time":5.303087891,"data":"    \"working\"\n"}
+,{"stream_name":"stdout","time":5.303093099,"data":"  ],\n"}
+,{"stream_name":"stdout","time":5.303098119,"data":"  \"pv_root\": \"MISSING\",\n"}
+,{"stream_name":"stdout","time":5.303103279,"data":"  \"pv_root_found\": \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color\",\n"}
+,{"stream_name":"stdout","time":5.303108466,"data":"  \"pd_root\": \"MISSING\",\n"}
+,{"stream_name":"stdout","time":5.3031131049999995,"data":"  \"elapsed_sec\": 4.46,\n"}
+,{"stream_name":"stdout","time":5.303118124,"data":"  \"sha256_self\": \"99b5b4820ebc3130dbba7bcdc4be160b572ba7db801e91f568453ceecee1bd94\"\n"}
+,{"stream_name":"stdout","time":5.303123697,"data":"}\n"}
+,{"stream_name":"stderr","time":8.509331794,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":8.509391807,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":8.87586583,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":8.875894583000001,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":9.673066412,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":11.343634048,"data":"[NbConvertApp] Writing 289949 bytes to __results__.html\n"}
+]

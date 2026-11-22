@@ -1,0 +1,4 @@
+dataset_slug,kaggle_ref,license,commercial_use,share_alike,attribution_required,source_url,notes
+plantvillage,abdallahalidev/plantvillage-dataset,CC-BY-NC-SA-4.0,NO,YES,YES,https://creativecommons.org/licenses/by-nc-sa/4.0/,Mirror by abdallahalidev; original PlantVillage (Hughes & Salathe 2015). Non-commercial use only.
+plantdoc,nirmalsankalana/plantdoc-dataset,CC0-1.0,YES,NO,NO,https://github.com/pratikkayal/PlantDoc-Dataset/blob/master/LICENSE.txt,Mirror of Pratik Kayal's GitHub PlantDoc. Paper Singh et al. 2020 ACM CoDS-COMAD.
+cassava,nirmalsankalana/cassava-leaf-disease-classification,CC0-1.0,YES,NO,NO,https://www.kaggle.com/competitions/cassava-leaf-disease-classification,Kaggle competition mirror by nirmalsankalana. Original 2020 competition by Makerere AI Lab.

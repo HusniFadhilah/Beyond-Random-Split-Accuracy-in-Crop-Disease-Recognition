@@ -1,0 +1,118 @@
+[{"stream_name":"stdout","time":0.727740743,"data":"Installing GPU torch...\n"}
+,{"stream_name":"stdout","time":158.431807625,"data":"pip install rc: 0\n"}
+,{"stream_name":"stdout","time":164.443471451,"data":"device: cuda\n"}
+,{"stream_name":"stdout","time":164.464110025,"data":"GPU: Tesla P100-PCIE-16GB\n"}
+,{"stream_name":"stdout","time":164.467581601,"data":"Loading PlantVillage training subset (80%)...\n"}
+,{"stream_name":"stdout","time":205.125219032,"data":"PV total: 54305, classes: 38\n"}
+,{"stream_name":"stdout","time":205.173387523,"data":"train: 43444\n"}
+,{"stream_name":"stderr","time":222.021417894,"data":"Downloading: \"https://download.pytorch.org/models/resnet50-11ad3fa6.pth\" to /root/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth\n"}
+,{"stream_name":"stderr","time":222.683691012,"data":"\r  0%|          | 0.00/97.8M [00:00\u003c?, ?B/s]\r 11%|█         | 11.0M/97.8M [00:00\u003c00:00, 115MB/s]\r 30%|██▉       | 29.0M/97.8M [00:00\u003c00:00, 158MB/s]\r 48%|████▊     | 47.0M/97.8M [00:00\u003c00:00, 172MB/s]\r 66%|██████▌   | 64.8M/97.8M [00:00\u003c00:00, 177MB/s]\r 84%|████████▍ | 82.5M/97.8M [00:00\u003c00:00, 180MB/s]\r100%|██████████| 97.8M/97.8M [00:00\u003c00:00, 176MB/s]\n"}
+,{"stream_name":"stdout","time":224.463229678,"data":"  retrain ep1 batch0/679 loss=3.6687 acc=0.0000\n"}
+,{"stream_name":"stdout","time":254.808568114,"data":"  retrain ep1 batch100/679 loss=0.2301 acc=0.7771\n"}
+,{"stream_name":"stdout","time":285.151003176,"data":"  retrain ep1 batch200/679 loss=0.2308 acc=0.8629\n"}
+,{"stream_name":"stdout","time":315.494701109,"data":"  retrain ep1 batch300/679 loss=0.0658 acc=0.8944\n"}
+,{"stream_name":"stdout","time":345.835399044,"data":"  retrain ep1 batch400/679 loss=0.0780 acc=0.9118\n"}
+,{"stream_name":"stdout","time":376.174272245,"data":"  retrain ep1 batch500/679 loss=0.0217 acc=0.9237\n"}
+,{"stream_name":"stdout","time":406.513313252,"data":"  retrain ep1 batch600/679 loss=0.0609 acc=0.9326\n"}
+,{"stream_name":"stdout","time":430.17437228,"data":"retrain epoch 1: acc=0.9380 (207s)\n"}
+,{"stream_name":"stdout","time":430.767700322,"data":"  retrain ep2 batch0/679 loss=0.0330 acc=1.0000\n"}
+,{"stream_name":"stdout","time":461.109306795,"data":"  retrain ep2 batch100/679 loss=0.0803 acc=0.9830\n"}
+,{"stream_name":"stdout","time":491.44963953,"data":"  retrain ep2 batch200/679 loss=0.0501 acc=0.9832\n"}
+,{"stream_name":"stdout","time":521.785574411,"data":"  retrain ep2 batch300/679 loss=0.1751 acc=0.9830\n"}
+,{"stream_name":"stdout","time":552.120339684,"data":"  retrain ep2 batch400/679 loss=0.0516 acc=0.9831\n"}
+,{"stream_name":"stdout","time":582.461233973,"data":"  retrain ep2 batch500/679 loss=0.0035 acc=0.9831\n"}
+,{"stream_name":"stdout","time":612.801802845,"data":"  retrain ep2 batch600/679 loss=0.0775 acc=0.9830\n"}
+,{"stream_name":"stdout","time":636.455730007,"data":"retrain epoch 2: acc=0.9824 (206s)\n"}
+,{"stream_name":"stdout","time":636.588071735,"data":"Saved /kaggle/working/resnet50_pv_retrained.pth\n"}
+,{"stream_name":"stdout","time":636.58810354,"data":"\n"}
+,{"stream_name":"stdout","time":636.588108125,"data":"=== Testing on PlantDoc ===\n"}
+,{"stream_name":"stdout","time":636.691795144,"data":"PD: 252 images, 27 classes\n"}
+,{"stream_name":"stdout","time":642.279990676,"data":"PD max-confidence mean: 0.6707, std: 0.2531\n"}
+,{"stream_name":"stdout","time":642.280033134,"data":"PD entropy mean: 1.0997, std: 0.8058\n"}
+,{"stream_name":"stdout","time":642.280039708,"data":"PD top-1 (label-match, will be 0 since no class overlap): 0.0516\n"}
+,{"stream_name":"stdout","time":642.280044909,"data":"PD top-5 (label-match, will be 0): 0.2619\n"}
+,{"stream_name":"stdout","time":642.28071196,"data":"PD predicted as PV classes (top 5):\n"}
+,{"stream_name":"stdout","time":642.280734707,"data":"  Pepper,_bell___Bacterial_spot: 22 PD images\n"}
+,{"stream_name":"stdout","time":642.280739305,"data":"  Tomato___Late_blight: 22 PD images\n"}
+,{"stream_name":"stdout","time":642.280742997,"data":"  Tomato___Early_blight: 21 PD images\n"}
+,{"stream_name":"stdout","time":642.280746967,"data":"  Tomato___Septoria_leaf_spot: 20 PD images\n"}
+,{"stream_name":"stdout","time":642.280750955,"data":"  Orange___Haunglongbing_(Citrus_greening): 19 PD images\n"}
+,{"stream_name":"stdout","time":642.280754837,"data":"\n"}
+,{"stream_name":"stdout","time":642.280758643,"data":"=== Testing on Cassava ===\n"}
+,{"stream_name":"stdout","time":674.221294821,"data":"CV: 21397 images, 5 classes\n"}
+,{"stream_name":"stdout","time":838.585269439,"data":"CV max-confidence mean: 0.7046, std: 0.2486\n"}
+,{"stream_name":"stdout","time":838.585322332,"data":"CV entropy mean: 1.0054, std: 0.7602\n"}
+,{"stream_name":"stdout","time":838.585478047,"data":"CV top-1 (label-match, no class overlap): 0.0048\n"}
+,{"stream_name":"stdout","time":838.585492884,"data":"\n"}
+,{"stream_name":"stdout","time":838.585500089,"data":"=== OOD detection: Cassava as OOD ===\n"}
+,{"stream_name":"stdout","time":874.383004815,"data":"PV in-dist max conf: mean=0.9775, std=0.0773\n"}
+,{"stream_name":"stdout","time":874.383181322,"data":"CV OOD max conf:     mean=0.7046, std=0.2486\n"}
+,{"stream_name":"stdout","time":874.383191747,"data":"OOD AUROC (softmax): 0.9302\n"}
+,{"stream_name":"stdout","time":874.384513552,"data":"\n"}
+,{"stream_name":"stdout","time":874.384535865,"data":"WROTE /kaggle/working/phase8_transfer_report.json\n"}
+,{"stream_name":"stdout","time":874.384738201,"data":"{\n"}
+,{"stream_name":"stdout","time":874.384751003,"data":"  \"phase\": \"8_cross_dataset_transfer\",\n"}
+,{"stream_name":"stdout","time":874.384763014,"data":"  \"captured_at_utc\": \"2026-07-26T02:01:30Z\",\n"}
+,{"stream_name":"stdout","time":874.384767558,"data":"  \"plantvillage_test\": {\n"}
+,{"stream_name":"stdout","time":874.384771283,"data":"    \"n\": 5430,\n"}
+,{"stream_name":"stdout","time":874.384774876,"data":"    \"max_conf_mean\": 0.9775,\n"}
+,{"stream_name":"stdout","time":874.384778455,"data":"    \"max_conf_std\": 0.0773\n"}
+,{"stream_name":"stdout","time":874.384782189,"data":"  },\n"}
+,{"stream_name":"stdout","time":874.384785587,"data":"  \"plantdoc_results\": {\n"}
+,{"stream_name":"stdout","time":874.384789232,"data":"    \"n\": 252,\n"}
+,{"stream_name":"stdout","time":874.384792773,"data":"    \"max_conf_mean\": 0.6707,\n"}
+,{"stream_name":"stdout","time":874.384814588,"data":"    \"max_conf_std\": 0.2531,\n"}
+,{"stream_name":"stdout","time":874.384821404,"data":"    \"entropy_mean\": 1.0997,\n"}
+,{"stream_name":"stdout","time":874.384827498,"data":"    \"entropy_std\": 0.8058,\n"}
+,{"stream_name":"stdout","time":874.384833706,"data":"    \"top1_label_match\": 0.0516,\n"}
+,{"stream_name":"stdout","time":874.384839112,"data":"    \"top5_label_match\": 0.2619,\n"}
+,{"stream_name":"stdout","time":874.384844264,"data":"    \"top_predicted_pv_classes\": [\n"}
+,{"stream_name":"stdout","time":874.384849441,"data":"      {\n"}
+,{"stream_name":"stdout","time":874.384854478,"data":"        \"pv_class\": \"Pepper,_bell___Bacterial_spot\",\n"}
+,{"stream_name":"stdout","time":874.384860234,"data":"        \"n_pd_images\": 22\n"}
+,{"stream_name":"stdout","time":874.384865458,"data":"      },\n"}
+,{"stream_name":"stdout","time":874.384870525,"data":"      {\n"}
+,{"stream_name":"stdout","time":874.384893818,"data":"        \"pv_class\": \"Tomato___Late_blight\",\n"}
+,{"stream_name":"stdout","time":874.384897304,"data":"        \"n_pd_images\": 22\n"}
+,{"stream_name":"stdout","time":874.384900746,"data":"      },\n"}
+,{"stream_name":"stdout","time":874.384918072,"data":"      {\n"}
+,{"stream_name":"stdout","time":874.384922854,"data":"        \"pv_class\": \"Tomato___Early_blight\",\n"}
+,{"stream_name":"stdout","time":874.38492791,"data":"        \"n_pd_images\": 21\n"}
+,{"stream_name":"stdout","time":874.384932591,"data":"      },\n"}
+,{"stream_name":"stdout","time":874.384937092,"data":"      {\n"}
+,{"stream_name":"stdout","time":874.384940897,"data":"        \"pv_class\": \"Tomato___Septoria_leaf_spot\",\n"}
+,{"stream_name":"stdout","time":874.384945093,"data":"        \"n_pd_images\": 20\n"}
+,{"stream_name":"stdout","time":874.384949041,"data":"      },\n"}
+,{"stream_name":"stdout","time":874.384952792,"data":"      {\n"}
+,{"stream_name":"stdout","time":874.384956622,"data":"        \"pv_class\": \"Orange___Haunglongbing_(Citrus_greening)\",\n"}
+,{"stream_name":"stdout","time":874.384960855,"data":"        \"n_pd_images\": 19\n"}
+,{"stream_name":"stdout","time":874.3849648,"data":"      }\n"}
+,{"stream_name":"stdout","time":874.384968605,"data":"    ],\n"}
+,{"stream_name":"stdout","time":874.384972467,"data":"    \"note\": \"PlantDoc classes do not overlap PlantVillage; top-1=0 expected (OOD).\"\n"}
+,{"stream_name":"stdout","time":874.384976833,"data":"  },\n"}
+,{"stream_name":"stdout","time":874.384980611,"data":"  \"cassava_results\": {\n"}
+,{"stream_name":"stdout","time":874.384984618,"data":"    \"n\": 21397,\n"}
+,{"stream_name":"stdout","time":874.384988631,"data":"    \"max_conf_mean\": 0.7046,\n"}
+,{"stream_name":"stdout","time":874.384998802,"data":"    \"max_conf_std\": 0.2486,\n"}
+,{"stream_name":"stdout","time":874.385014775,"data":"    \"entropy_mean\": 1.0054,\n"}
+,{"stream_name":"stdout","time":874.385019615,"data":"    \"entropy_std\": 0.7602,\n"}
+,{"stream_name":"stdout","time":874.385024878,"data":"    \"top1_label_match\": 0.0048,\n"}
+,{"stream_name":"stdout","time":874.385036032,"data":"    \"note\": \"Cassava classes do not overlap PlantVillage; top-1=0 expected (OOD).\"\n"}
+,{"stream_name":"stdout","time":874.385040695,"data":"  },\n"}
+,{"stream_name":"stdout","time":874.385044517,"data":"  \"ood_detection_cv_vs_pv\": {\n"}
+,{"stream_name":"stdout","time":874.385048584,"data":"    \"auroc_max_softmax\": 0.9302,\n"}
+,{"stream_name":"stdout","time":874.385052716,"data":"    \"auroc_interpretation\": \"0.5 = random, 1.0 = perfect OOD detection\",\n"}
+,{"stream_name":"stdout","time":874.385057037,"data":"    \"decision_rule\": \"in-dist if max_softmax \u003e threshold; OOD otherwise\",\n"}
+,{"stream_name":"stdout","time":874.385061725,"data":"    \"n_pv_in_dist\": 5430,\n"}
+,{"stream_name":"stdout","time":874.385065721,"data":"    \"n_cv_ood\": 21397\n"}
+,{"stream_name":"stdout","time":874.385069678,"data":"  },\n"}
+,{"stream_name":"stdout","time":874.385073466,"data":"  \"elapsed_sec\": 709.98,\n"}
+,{"stream_name":"stdout","time":874.385077464,"data":"  \"sha256_self\": \"69ac4cee34c4741bf135fb2b4681530aaafd918277f9810b5198e6918f2374b6\"\n"}
+,{"stream_name":"stdout","time":874.385081764,"data":"}\n"}
+,{"stream_name":"stderr","time":877.494546494,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":877.494576016,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":877.699105223,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":877.699132954,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":878.292676669,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":879.428119417,"data":"[NbConvertApp] Writing 334293 bytes to __results__.html\n"}
+]

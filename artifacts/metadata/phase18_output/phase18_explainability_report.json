@@ -1,0 +1,49 @@
+{
+  "phase": "18_explainability",
+  "captured_at_utc": "2026-07-26T05:19:14Z",
+  "protocol": {
+    "seed": 42,
+    "training_epochs": 2,
+    "samples_per_domain": 50,
+    "occlusion_grid": "3x3",
+    "lesion_masks_available": false
+  },
+  "domains": {
+    "plantvillage": {
+      "n": 50,
+      "mean_confidence": 0.996,
+      "accuracy_if_labels_compatible": 1.0,
+      "gradcam_center_mass_mean": 0.3907,
+      "gradcam_border_mass_mean": 0.6093,
+      "occlusion_max_drop_mean": 0.0144,
+      "occlusion_center_drop_mean": 0.0039,
+      "occlusion_border_drop_mean": 0.0021,
+      "occlusion_center_minus_border": 0.0018
+    },
+    "plantdoc": {
+      "n": 50,
+      "mean_confidence": 0.7361,
+      "accuracy_if_labels_compatible": null,
+      "gradcam_center_mass_mean": 0.3219,
+      "gradcam_border_mass_mean": 0.6781,
+      "occlusion_max_drop_mean": 0.2145,
+      "occlusion_center_drop_mean": 0.0167,
+      "occlusion_border_drop_mean": 0.0058,
+      "occlusion_center_minus_border": 0.0109
+    },
+    "cassava": {
+      "n": 50,
+      "mean_confidence": 0.8043,
+      "accuracy_if_labels_compatible": null,
+      "gradcam_center_mass_mean": 0.2435,
+      "gradcam_border_mass_mean": 0.7565,
+      "occlusion_max_drop_mean": 0.2186,
+      "occlusion_center_drop_mean": 0.0629,
+      "occlusion_border_drop_mean": 0.048,
+      "occlusion_center_minus_border": 0.0149
+    }
+  },
+  "interpretation_boundary": "Without lesion masks, Grad-CAM/occlusion values are attribution diagnostics only; center/border concentration is not lesion localization or causal evidence. External-domain labels are not mapped to PlantVillage classes.",
+  "elapsed_sec": 564.86,
+  "sha256_self": "7e31691ca004d11645bb075027ca190929c4edb9604c2d0c1540a9e6f0004a38"
+}

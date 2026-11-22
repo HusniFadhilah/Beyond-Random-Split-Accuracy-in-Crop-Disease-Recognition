@@ -1,0 +1,8 @@
+{
+  "phase": "21_evidence_synthesis_statistical_readiness",
+  "report": "/root/research/crop_disease_shift_research/data/metadata/phase21_evidence_synthesis_report.json",
+  "report_sha256": "fff9a4cca163c982f6a6fe35a14981ded3199941a3a1a4cb98bb60630c4d1212",
+  "json_parse": "PASS",
+  "calculation_checks": "PASS",
+  "inferential_status": "BLOCKED until per-sample predictions are available"
+}

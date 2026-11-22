@@ -1,0 +1,85 @@
+{
+  "phase": "35_calibration_selective_resnet50",
+  "captured_at_utc": "2026-08-13T14:55:37Z",
+  "protocol": {
+    "model": "resnet50",
+    "resolution": 224,
+    "mode": "full_finetune",
+    "augmentation": "basic_resize_crop_flip",
+    "optimizer": "adamw",
+    "loss": "cross_entropy",
+    "label_smoothing": 0.1,
+    "scheduler": "cosine",
+    "epochs": 6,
+    "seed": 42,
+    "selection": "validation macro_f1",
+    "test_policy": "test only locked validation checkpoint",
+    "ece_bins": 15
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "best_val_macro_f1": 0.995132,
+  "validation_ece": 0.097616,
+  "test_ece": 0.097426,
+  "test_metrics": {
+    "accuracy": 0.99687,
+    "balanced_accuracy": 0.995494,
+    "macro_f1": 0.995047
+  },
+  "selective_test": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.998711,
+      "n_accepted": 5424,
+      "accuracy_on_accepted": 0.997972,
+      "macro_f1_on_accepted": 0.996578
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.997054,
+      "n_accepted": 5415,
+      "accuracy_on_accepted": 0.998523,
+      "macro_f1_on_accepted": 0.997174
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.995213,
+      "n_accepted": 5405,
+      "accuracy_on_accepted": 0.99889,
+      "macro_f1_on_accepted": 0.997783
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.991162,
+      "n_accepted": 5383,
+      "accuracy_on_accepted": 0.999443,
+      "macro_f1_on_accepted": 0.998959
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.606518,
+      "n_accepted": 3294,
+      "accuracy_on_accepted": 0.999696,
+      "macro_f1_on_accepted": 0.999637
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.000552,
+      "n_accepted": 3,
+      "accuracy_on_accepted": 1.0,
+      "macro_f1_on_accepted": 1.0
+    },
+    {
+      "threshold": 0.99,
+      "coverage": 0.0,
+      "n_accepted": 0,
+      "accuracy_on_accepted": null,
+      "macro_f1_on_accepted": null
+    }
+  ],
+  "elapsed_sec": 1523.25,
+  "sha256_self": "9f66aebd753f37ab86b1f5ff852856400142b869923870245f4f57bf2566858c"
+}

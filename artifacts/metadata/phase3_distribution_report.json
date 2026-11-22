@@ -1,0 +1,739 @@
+{
+  "phase": "3_distribution",
+  "captured_at_utc": "2026-07-26T01:24:19Z",
+  "python": "3.12.13",
+  "dataset_paths": {
+    "plantvillage": "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color",
+    "plantdoc": "/kaggle/input/datasets/nirmalsankalana/plantdoc-dataset/test",
+    "cassava": "/kaggle/input/datasets/nirmalsankalana/cassava-leaf-disease-classification/data"
+  },
+  "plantvillage": {
+    "Apple___Apple_scab": {
+      "count_total": 630,
+      "sampled": 50,
+      "mean_R": 0.4026,
+      "mean_G": 0.4443,
+      "mean_B": 0.4245,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0367
+    },
+    "Apple___Black_rot": {
+      "count_total": 621,
+      "sampled": 50,
+      "mean_R": 0.4761,
+      "mean_G": 0.5033,
+      "mean_B": 0.4547,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0702
+    },
+    "Apple___Cedar_apple_rust": {
+      "count_total": 275,
+      "sampled": 50,
+      "mean_R": 0.4513,
+      "mean_G": 0.4805,
+      "mean_B": 0.3824,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0189
+    },
+    "Apple___healthy": {
+      "count_total": 1645,
+      "sampled": 50,
+      "mean_R": 0.4319,
+      "mean_G": 0.4621,
+      "mean_B": 0.4586,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0393
+    },
+    "Blueberry___healthy": {
+      "count_total": 1502,
+      "sampled": 50,
+      "mean_R": 0.5309,
+      "mean_G": 0.5506,
+      "mean_B": 0.5138,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0663
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+      "count_total": 1052,
+      "sampled": 50,
+      "mean_R": 0.4497,
+      "mean_G": 0.474,
+      "mean_B": 0.4024,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0197
+    },
+    "Cherry_(including_sour)___healthy": {
+      "count_total": 854,
+      "sampled": 50,
+      "mean_R": 0.5445,
+      "mean_G": 0.5674,
+      "mean_B": 0.4792,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.054
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "count_total": 513,
+      "sampled": 50,
+      "mean_R": 0.4609,
+      "mean_G": 0.4848,
+      "mean_B": 0.3915,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.047
+    },
+    "Corn_(maize)___Common_rust_": {
+      "count_total": 1192,
+      "sampled": 50,
+      "mean_R": 0.354,
+      "mean_G": 0.3899,
+      "mean_B": 0.2774,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0395
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "count_total": 985,
+      "sampled": 50,
+      "mean_R": 0.4456,
+      "mean_G": 0.477,
+      "mean_B": 0.38,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0354
+    },
+    "Corn_(maize)___healthy": {
+      "count_total": 1162,
+      "sampled": 50,
+      "mean_R": 0.506,
+      "mean_G": 0.6483,
+      "mean_B": 0.4869,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.022
+    },
+    "Grape___Black_rot": {
+      "count_total": 1180,
+      "sampled": 50,
+      "mean_R": 0.4385,
+      "mean_G": 0.4686,
+      "mean_B": 0.3842,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0473
+    },
+    "Grape___Esca_(Black_Measles)": {
+      "count_total": 1383,
+      "sampled": 50,
+      "mean_R": 0.4722,
+      "mean_G": 0.491,
+      "mean_B": 0.4119,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0725
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "count_total": 1076,
+      "sampled": 50,
+      "mean_R": 0.4905,
+      "mean_G": 0.5088,
+      "mean_B": 0.3493,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0591
+    },
+    "Grape___healthy": {
+      "count_total": 423,
+      "sampled": 50,
+      "mean_R": 0.5146,
+      "mean_G": 0.5615,
+      "mean_B": 0.4631,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.04
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+      "count_total": 5507,
+      "sampled": 50,
+      "mean_R": 0.4321,
+      "mean_G": 0.4398,
+      "mean_B": 0.2984,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0232
+    },
+    "Peach___Bacterial_spot": {
+      "count_total": 2297,
+      "sampled": 50,
+      "mean_R": 0.484,
+      "mean_G": 0.4752,
+      "mean_B": 0.4057,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0374
+    },
+    "Peach___healthy": {
+      "count_total": 360,
+      "sampled": 50,
+      "mean_R": 0.5147,
+      "mean_G": 0.4909,
+      "mean_B": 0.477,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0532
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "count_total": 997,
+      "sampled": 50,
+      "mean_R": 0.4624,
+      "mean_G": 0.4753,
+      "mean_B": 0.3776,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0632
+    },
+    "Pepper,_bell___healthy": {
+      "count_total": 1478,
+      "sampled": 50,
+      "mean_R": 0.4681,
+      "mean_G": 0.5166,
+      "mean_B": 0.436,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0556
+    },
+    "Potato___Early_blight": {
+      "count_total": 1000,
+      "sampled": 50,
+      "mean_R": 0.5344,
+      "mean_G": 0.5541,
+      "mean_B": 0.4528,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0758
+    },
+    "Potato___Late_blight": {
+      "count_total": 1000,
+      "sampled": 50,
+      "mean_R": 0.4497,
+      "mean_G": 0.4579,
+      "mean_B": 0.398,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0524
+    },
+    "Potato___healthy": {
+      "count_total": 152,
+      "sampled": 50,
+      "mean_R": 0.4962,
+      "mean_G": 0.5243,
+      "mean_B": 0.4457,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0732
+    },
+    "Raspberry___healthy": {
+      "count_total": 371,
+      "sampled": 50,
+      "mean_R": 0.4884,
+      "mean_G": 0.5236,
+      "mean_B": 0.4219,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.06
+    },
+    "Soybean___healthy": {
+      "count_total": 5090,
+      "sampled": 50,
+      "mean_R": 0.5151,
+      "mean_G": 0.5511,
+      "mean_B": 0.5027,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0597
+    },
+    "Squash___Powdery_mildew": {
+      "count_total": 1835,
+      "sampled": 50,
+      "mean_R": 0.4695,
+      "mean_G": 0.5218,
+      "mean_B": 0.4271,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0566
+    },
+    "Strawberry___Leaf_scorch": {
+      "count_total": 1109,
+      "sampled": 50,
+      "mean_R": 0.5689,
+      "mean_G": 0.5553,
+      "mean_B": 0.4597,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.065
+    },
+    "Strawberry___healthy": {
+      "count_total": 456,
+      "sampled": 50,
+      "mean_R": 0.4623,
+      "mean_G": 0.53,
+      "mean_B": 0.4218,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0739
+    },
+    "Tomato___Bacterial_spot": {
+      "count_total": 2127,
+      "sampled": 50,
+      "mean_R": 0.4106,
+      "mean_G": 0.4349,
+      "mean_B": 0.3743,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0315
+    },
+    "Tomato___Early_blight": {
+      "count_total": 1000,
+      "sampled": 50,
+      "mean_R": 0.4272,
+      "mean_G": 0.4456,
+      "mean_B": 0.4016,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0408
+    },
+    "Tomato___Late_blight": {
+      "count_total": 1909,
+      "sampled": 50,
+      "mean_R": 0.4605,
+      "mean_G": 0.4688,
+      "mean_B": 0.4165,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0355
+    },
+    "Tomato___Leaf_Mold": {
+      "count_total": 952,
+      "sampled": 50,
+      "mean_R": 0.431,
+      "mean_G": 0.4516,
+      "mean_B": 0.4462,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0522
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "count_total": 1771,
+      "sampled": 50,
+      "mean_R": 0.5294,
+      "mean_G": 0.5299,
+      "mean_B": 0.4756,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0667
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "count_total": 1676,
+      "sampled": 50,
+      "mean_R": 0.4809,
+      "mean_G": 0.4685,
+      "mean_B": 0.4217,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0744
+    },
+    "Tomato___Target_Spot": {
+      "count_total": 1404,
+      "sampled": 50,
+      "mean_R": 0.4609,
+      "mean_G": 0.4656,
+      "mean_B": 0.4353,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0818
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "count_total": 5357,
+      "sampled": 50,
+      "mean_R": 0.4597,
+      "mean_G": 0.4908,
+      "mean_B": 0.3666,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.019
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "count_total": 373,
+      "sampled": 50,
+      "mean_R": 0.4743,
+      "mean_G": 0.4643,
+      "mean_B": 0.4627,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0692
+    },
+    "Tomato___healthy": {
+      "count_total": 1591,
+      "sampled": 50,
+      "mean_R": 0.4407,
+      "mean_G": 0.4641,
+      "mean_B": 0.4241,
+      "median_width": 256,
+      "median_height": 256,
+      "edge_density_median": 0.0958
+    }
+  },
+  "plantdoc": {
+    "Apple_Scab_Leaf": {
+      "count_total": 10,
+      "sampled": 10,
+      "mean_R": 0.5611,
+      "mean_G": 0.6062,
+      "mean_B": 0.4663,
+      "median_width": 496,
+      "median_height": 392,
+      "edge_density_median": 0.0276
+    },
+    "Apple_leaf": {
+      "count_total": 9,
+      "sampled": 9,
+      "mean_R": 0.6399,
+      "mean_G": 0.7283,
+      "mean_B": 0.5144,
+      "median_width": 1300,
+      "median_height": 1174,
+      "edge_density_median": 0.0166
+    },
+    "Apple_rust_leaf": {
+      "count_total": 10,
+      "sampled": 10,
+      "mean_R": 0.4224,
+      "mean_G": 0.5264,
+      "mean_B": 0.3049,
+      "median_width": 575,
+      "median_height": 431,
+      "edge_density_median": 0.0252
+    },
+    "Bell_pepper_leaf": {
+      "count_total": 8,
+      "sampled": 8,
+      "mean_R": 0.4379,
+      "mean_G": 0.5391,
+      "mean_B": 0.281,
+      "median_width": 600,
+      "median_height": 600,
+      "edge_density_median": 0.0171
+    },
+    "Bell_pepper_leaf_spot": {
+      "count_total": 9,
+      "sampled": 9,
+      "mean_R": 0.3596,
+      "mean_G": 0.4924,
+      "mean_B": 0.3202,
+      "median_width": 408,
+      "median_height": 360,
+      "edge_density_median": 0.0217
+    },
+    "Blueberry_leaf": {
+      "count_total": 11,
+      "sampled": 11,
+      "mean_R": 0.6396,
+      "mean_G": 0.6811,
+      "mean_B": 0.5343,
+      "median_width": 1012,
+      "median_height": 1148,
+      "edge_density_median": 0.0121
+    },
+    "Cherry_leaf": {
+      "count_total": 10,
+      "sampled": 10,
+      "mean_R": 0.7346,
+      "mean_G": 0.78,
+      "mean_B": 0.6439,
+      "median_width": 1056,
+      "median_height": 1260,
+      "edge_density_median": 0.0093
+    },
+    "Corn_Gray_leaf_spot": {
+      "count_total": 4,
+      "sampled": 4,
+      "mean_R": 0.4245,
+      "mean_G": 0.5373,
+      "mean_B": 0.2663,
+      "median_width": 480,
+      "median_height": 378,
+      "edge_density_median": 0.0245
+    },
+    "Corn_leaf_blight": {
+      "count_total": 12,
+      "sampled": 12,
+      "mean_R": 0.4549,
+      "mean_G": 0.523,
+      "mean_B": 0.37,
+      "median_width": 960,
+      "median_height": 540,
+      "edge_density_median": 0.0228
+    },
+    "Corn_rust_leaf": {
+      "count_total": 10,
+      "sampled": 10,
+      "mean_R": 0.4494,
+      "mean_G": 0.5284,
+      "mean_B": 0.2755,
+      "median_width": 432,
+      "median_height": 419,
+      "edge_density_median": 0.0316
+    },
+    "Peach_leaf": {
+      "count_total": 9,
+      "sampled": 9,
+      "mean_R": 0.7697,
+      "mean_G": 0.8129,
+      "mean_B": 0.7169,
+      "median_width": 1056,
+      "median_height": 1000,
+      "edge_density_median": 0.0124
+    },
+    "Potato_leaf_early_blight": {
+      "count_total": 14,
+      "sampled": 14,
+      "mean_R": 0.4331,
+      "mean_G": 0.4844,
+      "mean_B": 0.2802,
+      "median_width": 798,
+      "median_height": 798,
+      "edge_density_median": 0.0204
+    },
+    "Potato_leaf_late_blight": {
+      "count_total": 8,
+      "sampled": 8,
+      "mean_R": 0.4917,
+      "mean_G": 0.6011,
+      "mean_B": 0.3874,
+      "median_width": 415,
+      "median_height": 415,
+      "edge_density_median": 0.0241
+    },
+    "Raspberry_leaf": {
+      "count_total": 7,
+      "sampled": 7,
+      "mean_R": 0.7919,
+      "mean_G": 0.8514,
+      "mean_B": 0.6763,
+      "median_width": 1101,
+      "median_height": 1024,
+      "edge_density_median": 0.0171
+    },
+    "Soyabean_leaf": {
+      "count_total": 8,
+      "sampled": 8,
+      "mean_R": 0.748,
+      "mean_G": 0.8101,
+      "mean_B": 0.6601,
+      "median_width": 1252,
+      "median_height": 864,
+      "edge_density_median": 0.015
+    },
+    "Squash_Powdery_mildew_leaf": {
+      "count_total": 6,
+      "sampled": 6,
+      "mean_R": 0.3907,
+      "mean_G": 0.4875,
+      "mean_B": 0.3292,
+      "median_width": 576,
+      "median_height": 540,
+      "edge_density_median": 0.0378
+    },
+    "Strawberry_leaf": {
+      "count_total": 8,
+      "sampled": 8,
+      "mean_R": 0.7971,
+      "mean_G": 0.8612,
+      "mean_B": 0.7007,
+      "median_width": 1300,
+      "median_height": 1185,
+      "edge_density_median": 0.0172
+    },
+    "Tomato_Early_blight_leaf": {
+      "count_total": 9,
+      "sampled": 9,
+      "mean_R": 0.4145,
+      "mean_G": 0.4809,
+      "mean_B": 0.3577,
+      "median_width": 638,
+      "median_height": 479,
+      "edge_density_median": 0.0203
+    },
+    "Tomato_Septoria_leaf_spot": {
+      "count_total": 12,
+      "sampled": 12,
+      "mean_R": 0.4167,
+      "mean_G": 0.5045,
+      "mean_B": 0.3421,
+      "median_width": 500,
+      "median_height": 600,
+      "edge_density_median": 0.0229
+    },
+    "Tomato_leaf": {
+      "count_total": 8,
+      "sampled": 8,
+      "mean_R": 0.4847,
+      "mean_G": 0.5923,
+      "mean_B": 0.4174,
+      "median_width": 1600,
+      "median_height": 1200,
+      "edge_density_median": 0.0152
+    },
+    "Tomato_leaf_bacterial_spot": {
+      "count_total": 9,
+      "sampled": 9,
+      "mean_R": 0.428,
+      "mean_G": 0.5073,
+      "mean_B": 0.3648,
+      "median_width": 500,
+      "median_height": 300,
+      "edge_density_median": 0.0285
+    },
+    "Tomato_leaf_late_blight": {
+      "count_total": 10,
+      "sampled": 10,
+      "mean_R": 0.3846,
+      "mean_G": 0.4728,
+      "mean_B": 0.3545,
+      "median_width": 540,
+      "median_height": 492,
+      "edge_density_median": 0.0205
+    },
+    "Tomato_leaf_mosaic_virus": {
+      "count_total": 10,
+      "sampled": 10,
+      "mean_R": 0.4052,
+      "mean_G": 0.4839,
+      "mean_B": 0.3172,
+      "median_width": 907,
+      "median_height": 675,
+      "edge_density_median": 0.021
+    },
+    "Tomato_leaf_yellow_virus": {
+      "count_total": 15,
+      "sampled": 15,
+      "mean_R": 0.4454,
+      "mean_G": 0.5287,
+      "mean_B": 0.2684,
+      "median_width": 300,
+      "median_height": 300,
+      "edge_density_median": 0.0306
+    },
+    "Tomato_mold_leaf": {
+      "count_total": 6,
+      "sampled": 6,
+      "mean_R": 0.5675,
+      "mean_G": 0.5883,
+      "mean_B": 0.4264,
+      "median_width": 800,
+      "median_height": 600,
+      "edge_density_median": 0.0243
+    },
+    "grape_leaf": {
+      "count_total": 12,
+      "sampled": 12,
+      "mean_R": 0.6441,
+      "mean_G": 0.7287,
+      "mean_B": 0.4483,
+      "median_width": 894,
+      "median_height": 894,
+      "edge_density_median": 0.0269
+    },
+    "grape_leaf_black_rot": {
+      "count_total": 8,
+      "sampled": 8,
+      "mean_R": 0.488,
+      "mean_G": 0.5887,
+      "mean_B": 0.4062,
+      "median_width": 675,
+      "median_height": 675,
+      "edge_density_median": 0.0236
+    }
+  },
+  "cassava": {
+    "Cassava___bacterial_blight": {
+      "count_total": 1087,
+      "sampled": 50,
+      "mean_R": 0.4131,
+      "mean_G": 0.4744,
+      "mean_B": 0.2831,
+      "median_width": 800,
+      "median_height": 600,
+      "edge_density_median": 0.0384
+    },
+    "Cassava___brown_streak_disease": {
+      "count_total": 2189,
+      "sampled": 50,
+      "mean_R": 0.4058,
+      "mean_G": 0.4778,
+      "mean_B": 0.2917,
+      "median_width": 800,
+      "median_height": 600,
+      "edge_density_median": 0.0381
+    },
+    "Cassava___green_mottle": {
+      "count_total": 2386,
+      "sampled": 50,
+      "mean_R": 0.4456,
+      "mean_G": 0.4949,
+      "mean_B": 0.3283,
+      "median_width": 800,
+      "median_height": 600,
+      "edge_density_median": 0.0424
+    },
+    "Cassava___healthy": {
+      "count_total": 2577,
+      "sampled": 50,
+      "mean_R": 0.4178,
+      "mean_G": 0.4775,
+      "mean_B": 0.3117,
+      "median_width": 800,
+      "median_height": 600,
+      "edge_density_median": 0.0378
+    },
+    "Cassava___mosaic_disease": {
+      "count_total": 13158,
+      "sampled": 50,
+      "mean_R": 0.4305,
+      "mean_G": 0.5021,
+      "mean_B": 0.3184,
+      "median_width": 800,
+      "median_height": 600,
+      "edge_density_median": 0.0466
+    }
+  },
+  "plantvillage_aggregate": {
+    "n_classes": 38,
+    "mean_R_across_classes": 0.4708,
+    "mean_G_across_classes": 0.4951,
+    "mean_B_across_classes": 0.4213,
+    "edge_density_median": 0.054
+  },
+  "plantdoc_aggregate": {
+    "n_classes": 27,
+    "mean_R_across_classes": 0.5268,
+    "mean_G_across_classes": 0.6047,
+    "mean_B_across_classes": 0.4234,
+    "edge_density_median": 0.0217
+  },
+  "cassava_aggregate": {
+    "n_classes": 5,
+    "mean_R_across_classes": 0.4226,
+    "mean_G_across_classes": 0.4853,
+    "mean_B_across_classes": 0.3066,
+    "edge_density_median": 0.0384
+  },
+  "elapsed_sec": 38.91,
+  "sha256_self": "0722163fc82fb03ca0ad67344d7534bc2dae05252715532619a3f4ad959ffa82"
+}

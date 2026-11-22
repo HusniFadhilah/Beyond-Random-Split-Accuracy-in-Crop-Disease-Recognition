@@ -1,0 +1,10 @@
+# Reproducibility environment
+# Exact versions explicitly installed by the executed Kaggle Phase 58 run:
+torch==2.3.1
+torchvision==0.18.1
+Pillow
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn

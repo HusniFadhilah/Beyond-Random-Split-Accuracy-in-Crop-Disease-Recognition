@@ -1,0 +1,65 @@
+[{"stream_name":"stdout","time":13.458966577,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 779.1/779.1 MB 2.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":14.093901077,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 11.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":18.352784581,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 4.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":18.500589236,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 92.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":18.861191961,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 34.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":18.893533477,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 47.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":28.918958084,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 731.7/731.7 MB 1.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":30.295904391,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 14.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":30.870305332,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 33.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":32.173585931,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 14.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":34.695335358,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 9.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":37.338928913,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 176.2/176.2 MB 5.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":37.363156086,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 8.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":136.708762297,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":136.708824009,"data":"torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.3.1 which is incompatible.\n"}
+,{"stream_name":"stderr","time":220.211699703,"data":"Downloading: \"https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth\" to /root/.cache/torch/hub/checkpoints/efficientnet_b0_rwightman-7f5810bc.pth\n"}
+,{"stream_name":"stderr","time":220.400609664,"data":"\r  0%|          | 0.00/20.5M [00:00\u003c?, ?B/s]\r 74%|███████▍  | 15.1M/20.5M [00:00\u003c00:00, 159MB/s]\r100%|██████████| 20.5M/20.5M [00:00\u003c00:00, 174MB/s]\n"}
+,{"stream_name":"stdout","time":1247.83414556,"data":"{\n"}
+,{"stream_name":"stdout","time":1247.83421224,"data":"  \"phase\": \"53_unseen_corruption_evaluation\",\n"}
+,{"stream_name":"stdout","time":1247.834229059,"data":"  \"model\": \"EfficientNet-B0 full fine-tuning\",\n"}
+,{"stream_name":"stdout","time":1247.83423754,"data":"  \"split\": {\n"}
+,{"stream_name":"stdout","time":1247.834240717,"data":"    \"train\": 43444,\n"}
+,{"stream_name":"stdout","time":1247.834243677,"data":"    \"validation\": 5430,\n"}
+,{"stream_name":"stdout","time":1247.83424672,"data":"    \"test\": 5431,\n"}
+,{"stream_name":"stdout","time":1247.834249625,"data":"    \"seed\": 42\n"}
+,{"stream_name":"stdout","time":1247.834252596,"data":"  },\n"}
+,{"stream_name":"stdout","time":1247.834255503,"data":"  \"checkpoint\": \"best validation macro-F1\",\n"}
+,{"stream_name":"stdout","time":1247.834258507,"data":"  \"training_corruptions\": \"basic resize-crop-flip only\",\n"}
+,{"stream_name":"stdout","time":1247.834261733,"data":"  \"unseen_corruptions\": {\n"}
+,{"stream_name":"stdout","time":1247.834264661,"data":"    \"jpeg_quality_25\": {\n"}
+,{"stream_name":"stdout","time":1247.834267539,"data":"      \"accuracy\": 0.976063,\n"}
+,{"stream_name":"stdout","time":1247.834270582,"data":"      \"balanced_accuracy\": 0.969168,\n"}
+,{"stream_name":"stdout","time":1247.834273461,"data":"      \"macro_f1\": 0.972729\n"}
+,{"stream_name":"stdout","time":1247.834276343,"data":"    },\n"}
+,{"stream_name":"stdout","time":1247.834279188,"data":"    \"motion_blur_kernel_15_sigma_5_1\": {\n"}
+,{"stream_name":"stdout","time":1247.834282068,"data":"      \"accuracy\": 0.58295,\n"}
+,{"stream_name":"stdout","time":1247.834284964,"data":"      \"balanced_accuracy\": 0.471394,\n"}
+,{"stream_name":"stdout","time":1247.834287834,"data":"      \"macro_f1\": 0.4452\n"}
+,{"stream_name":"stdout","time":1247.834290731,"data":"    },\n"}
+,{"stream_name":"stdout","time":1247.834293493,"data":"    \"square_occlusion_80px\": {\n"}
+,{"stream_name":"stdout","time":1247.834296407,"data":"      \"accuracy\": 0.98306,\n"}
+,{"stream_name":"stdout","time":1247.83429927,"data":"      \"balanced_accuracy\": 0.978185,\n"}
+,{"stream_name":"stdout","time":1247.834302177,"data":"      \"macro_f1\": 0.978276\n"}
+,{"stream_name":"stdout","time":1247.834304974,"data":"    },\n"}
+,{"stream_name":"stdout","time":1247.834307669,"data":"    \"red_color_shift\": {\n"}
+,{"stream_name":"stdout","time":1247.83431051,"data":"      \"accuracy\": 0.66728,\n"}
+,{"stream_name":"stdout","time":1247.834313365,"data":"      \"balanced_accuracy\": 0.634478,\n"}
+,{"stream_name":"stdout","time":1247.834316204,"data":"      \"macro_f1\": 0.665723\n"}
+,{"stream_name":"stdout","time":1247.834319079,"data":"    }\n"}
+,{"stream_name":"stdout","time":1247.834321917,"data":"  },\n"}
+,{"stream_name":"stdout","time":1247.834324854,"data":"  \"clean_test\": {\n"}
+,{"stream_name":"stdout","time":1247.834327679,"data":"    \"accuracy\": 0.997975,\n"}
+,{"stream_name":"stdout","time":1247.834330634,"data":"    \"balanced_accuracy\": 0.996853,\n"}
+,{"stream_name":"stdout","time":1247.8343336,"data":"    \"macro_f1\": 0.997141\n"}
+,{"stream_name":"stdout","time":1247.834336532,"data":"  },\n"}
+,{"stream_name":"stdout","time":1247.834339289,"data":"  \"elapsed_sec\": 1102.18,\n"}
+,{"stream_name":"stdout","time":1247.834342311,"data":"  \"sha256_self\": \"3086447633c3c94f08850717015d3a6b1ca595335f333cad0516c82cb9795278\"\n"}
+,{"stream_name":"stdout","time":1247.834345415,"data":"}\n"}
+,{"stream_name":"stderr","time":1251.357415277,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1251.357448408,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1251.612561228,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1251.612615893,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1252.37798031,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1253.525518044,"data":"[NbConvertApp] Writing 308922 bytes to __results__.html\n"}
+]

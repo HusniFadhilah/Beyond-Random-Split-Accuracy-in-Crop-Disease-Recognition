@@ -1,0 +1,59 @@
+{
+  "phase": "8_cross_dataset_transfer",
+  "captured_at_utc": "2026-07-26T02:01:30Z",
+  "plantvillage_test": {
+    "n": 5430,
+    "max_conf_mean": 0.9775,
+    "max_conf_std": 0.0773
+  },
+  "plantdoc_results": {
+    "n": 252,
+    "max_conf_mean": 0.6707,
+    "max_conf_std": 0.2531,
+    "entropy_mean": 1.0997,
+    "entropy_std": 0.8058,
+    "top1_label_match": 0.0516,
+    "top5_label_match": 0.2619,
+    "top_predicted_pv_classes": [
+      {
+        "pv_class": "Pepper,_bell___Bacterial_spot",
+        "n_pd_images": 22
+      },
+      {
+        "pv_class": "Tomato___Late_blight",
+        "n_pd_images": 22
+      },
+      {
+        "pv_class": "Tomato___Early_blight",
+        "n_pd_images": 21
+      },
+      {
+        "pv_class": "Tomato___Septoria_leaf_spot",
+        "n_pd_images": 20
+      },
+      {
+        "pv_class": "Orange___Haunglongbing_(Citrus_greening)",
+        "n_pd_images": 19
+      }
+    ],
+    "note": "PlantDoc classes do not overlap PlantVillage; top-1=0 expected (OOD)."
+  },
+  "cassava_results": {
+    "n": 21397,
+    "max_conf_mean": 0.7046,
+    "max_conf_std": 0.2486,
+    "entropy_mean": 1.0054,
+    "entropy_std": 0.7602,
+    "top1_label_match": 0.0048,
+    "note": "Cassava classes do not overlap PlantVillage; top-1=0 expected (OOD)."
+  },
+  "ood_detection_cv_vs_pv": {
+    "auroc_max_softmax": 0.9302,
+    "auroc_interpretation": "0.5 = random, 1.0 = perfect OOD detection",
+    "decision_rule": "in-dist if max_softmax > threshold; OOD otherwise",
+    "n_pv_in_dist": 5430,
+    "n_cv_ood": 21397
+  },
+  "elapsed_sec": 709.98,
+  "sha256_self": "69ac4cee34c4741bf135fb2b4681530aaafd918277f9810b5198e6918f2374b6"
+}

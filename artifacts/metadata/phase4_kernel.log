@@ -1,0 +1,27 @@
+[{"stream_name":"stdout","time":149.321629521,"data":"WROTE /kaggle/working/phase4_leakage_report.json\n"}
+,{"stream_name":"stdout","time":149.321731789,"data":"{\n"}
+,{"stream_name":"stdout","time":149.321738741,"data":"  \"phase\": \"4_leakage\",\n"}
+,{"stream_name":"stdout","time":149.321743576,"data":"  \"captured_at_utc\": \"2026-07-26T01:28:20Z\",\n"}
+,{"stream_name":"stdout","time":149.321747944,"data":"  \"dataset_paths\": {\n"}
+,{"stream_name":"stdout","time":149.321752836,"data":"    \"plantvillage\": \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color\",\n"}
+,{"stream_name":"stdout","time":149.321757625,"data":"    \"plantdoc\": \"/kaggle/input/datasets/nirmalsankalana/plantdoc-dataset/test\",\n"}
+,{"stream_name":"stdout","time":149.321762262,"data":"    \"cassava\": \"/kaggle/input/datasets/nirmalsankalana/cassava-leaf-disease-classification/data\"\n"}
+,{"stream_name":"stdout","time":149.32176733,"data":"  },\n"}
+,{"stream_name":"stdout","time":149.321771553,"data":"  \"imagehash_version\": \"4.3.2\",\n"}
+,{"stream_name":"stdout","time":149.321806989,"data":"  \"exact_dup_groups_count\": 0,\n"}
+,{"stream_name":"stdout","time":149.321811438,"data":"  \"exact_dup_total_images\": 0,\n"}
+,{"stream_name":"stdout","time":149.321815717,"data":"  \"total_hashed\": 10252,\n"}
+,{"stream_name":"stdout","time":149.3218245,"data":"  \"cross_dataset_exact_dup\": [],\n"}
+,{"stream_name":"stdout","time":149.321829432,"data":"  \"phash_exact_groups_count\": 0,\n"}
+,{"stream_name":"stdout","time":149.321833863,"data":"  \"phash_exact_total_images\": 0,\n"}
+,{"stream_name":"stdout","time":149.321838298,"data":"  \"cross_dataset_phash_dup\": [],\n"}
+,{"stream_name":"stdout","time":149.321842715,"data":"  \"elapsed_sec\": 148.39,\n"}
+,{"stream_name":"stdout","time":149.321846885,"data":"  \"sha256_self\": \"ea81c69c75667d4871ffa8c5dfe707a29262329eb13588a04d03203596fb86e3\"\n"}
+,{"stream_name":"stdout","time":149.321851728,"data":"}\n"}
+,{"stream_name":"stderr","time":152.21037654,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":152.210439084,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":152.604628951,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":152.604661198,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":154.287049413,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":155.889585009,"data":"[NbConvertApp] Writing 299716 bytes to __results__.html\n"}
+]

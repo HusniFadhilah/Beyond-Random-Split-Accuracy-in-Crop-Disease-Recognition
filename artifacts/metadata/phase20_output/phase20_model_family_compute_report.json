@@ -1,0 +1,88 @@
+{
+  "phase": "20_model_family_compute",
+  "captured_at_utc": "2026-07-26T05:52:06Z",
+  "protocol": {
+    "seed": 42,
+    "backbone_mode": "ImageNet pretrained frozen features",
+    "head": "linear classifier",
+    "head_epochs": 10,
+    "models": [
+      "resnet50",
+      "mobilenet_v3_large",
+      "efficientnet_b0"
+    ]
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431,
+    "n_classes": 38
+  },
+  "results": {
+    "resnet50": {
+      "total_backbone_params": 23508032,
+      "feature_dim": 2048,
+      "feature_extract_seconds": {
+        "train": 166.011,
+        "val": 20.946,
+        "test": 20.214
+      },
+      "linear_head_params": 77862,
+      "linear_head_inference_ms_per_image": 0.0003,
+      "val": {
+        "accuracy": 0.9801,
+        "balanced_accuracy": 0.9729,
+        "macro_f1": 0.973
+      },
+      "test": {
+        "accuracy": 0.9794,
+        "balanced_accuracy": 0.9685,
+        "macro_f1": 0.9708
+      }
+    },
+    "mobilenet_v3_large": {
+      "total_backbone_params": 2971952,
+      "feature_dim": 960,
+      "feature_extract_seconds": {
+        "train": 68.803,
+        "val": 8.784,
+        "test": 8.566
+      },
+      "linear_head_params": 36518,
+      "linear_head_inference_ms_per_image": 0.0002,
+      "val": {
+        "accuracy": 0.9808,
+        "balanced_accuracy": 0.9698,
+        "macro_f1": 0.9739
+      },
+      "test": {
+        "accuracy": 0.9768,
+        "balanced_accuracy": 0.9677,
+        "macro_f1": 0.9702
+      }
+    },
+    "efficientnet_b0": {
+      "total_backbone_params": 4007548,
+      "feature_dim": 1280,
+      "feature_extract_seconds": {
+        "train": 70.682,
+        "val": 8.794,
+        "test": 8.998
+      },
+      "linear_head_params": 48678,
+      "linear_head_inference_ms_per_image": 0.0002,
+      "val": {
+        "accuracy": 0.9799,
+        "balanced_accuracy": 0.9679,
+        "macro_f1": 0.9699
+      },
+      "test": {
+        "accuracy": 0.9796,
+        "balanced_accuracy": 0.9685,
+        "macro_f1": 0.9714
+      }
+    }
+  },
+  "elapsed_sec": 487.78,
+  "sha256_self": "bee6553876f4b5f3d06b70d99b31838d7524e7938bcb4abffb8a2f0b4656262e"
+}

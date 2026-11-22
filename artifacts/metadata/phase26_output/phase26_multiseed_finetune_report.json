@@ -1,0 +1,105 @@
+{
+  "phase": "26_multiseed_full_finetune",
+  "captured_at_utc": "2026-08-09T11:17:41Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "mode": "full_finetune",
+    "augmentation": "strong",
+    "seeds": [
+      7,
+      42,
+      123
+    ],
+    "epochs": 8,
+    "selection": "best validation macro_f1 checkpoint per seed",
+    "test_policy": "test evaluated only after validation checkpoint is locked"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431,
+    "n_classes": 38
+  },
+  "per_seed": [
+    {
+      "seed": 7,
+      "best_epoch": 8,
+      "best_val": {
+        "macro_f1": 0.992864
+      },
+      "test": {
+        "accuracy": 0.994476,
+        "balanced_accuracy": 0.99353,
+        "macro_f1": 0.993048
+      }
+    },
+    {
+      "seed": 42,
+      "best_epoch": 7,
+      "best_val": {
+        "macro_f1": 0.994795
+      },
+      "test": {
+        "accuracy": 0.992267,
+        "balanced_accuracy": 0.990619,
+        "macro_f1": 0.988285
+      }
+    },
+    {
+      "seed": 123,
+      "best_epoch": 6,
+      "best_val": {
+        "macro_f1": 0.996217
+      },
+      "test": {
+        "accuracy": 0.996133,
+        "balanced_accuracy": 0.992932,
+        "macro_f1": 0.993064
+      }
+    }
+  ],
+  "aggregates": {
+    "best_val": {
+      "macro_f1": {
+        "mean": 0.994625,
+        "sd": 0.001683,
+        "values": [
+          0.992864,
+          0.994795,
+          0.996217
+        ]
+      }
+    },
+    "test": {
+      "accuracy": {
+        "mean": 0.994292,
+        "sd": 0.00194,
+        "values": [
+          0.994476,
+          0.992267,
+          0.996133
+        ]
+      },
+      "balanced_accuracy": {
+        "mean": 0.99236,
+        "sd": 0.001537,
+        "values": [
+          0.99353,
+          0.990619,
+          0.992932
+        ]
+      },
+      "macro_f1": {
+        "mean": 0.991466,
+        "sd": 0.002755,
+        "values": [
+          0.993048,
+          0.988285,
+          0.993064
+        ]
+      }
+    }
+  },
+  "elapsed_sec": 4367.43,
+  "sha256_self": "8245a98df86d020bf1faad7756cfc1af540bdb0cc77d480ad244d68c3765c831"
+}

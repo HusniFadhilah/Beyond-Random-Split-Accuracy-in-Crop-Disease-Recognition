@@ -1,0 +1,238 @@
+{
+  "phase": "54_cross_split_duplicate_audit",
+  "dataset_root": "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color",
+  "split_protocol": {
+    "seed": 42,
+    "train": 43444,
+    "validation": 5430,
+    "test": 5431,
+    "stratified": true
+  },
+  "n_images": 54305,
+  "n_failures": 0,
+  "md5": {
+    "total_groups": 21,
+    "cross_split_groups": 7,
+    "cross_split": [
+      {
+        "splits": [
+          "train",
+          "validation"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "train": 1,
+          "validation": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Apple___healthy/f2cda910-55c7-46d7-b1a2-9a3bb9792148___RS_HL 6274.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Apple___healthy/fdbfa6f7-f887-442d-8df1-1f0cf839fc4d___RS_HL 6274.JPG"
+        ]
+      },
+      {
+        "splits": [
+          "test",
+          "validation"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "test": 1,
+          "validation": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/5688ea99-c949-41d0-bbab-9cbf0ffb8bcd___GHLB2 Leaf 8677.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/e20107e7-137f-400e-817f-5dc4c58e5d70___GHLB2 Leaf 8677.JPG"
+        ]
+      },
+      {
+        "splits": [
+          "test",
+          "train"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "test": 1,
+          "train": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/5f21282c-e2ef-4c4a-ace1-b5701fe7effc___GHLB2 Leaf 8999.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/e5d707cd-077c-43af-bda9-6138e516ff51___GHLB2 Leaf 8999.JPG"
+        ]
+      },
+      {
+        "splits": [
+          "test",
+          "train"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "test": 1,
+          "train": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/98586693-fe1f-4ea0-8e27-4501b61cf09b___GHLB_PS Leaf 23.5 Day 13.jpg",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/c1775bad-7c02-41fb-bb7d-f8df91d60ac3___GHLB_PS Leaf 23.5 Day 13.jpg"
+        ]
+      },
+      {
+        "splits": [
+          "test",
+          "train"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "test": 1,
+          "train": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/068e324c-faf6-40d6-8f83-578907f1cac5___GH_HL Leaf 466.1.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/34c81c57-e1fa-49dd-a49d-34fe8b2385fe___GH_HL Leaf 466.1.JPG"
+        ]
+      },
+      {
+        "splits": [
+          "train",
+          "validation"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "train": 1,
+          "validation": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/1af0bfe1-4bcf-4b8b-be66-5d0953eb647e___GH_HL Leaf 482.2.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/cfd491d6-4af5-4728-8f0e-0d330a07174a___GH_HL Leaf 482.2.JPG"
+        ]
+      },
+      {
+        "splits": [
+          "test",
+          "validation"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "test": 1,
+          "validation": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/37aad83b-7ff8-4b35-b3ed-fb8e0f54910b___GH_HL Leaf 342.1.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/e786ac89-29fe-47e3-b49e-b9a9ee7edd9d___GH_HL Leaf 342.1.JPG"
+        ]
+      }
+    ]
+  },
+  "phash_exact": {
+    "total_groups": 22,
+    "cross_split_groups": 7,
+    "cross_split": [
+      {
+        "splits": [
+          "train",
+          "validation"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "train": 1,
+          "validation": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Apple___healthy/f2cda910-55c7-46d7-b1a2-9a3bb9792148___RS_HL 6274.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Apple___healthy/fdbfa6f7-f887-442d-8df1-1f0cf839fc4d___RS_HL 6274.JPG"
+        ]
+      },
+      {
+        "splits": [
+          "test",
+          "validation"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "test": 1,
+          "validation": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/5688ea99-c949-41d0-bbab-9cbf0ffb8bcd___GHLB2 Leaf 8677.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/e20107e7-137f-400e-817f-5dc4c58e5d70___GHLB2 Leaf 8677.JPG"
+        ]
+      },
+      {
+        "splits": [
+          "test",
+          "train"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "test": 1,
+          "train": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/5f21282c-e2ef-4c4a-ace1-b5701fe7effc___GHLB2 Leaf 8999.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/e5d707cd-077c-43af-bda9-6138e516ff51___GHLB2 Leaf 8999.JPG"
+        ]
+      },
+      {
+        "splits": [
+          "test",
+          "train"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "test": 1,
+          "train": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/98586693-fe1f-4ea0-8e27-4501b61cf09b___GHLB_PS Leaf 23.5 Day 13.jpg",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/c1775bad-7c02-41fb-bb7d-f8df91d60ac3___GHLB_PS Leaf 23.5 Day 13.jpg"
+        ]
+      },
+      {
+        "splits": [
+          "test",
+          "train"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "test": 1,
+          "train": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/068e324c-faf6-40d6-8f83-578907f1cac5___GH_HL Leaf 466.1.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/34c81c57-e1fa-49dd-a49d-34fe8b2385fe___GH_HL Leaf 466.1.JPG"
+        ]
+      },
+      {
+        "splits": [
+          "train",
+          "validation"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "train": 1,
+          "validation": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/1af0bfe1-4bcf-4b8b-be66-5d0953eb647e___GH_HL Leaf 482.2.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/cfd491d6-4af5-4728-8f0e-0d330a07174a___GH_HL Leaf 482.2.JPG"
+        ]
+      },
+      {
+        "splits": [
+          "test",
+          "validation"
+        ],
+        "n_images": 2,
+        "split_counts": {
+          "test": 1,
+          "validation": 1
+        },
+        "paths": [
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/37aad83b-7ff8-4b35-b3ed-fb8e0f54910b___GH_HL Leaf 342.1.JPG",
+          "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/e786ac89-29fe-47e3-b49e-b9a9ee7edd9d___GH_HL Leaf 342.1.JPG"
+        ]
+      }
+    ]
+  },
+  "sha256_self": "2892252f3f739f88c7cd4368226a3e83e07321656e8859a2e3d7e113d545727f",
+  "elapsed_sec": 883.45,
+  "self_hash_verified": true
+}

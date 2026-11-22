@@ -1,0 +1,11 @@
+{
+ "id": "remahankecil/crop-disease-phase53-unseen-corruption",
+ "title": "Crop Disease Phase53 Unseen Corruption",
+ "code_file": "kernel.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_internet": true,
+ "dataset_sources": ["abdallahalidev/plantvillage-dataset"]
+}

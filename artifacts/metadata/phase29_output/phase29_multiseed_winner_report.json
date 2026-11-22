@@ -1,0 +1,111 @@
+{
+  "phase": "29_multiseed_phase28_winner",
+  "captured_at_utc": "2026-08-09T22:15:06Z",
+  "protocol": {
+    "model": "efficientnet_b0",
+    "mode": "full_finetune",
+    "augmentation": "strong_no_hue",
+    "optimizer": "adamw",
+    "loss": "cross_entropy",
+    "label_smoothing": 0.1,
+    "scheduler": "cosine",
+    "weight_decay": 0.0001,
+    "learning_rate": 0.0003,
+    "seeds": [
+      7,
+      42,
+      123
+    ],
+    "epochs": 8,
+    "selection": "best validation macro_f1 checkpoint per seed",
+    "test_policy": "test evaluated only after validation checkpoint is locked"
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431,
+    "n_classes": 38
+  },
+  "per_seed": [
+    {
+      "seed": 7,
+      "best_epoch": 5,
+      "best_val": {
+        "macro_f1": 0.994616
+      },
+      "test": {
+        "accuracy": 0.996133,
+        "balanced_accuracy": 0.994608,
+        "macro_f1": 0.994993
+      }
+    },
+    {
+      "seed": 42,
+      "best_epoch": 8,
+      "best_val": {
+        "macro_f1": 0.99719
+      },
+      "test": {
+        "accuracy": 0.996686,
+        "balanced_accuracy": 0.995604,
+        "macro_f1": 0.99545
+      }
+    },
+    {
+      "seed": 123,
+      "best_epoch": 6,
+      "best_val": {
+        "macro_f1": 0.996125
+      },
+      "test": {
+        "accuracy": 0.997054,
+        "balanced_accuracy": 0.995964,
+        "macro_f1": 0.995844
+      }
+    }
+  ],
+  "aggregates": {
+    "best_val": {
+      "macro_f1": {
+        "mean": 0.995977,
+        "sd": 0.001293,
+        "values": [
+          0.994616,
+          0.99719,
+          0.996125
+        ]
+      }
+    },
+    "test": {
+      "accuracy": {
+        "mean": 0.996624,
+        "sd": 0.000464,
+        "values": [
+          0.996133,
+          0.996686,
+          0.997054
+        ]
+      },
+      "balanced_accuracy": {
+        "mean": 0.995392,
+        "sd": 0.000702,
+        "values": [
+          0.994608,
+          0.995604,
+          0.995964
+        ]
+      },
+      "macro_f1": {
+        "mean": 0.995429,
+        "sd": 0.000426,
+        "values": [
+          0.994993,
+          0.99545,
+          0.995844
+        ]
+      }
+    }
+  },
+  "elapsed_sec": 4059.82,
+  "sha256_self": "a95e194c5757b34e0d6319c558addfe02fe3891140b2447b624aea45b1d43523"
+}

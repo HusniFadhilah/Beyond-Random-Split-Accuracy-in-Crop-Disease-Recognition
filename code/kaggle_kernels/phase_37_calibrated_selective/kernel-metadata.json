@@ -1,0 +1,11 @@
+{
+  "id": "husnifadhilahdhiya/crop-disease-phase37-calibrated-selective",
+  "title": "Crop Disease Phase37 Calibrated Selective",
+  "code_file": "kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["abdallahalidev/plantvillage-dataset"]
+}

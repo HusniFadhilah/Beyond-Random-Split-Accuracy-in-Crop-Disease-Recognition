@@ -1,0 +1,80 @@
+{
+  "phase": "37_calibrated_selective_resnet50",
+  "captured_at_utc": "2026-08-14T06:28:39Z",
+  "protocol": {
+    "model": "resnet50",
+    "resolution": 224,
+    "selection": "validation macro_f1",
+    "temperature_fit": "validation NLL only",
+    "selective_scores": "temperature-scaled test probabilities",
+    "test_policy": "test evaluated after checkpoint and temperature are locked",
+    "ece_bins": 15
+  },
+  "split_sizes": {
+    "train": 43444,
+    "val": 5430,
+    "test": 5431
+  },
+  "best_val_macro_f1": 0.996089,
+  "temperature": 0.524805,
+  "validation_ece_after": 0.000808,
+  "test_ece_after": 0.001312,
+  "test_metrics": {
+    "accuracy": 0.997422,
+    "balanced_accuracy": 0.996227,
+    "macro_f1": 0.996576
+  },
+  "selective_test": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.999816,
+      "n_accepted": 5430,
+      "accuracy_on_accepted": 0.997606,
+      "macro_f1_on_accepted": 0.99667
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.999263,
+      "n_accepted": 5427,
+      "accuracy_on_accepted": 0.997789,
+      "macro_f1_on_accepted": 0.996797
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.998711,
+      "n_accepted": 5424,
+      "accuracy_on_accepted": 0.997788,
+      "macro_f1_on_accepted": 0.996792
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.99779,
+      "n_accepted": 5419,
+      "accuracy_on_accepted": 0.998155,
+      "macro_f1_on_accepted": 0.997166
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.996133,
+      "n_accepted": 5410,
+      "accuracy_on_accepted": 0.998521,
+      "macro_f1_on_accepted": 0.99773
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.994844,
+      "n_accepted": 5403,
+      "accuracy_on_accepted": 0.998519,
+      "macro_f1_on_accepted": 0.997696
+    },
+    {
+      "threshold": 0.99,
+      "coverage": 0.989136,
+      "n_accepted": 5372,
+      "accuracy_on_accepted": 0.999069,
+      "macro_f1_on_accepted": 0.998461
+    }
+  ],
+  "elapsed_sec": 1402.9,
+  "sha256_self": "7098f11fa5af9e7274a3667a2f4ba5280aad0356027773312df3bcd313c9618b"
+}

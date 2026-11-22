@@ -1,0 +1,234 @@
+[{"stream_name":"stdout","time":897.019899962,"data":"{\n"}
+,{"stream_name":"stdout","time":897.021623439,"data":"  \"phase\": \"54_cross_split_duplicate_audit\",\n"}
+,{"stream_name":"stdout","time":897.021634674,"data":"  \"n_images\": 54305,\n"}
+,{"stream_name":"stdout","time":897.021638883,"data":"  \"n_failures\": 0,\n"}
+,{"stream_name":"stdout","time":897.021642592,"data":"  \"md5\": {\n"}
+,{"stream_name":"stdout","time":897.021646118,"data":"    \"total_groups\": 21,\n"}
+,{"stream_name":"stdout","time":897.021648684,"data":"    \"cross_split_groups\": 7,\n"}
+,{"stream_name":"stdout","time":897.021651712,"data":"    \"cross_split\": [\n"}
+,{"stream_name":"stdout","time":897.021655806,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.021659731,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.021663554,"data":"          \"train\",\n"}
+,{"stream_name":"stdout","time":897.021667334,"data":"          \"validation\"\n"}
+,{"stream_name":"stdout","time":897.021671181,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.021674786,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.021678651,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.021682604,"data":"          \"train\": 1,\n"}
+,{"stream_name":"stdout","time":897.021686374,"data":"          \"validation\": 1\n"}
+,{"stream_name":"stdout","time":897.021690342,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.0216939,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.021697794,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Apple___healthy/f2cda910-55c7-46d7-b1a2-9a3bb9792148___RS_HL 6274.JPG\",\n"}
+,{"stream_name":"stdout","time":897.021702009,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Apple___healthy/fdbfa6f7-f887-442d-8df1-1f0cf839fc4d___RS_HL 6274.JPG\"\n"}
+,{"stream_name":"stdout","time":897.021706164,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.02170971,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.021713303,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.021716848,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.021720891,"data":"          \"test\",\n"}
+,{"stream_name":"stdout","time":897.021724539,"data":"          \"validation\"\n"}
+,{"stream_name":"stdout","time":897.02172818,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.021731715,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.021735385,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.021739121,"data":"          \"test\": 1,\n"}
+,{"stream_name":"stdout","time":897.021741531,"data":"          \"validation\": 1\n"}
+,{"stream_name":"stdout","time":897.021743874,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.021746984,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.021750771,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/5688ea99-c949-41d0-bbab-9cbf0ffb8bcd___GHLB2 Leaf 8677.JPG\",\n"}
+,{"stream_name":"stdout","time":897.021754986,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/e20107e7-137f-400e-817f-5dc4c58e5d70___GHLB2 Leaf 8677.JPG\"\n"}
+,{"stream_name":"stdout","time":897.021759286,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.02176258,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.02176596,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.021769428,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.021779826,"data":"          \"test\",\n"}
+,{"stream_name":"stdout","time":897.021783773,"data":"          \"train\"\n"}
+,{"stream_name":"stdout","time":897.021787676,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.02179134,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.021794981,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.021798763,"data":"          \"test\": 1,\n"}
+,{"stream_name":"stdout","time":897.021802549,"data":"          \"train\": 1\n"}
+,{"stream_name":"stdout","time":897.021806314,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.021809904,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.02181381,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/5f21282c-e2ef-4c4a-ace1-b5701fe7effc___GHLB2 Leaf 8999.JPG\",\n"}
+,{"stream_name":"stdout","time":897.021818037,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/e5d707cd-077c-43af-bda9-6138e516ff51___GHLB2 Leaf 8999.JPG\"\n"}
+,{"stream_name":"stdout","time":897.021822202,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.021825747,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.021829259,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.021832752,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.021836891,"data":"          \"test\",\n"}
+,{"stream_name":"stdout","time":897.021840934,"data":"          \"train\"\n"}
+,{"stream_name":"stdout","time":897.02184483,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.021848417,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.02185215,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.021855851,"data":"          \"test\": 1,\n"}
+,{"stream_name":"stdout","time":897.021859343,"data":"          \"train\": 1\n"}
+,{"stream_name":"stdout","time":897.021861804,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.021864047,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.021870788,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/98586693-fe1f-4ea0-8e27-4501b61cf09b___GHLB_PS Leaf 23.5 Day 13.jpg\",\n"}
+,{"stream_name":"stdout","time":897.021875763,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/c1775bad-7c02-41fb-bb7d-f8df91d60ac3___GHLB_PS Leaf 23.5 Day 13.jpg\"\n"}
+,{"stream_name":"stdout","time":897.021880234,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.021884068,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.02188771,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.021891426,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.021895112,"data":"          \"test\",\n"}
+,{"stream_name":"stdout","time":897.021898758,"data":"          \"train\"\n"}
+,{"stream_name":"stdout","time":897.021902448,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.021906238,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.021909983,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.021913707,"data":"          \"test\": 1,\n"}
+,{"stream_name":"stdout","time":897.02191735,"data":"          \"train\": 1\n"}
+,{"stream_name":"stdout","time":897.021920988,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.021924483,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.021928174,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/068e324c-faf6-40d6-8f83-578907f1cac5___GH_HL Leaf 466.1.JPG\",\n"}
+,{"stream_name":"stdout","time":897.021936075,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/34c81c57-e1fa-49dd-a49d-34fe8b2385fe___GH_HL Leaf 466.1.JPG\"\n"}
+,{"stream_name":"stdout","time":897.021940588,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.021944009,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.021947707,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.021950578,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.021952924,"data":"          \"train\",\n"}
+,{"stream_name":"stdout","time":897.021955192,"data":"          \"validation\"\n"}
+,{"stream_name":"stdout","time":897.021958651,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.021962291,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.021966312,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.021969864,"data":"          \"train\": 1,\n"}
+,{"stream_name":"stdout","time":897.021973525,"data":"          \"validation\": 1\n"}
+,{"stream_name":"stdout","time":897.021977135,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.021980633,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.021984563,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/1af0bfe1-4bcf-4b8b-be66-5d0953eb647e___GH_HL Leaf 482.2.JPG\",\n"}
+,{"stream_name":"stdout","time":897.021988548,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/cfd491d6-4af5-4728-8f0e-0d330a07174a___GH_HL Leaf 482.2.JPG\"\n"}
+,{"stream_name":"stdout","time":897.021992698,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.021996506,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.022000049,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.02200359,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.022007266,"data":"          \"test\",\n"}
+,{"stream_name":"stdout","time":897.022011067,"data":"          \"validation\"\n"}
+,{"stream_name":"stdout","time":897.022014774,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.022018251,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.022021882,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.022025823,"data":"          \"test\": 1,\n"}
+,{"stream_name":"stdout","time":897.022029615,"data":"          \"validation\": 1\n"}
+,{"stream_name":"stdout","time":897.022033343,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.022036803,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.022040314,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/37aad83b-7ff8-4b35-b3ed-fb8e0f54910b___GH_HL Leaf 342.1.JPG\",\n"}
+,{"stream_name":"stdout","time":897.02204411,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/e786ac89-29fe-47e3-b49e-b9a9ee7edd9d___GH_HL Leaf 342.1.JPG\"\n"}
+,{"stream_name":"stdout","time":897.022046813,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.022050035,"data":"      }\n"}
+,{"stream_name":"stdout","time":897.02205374,"data":"    ]\n"}
+,{"stream_name":"stdout","time":897.022057376,"data":"  },\n"}
+,{"stream_name":"stdout","time":897.022060996,"data":"  \"phash_exact\": {\n"}
+,{"stream_name":"stdout","time":897.022064507,"data":"    \"total_groups\": 22,\n"}
+,{"stream_name":"stdout","time":897.022072291,"data":"    \"cross_split_groups\": 7,\n"}
+,{"stream_name":"stdout","time":897.022076584,"data":"    \"cross_split\": [\n"}
+,{"stream_name":"stdout","time":897.022080267,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.022083802,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.022087701,"data":"          \"train\",\n"}
+,{"stream_name":"stdout","time":897.022091352,"data":"          \"validation\"\n"}
+,{"stream_name":"stdout","time":897.022095201,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.02209936,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.022103063,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.022106714,"data":"          \"train\": 1,\n"}
+,{"stream_name":"stdout","time":897.022110397,"data":"          \"validation\": 1\n"}
+,{"stream_name":"stdout","time":897.022114118,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.022117965,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.022121638,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Apple___healthy/f2cda910-55c7-46d7-b1a2-9a3bb9792148___RS_HL 6274.JPG\",\n"}
+,{"stream_name":"stdout","time":897.022125886,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Apple___healthy/fdbfa6f7-f887-442d-8df1-1f0cf839fc4d___RS_HL 6274.JPG\"\n"}
+,{"stream_name":"stdout","time":897.022129746,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.02213338,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.022136095,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.022138323,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.022140844,"data":"          \"test\",\n"}
+,{"stream_name":"stdout","time":897.022144688,"data":"          \"validation\"\n"}
+,{"stream_name":"stdout","time":897.022148434,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.022152077,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.022155927,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.022159906,"data":"          \"test\": 1,\n"}
+,{"stream_name":"stdout","time":897.02216363,"data":"          \"validation\": 1\n"}
+,{"stream_name":"stdout","time":897.022167448,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.022171013,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.022174491,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/5688ea99-c949-41d0-bbab-9cbf0ffb8bcd___GHLB2 Leaf 8677.JPG\",\n"}
+,{"stream_name":"stdout","time":897.022178676,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/e20107e7-137f-400e-817f-5dc4c58e5d70___GHLB2 Leaf 8677.JPG\"\n"}
+,{"stream_name":"stdout","time":897.022182866,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.022186411,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.022189931,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.022193398,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.022197081,"data":"          \"test\",\n"}
+,{"stream_name":"stdout","time":897.022200744,"data":"          \"train\"\n"}
+,{"stream_name":"stdout","time":897.022204709,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.022208234,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.022211881,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.022215556,"data":"          \"test\": 1,\n"}
+,{"stream_name":"stdout","time":897.022222795,"data":"          \"train\": 1\n"}
+,{"stream_name":"stdout","time":897.022226256,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.022228542,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.022230894,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/5f21282c-e2ef-4c4a-ace1-b5701fe7effc___GHLB2 Leaf 8999.JPG\",\n"}
+,{"stream_name":"stdout","time":897.022235184,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/e5d707cd-077c-43af-bda9-6138e516ff51___GHLB2 Leaf 8999.JPG\"\n"}
+,{"stream_name":"stdout","time":897.022239551,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.02224321,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.022246897,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.022250502,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.022254215,"data":"          \"test\",\n"}
+,{"stream_name":"stdout","time":897.022265935,"data":"          \"train\"\n"}
+,{"stream_name":"stdout","time":897.022270164,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.02227376,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.022277495,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.022285814,"data":"          \"test\": 1,\n"}
+,{"stream_name":"stdout","time":897.022289524,"data":"          \"train\": 1\n"}
+,{"stream_name":"stdout","time":897.022293295,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.022296838,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.022300555,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/98586693-fe1f-4ea0-8e27-4501b61cf09b___GHLB_PS Leaf 23.5 Day 13.jpg\",\n"}
+,{"stream_name":"stdout","time":897.022305123,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___Late_blight/c1775bad-7c02-41fb-bb7d-f8df91d60ac3___GHLB_PS Leaf 23.5 Day 13.jpg\"\n"}
+,{"stream_name":"stdout","time":897.022309651,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.022313681,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.022317033,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.022319392,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.022321725,"data":"          \"test\",\n"}
+,{"stream_name":"stdout","time":897.022325051,"data":"          \"train\"\n"}
+,{"stream_name":"stdout","time":897.022328776,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.022332613,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.022336123,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.022339944,"data":"          \"test\": 1,\n"}
+,{"stream_name":"stdout","time":897.022343672,"data":"          \"train\": 1\n"}
+,{"stream_name":"stdout","time":897.022347638,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.022351233,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.022355101,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/068e324c-faf6-40d6-8f83-578907f1cac5___GH_HL Leaf 466.1.JPG\",\n"}
+,{"stream_name":"stdout","time":897.022359385,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/34c81c57-e1fa-49dd-a49d-34fe8b2385fe___GH_HL Leaf 466.1.JPG\"\n"}
+,{"stream_name":"stdout","time":897.02236379,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.022367339,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.022374878,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.022378491,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.022382256,"data":"          \"train\",\n"}
+,{"stream_name":"stdout","time":897.022386091,"data":"          \"validation\"\n"}
+,{"stream_name":"stdout","time":897.022389835,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.022393381,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.022397402,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.022416014,"data":"          \"train\": 1,\n"}
+,{"stream_name":"stdout","time":897.022426737,"data":"          \"validation\": 1\n"}
+,{"stream_name":"stdout","time":897.022430815,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.022434338,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.022438072,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/1af0bfe1-4bcf-4b8b-be66-5d0953eb647e___GH_HL Leaf 482.2.JPG\",\n"}
+,{"stream_name":"stdout","time":897.022442286,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/cfd491d6-4af5-4728-8f0e-0d330a07174a___GH_HL Leaf 482.2.JPG\"\n"}
+,{"stream_name":"stdout","time":897.022446727,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.022450501,"data":"      },\n"}
+,{"stream_name":"stdout","time":897.022454148,"data":"      {\n"}
+,{"stream_name":"stdout","time":897.022457718,"data":"        \"splits\": [\n"}
+,{"stream_name":"stdout","time":897.022461405,"data":"          \"test\",\n"}
+,{"stream_name":"stdout","time":897.022465059,"data":"          \"validation\"\n"}
+,{"stream_name":"stdout","time":897.022468739,"data":"        ],\n"}
+,{"stream_name":"stdout","time":897.022472341,"data":"        \"n_images\": 2,\n"}
+,{"stream_name":"stdout","time":897.022476331,"data":"        \"split_counts\": {\n"}
+,{"stream_name":"stdout","time":897.022480102,"data":"          \"test\": 1,\n"}
+,{"stream_name":"stdout","time":897.022483752,"data":"          \"validation\": 1\n"}
+,{"stream_name":"stdout","time":897.02248757,"data":"        },\n"}
+,{"stream_name":"stdout","time":897.022490239,"data":"        \"paths\": [\n"}
+,{"stream_name":"stdout","time":897.022492673,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/37aad83b-7ff8-4b35-b3ed-fb8e0f54910b___GH_HL Leaf 342.1.JPG\",\n"}
+,{"stream_name":"stdout","time":897.022496206,"data":"          \"/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color/Tomato___healthy/e786ac89-29fe-47e3-b49e-b9a9ee7edd9d___GH_HL Leaf 342.1.JPG\"\n"}
+,{"stream_name":"stdout","time":897.022500408,"data":"        ]\n"}
+,{"stream_name":"stdout","time":897.02250414,"data":"      }\n"}
+,{"stream_name":"stdout","time":897.022507931,"data":"    ]\n"}
+,{"stream_name":"stdout","time":897.022511624,"data":"  }\n"}
+,{"stream_name":"stdout","time":897.022515418,"data":"}\n"}
+,{"stream_name":"stderr","time":900.571688532,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":900.57174108,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":900.867322713,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":900.867349601,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":901.625928106,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":903.104377482,"data":"[NbConvertApp] Writing 290966 bytes to __results__.html\n"}
+]
