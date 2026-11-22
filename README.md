@@ -2,7 +2,7 @@
 
 Reproducibility materials for **Beyond Random-Split Accuracy: Distribution-Shift, Calibration, and Robustness Evaluation of Crop Disease Recognition**.
 
-This repository contains the executed experiment code, the configuration used for the main run, raw run logs, result files, figures, and selected model/prediction artifacts. The manuscript reports the reviewer-requested duplicate-leakage sensitivity analysis, unseen-corruption evaluation, calibration rerun, and training-history curves.
+This repository contains the executed experiment code, the configuration used for the main run, raw run logs, result files, figures, and selected model/prediction artifacts. The manuscript includes duplicate-leakage sensitivity analysis, unseen-corruption evaluation, a calibration rerun, and complete training-history curves.
 
 ## Repository layout
 
