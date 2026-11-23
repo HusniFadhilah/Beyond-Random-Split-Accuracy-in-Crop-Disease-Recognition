@@ -1,17 +1,28 @@
 {
-  "source": "Kaggle Phase 58 original execution log",
-  "run_status": "COMPLETE",
-  "device_observed": "cuda",
-  "gpu_model": "NOT_CAPTURED_IN_ORIGINAL_LOG",
-  "gpu_memory": "NOT_CAPTURED_IN_ORIGINAL_LOG",
-  "cpu_model": "NOT_CAPTURED_IN_ORIGINAL_LOG",
-  "system_memory": "NOT_CAPTURED_IN_ORIGINAL_LOG",
-  "operating_system": "NOT_CAPTURED_IN_ORIGINAL_LOG",
-  "python_version": "NOT_CAPTURED_IN_ORIGINAL_LOG",
-  "pytorch_version": "not independently printed; pip install command records 2.3.1",
-  "torchvision_version": "not independently printed; pip install command records 0.18.1",
-  "cuda_runtime_version": "NOT_CAPTURED_IN_ORIGINAL_LOG",
+  "source": "Phase 58 archived run log plus separate author-supplied environment inspection",
+  "archived_run": {
+    "run_status": "COMPLETE",
+    "device_observed": "cuda",
+    "gpu_model": "NOT_CAPTURED_IN_ARCHIVED_LOG",
+    "gpu_memory": "NOT_CAPTURED_IN_ARCHIVED_LOG",
+    "cpu_model": "NOT_CAPTURED_IN_ARCHIVED_LOG",
+    "system_memory": "NOT_CAPTURED_IN_ARCHIVED_LOG",
+    "operating_system": "NOT_CAPTURED_IN_ARCHIVED_LOG",
+    "python_version": "NOT_CAPTURED_IN_ARCHIVED_LOG",
+    "pytorch_version": "2.3.1 in installation command; not independently printed as runtime version",
+    "torchvision_version": "0.18.1 in installation command; not independently printed as runtime version",
+    "cuda_runtime_version": "NOT_CAPTURED_IN_ARCHIVED_LOG"
+  },
+  "separate_environment_inspection": {
+    "platform": "Kaggle Kernel",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.00GHz; 4 logical CPUs; 2 reported cores",
+    "gpu": "NVIDIA Tesla P100-PCIE",
+    "gpu_memory": "16 GB",
+    "nvidia_driver": "560.35.03",
+    "nvidia_smi_cuda_report": "12.6; driver-supported value, not an independently measured PyTorch runtime version",
+    "system_memory": "24,605,328 kB (approximately 24.6 GB decimal)"
+  },
   "execution_log": "artifacts/metadata/phase58_training_curves.log",
-  "result_report": "artifacts/metadata/phase58_training_curves_report.json",
-  "note": "No hardware/version values are inferred where the original run log did not print them."
+  "provenance_note": "The separate inspection is not independently time-matched to the archived Phase 58 log. Hardware values are therefore not represented as if captured by that original log.",
+  "detailed_provenance": "provenance/COMPUTE_ENVIRONMENT_PROVENANCE.md"
 }

@@ -11,10 +11,12 @@ This repository contains the executed experiment code, the configuration used fo
 - `artifacts/figures/` — figures used in the manuscript.
 - `artifacts/metadata/phase21_paired_output/phase21_per_sample_predictions.json` — retained per-sample prediction output where available.
 - `artifacts/metadata/*.pth` — retained model checkpoints.
-- `manuscript/` — manuscript source and bibliography.
+- `manuscript/` — manuscript source and bibliography for the earlier preflight source.
+- `manuscript/jbcs/` — the latest JBCS manuscript source, compiled PDF, bibliography, and figures.
+- `response/` — the current point-by-point response to Reviewers B and E.
 - `configs/` — training configuration for the primary training-history run.
 - `environment/` — dependency specification.
-- `provenance/` — execution-environment information recovered from the original logs.
+- `provenance/` — execution-environment information, including the distinction between archived run logs and separate system inspection.
 
 ## Data
 
@@ -22,9 +24,7 @@ The PlantVillage, PlantDoc, and Cassava datasets are not redistributed. They rem
 
 ## Environment record
 
-The Phase 58 log records execution on CUDA. The original log does not record the GPU model, GPU memory, CPU model, system memory, operating system, Python version, or CUDA runtime version. Those fields are explicitly marked as not captured in `provenance/execution_environment.json`; no hardware details are inferred.
-
-The executed installation command records PyTorch 2.3.1 and torchvision 0.18.1. See `environment/requirements.txt` and `configs/phase58_training.yaml` for the primary run settings.
+The archived Phase 58 log records execution on CUDA and the installation command records PyTorch 2.3.1 and torchvision 0.18.1. A separate author-supplied environment inspection reports an Intel Xeon CPU, NVIDIA Tesla P100 with 16 GB VRAM, driver 560.35.03, and approximately 24.6 GB system memory. These hardware values are preserved with an explicit provenance caveat: they are not independently time-matched to the archived Phase 58 log. Operating-system, Python, and PyTorch CUDA-runtime versions were not established from the available records. See `provenance/COMPUTE_ENVIRONMENT_PROVENANCE.md`.
 
 ## Reproduction
 
