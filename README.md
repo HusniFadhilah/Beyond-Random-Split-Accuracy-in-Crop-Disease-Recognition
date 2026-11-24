@@ -24,7 +24,7 @@ The PlantVillage, PlantDoc, and Cassava datasets are not redistributed. They rem
 
 ## Environment record
 
-The archived Phase 58 log records execution on CUDA and the installation command records PyTorch 2.3.1 and torchvision 0.18.1. A separate author-supplied environment inspection reports an Intel Xeon CPU, NVIDIA Tesla P100 with 16 GB VRAM, driver 560.35.03, and approximately 24.6 GB system memory. These hardware values are preserved with an explicit provenance caveat: they are not independently time-matched to the archived Phase 58 log. Operating-system, Python, and PyTorch CUDA-runtime versions were not established from the available records. See `provenance/COMPUTE_ENVIRONMENT_PROVENANCE.md`.
+The archived Phase 58 log records execution on CUDA and the installation command records PyTorch 2.3.1 and torchvision 0.18.1. A separate end-to-end inference benchmark was completed on a current Kaggle Tesla T4 runtime with PyTorch 2.11.0+cu130; its latency and peak-memory results are retained in `artifacts/metadata/end_to_end_gpu_inference_report.json`. These values are not time-matched to Phase 58 and must not be used to reconstruct its historical hardware. A separate author-supplied environment inspection reports an Intel Xeon CPU, NVIDIA Tesla P100 with 16 GB VRAM, driver 560.35.03, and approximately 24.6 GB system memory. These hardware values also are not independently time-matched to the archived Phase 58 log. Operating-system, Python, and original PyTorch CUDA-runtime versions were not established from the available records. See `provenance/COMPUTE_ENVIRONMENT_PROVENANCE.md`.
 
 ## Reproduction
 

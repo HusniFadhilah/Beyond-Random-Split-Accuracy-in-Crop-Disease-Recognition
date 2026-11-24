@@ -1,0 +1,44 @@
+[{"stream_name":"stdout","time":45.642540142,"data":"{\n"}
+,{"stream_name":"stdout","time":45.642573608,"data":"  \"phase\": \"end_to_end_gpu_inference_benchmark\",\n"}
+,{"stream_name":"stdout","time":45.642578254,"data":"  \"device\": \"Tesla T4\",\n"}
+,{"stream_name":"stdout","time":45.642581645,"data":"  \"torch\": \"2.11.0+cu130\",\n"}
+,{"stream_name":"stdout","time":45.642585085,"data":"  \"torch_cuda\": \"13.0\",\n"}
+,{"stream_name":"stdout","time":45.642588999,"data":"  \"cudnn\": 92700,\n"}
+,{"stream_name":"stdout","time":45.642592454,"data":"  \"protocol\": \"random input, 224x224 RGB, batch 32, 20 warmup iterations, 100 CUDA-event timed iterations, cuDNN benchmark enabled\",\n"}
+,{"stream_name":"stdout","time":45.64259608,"data":"  \"results\": {\n"}
+,{"stream_name":"stdout","time":45.642599259,"data":"    \"resnet50\": {\n"}
+,{"stream_name":"stdout","time":45.642602483,"data":"      \"parameters\": 25557032,\n"}
+,{"stream_name":"stdout","time":45.64260583,"data":"      \"batch_size\": 32,\n"}
+,{"stream_name":"stdout","time":45.642609124,"data":"      \"input_resolution\": 224,\n"}
+,{"stream_name":"stdout","time":45.642613234,"data":"      \"latency_ms_batch_mean\": 93.6168,\n"}
+,{"stream_name":"stdout","time":45.642617089,"data":"      \"latency_ms_image_mean\": 2.9255,\n"}
+,{"stream_name":"stdout","time":45.642620209,"data":"      \"latency_ms_image_p50\": 2.9227,\n"}
+,{"stream_name":"stdout","time":45.642623442,"data":"      \"peak_memory_allocated_mib\": 443.791\n"}
+,{"stream_name":"stdout","time":45.642627016,"data":"    },\n"}
+,{"stream_name":"stdout","time":45.64263039,"data":"    \"mobilenet_v3_large\": {\n"}
+,{"stream_name":"stdout","time":45.64263404,"data":"      \"parameters\": 5483032,\n"}
+,{"stream_name":"stdout","time":45.642637249,"data":"      \"batch_size\": 32,\n"}
+,{"stream_name":"stdout","time":45.642640291,"data":"      \"input_resolution\": 224,\n"}
+,{"stream_name":"stdout","time":45.642643704,"data":"      \"latency_ms_batch_mean\": 21.1254,\n"}
+,{"stream_name":"stdout","time":45.642647085,"data":"      \"latency_ms_image_mean\": 0.6602,\n"}
+,{"stream_name":"stdout","time":45.642650557,"data":"      \"latency_ms_image_p50\": 0.6602,\n"}
+,{"stream_name":"stdout","time":45.642653834,"data":"      \"peak_memory_allocated_mib\": 269.149\n"}
+,{"stream_name":"stdout","time":45.642657237,"data":"    },\n"}
+,{"stream_name":"stdout","time":45.642660441,"data":"    \"efficientnet_b0\": {\n"}
+,{"stream_name":"stdout","time":45.642663749,"data":"      \"parameters\": 5288548,\n"}
+,{"stream_name":"stdout","time":45.642667225,"data":"      \"batch_size\": 32,\n"}
+,{"stream_name":"stdout","time":45.642670379,"data":"      \"input_resolution\": 224,\n"}
+,{"stream_name":"stdout","time":45.642673826,"data":"      \"latency_ms_batch_mean\": 35.9322,\n"}
+,{"stream_name":"stdout","time":45.642677132,"data":"      \"latency_ms_image_mean\": 1.1229,\n"}
+,{"stream_name":"stdout","time":45.64268067,"data":"      \"latency_ms_image_p50\": 1.1219,\n"}
+,{"stream_name":"stdout","time":45.642684,"data":"      \"peak_memory_allocated_mib\": 369.692\n"}
+,{"stream_name":"stdout","time":45.6426875,"data":"    }\n"}
+,{"stream_name":"stdout","time":45.642690695,"data":"  }\n"}
+,{"stream_name":"stdout","time":45.642693697,"data":"}\n"}
+,{"stream_name":"stderr","time":54.350078908,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":54.350110704,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":54.671311113,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":54.671359755,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":55.55775244,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":56.740355903,"data":"[NbConvertApp] Writing 283524 bytes to __results__.html\n"}
+]

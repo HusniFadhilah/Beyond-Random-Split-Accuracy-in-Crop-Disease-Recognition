@@ -1,0 +1,42 @@
+[{"stream_name":"stdout","time":23.055650387,"data":"Downloading: \"https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth\" to /root/.cache/torch/hub/checkpoints/efficientnet_b0_rwightman-7f5810bc.pth\n"}
+,{"stream_name":"stderr","time":23.31358115,"data":"\r  0%|          | 0.00/20.5M [00:00\u003c?, ?B/s]\r 65%|██████▌   | 13.4M/20.5M [00:00\u003c00:00, 140MB/s]\r100%|██████████| 20.5M/20.5M [00:00\u003c00:00, 165MB/s]\n"}
+,{"stream_name":"stdout","time":6572.868445029,"data":"{\n"}
+,{"stream_name":"stdout","time":6572.86849813,"data":"  \"phase\": \"multi_seed_external_ood\",\n"}
+,{"stream_name":"stdout","time":6572.868505804,"data":"  \"seeds\": [\n"}
+,{"stream_name":"stdout","time":6572.868511541,"data":"    7,\n"}
+,{"stream_name":"stdout","time":6572.868517048,"data":"    42,\n"}
+,{"stream_name":"stdout","time":6572.868522757,"data":"    123\n"}
+,{"stream_name":"stdout","time":6572.868527924,"data":"  ],\n"}
+,{"stream_name":"stdout","time":6572.86853359,"data":"  \"protocol\": \"same stratified seed-42 partition; each seed independently trained; validation-only temperature fitting; negative temperature-scaled max confidence\",\n"}
+,{"stream_name":"stdout","time":6572.868539271,"data":"  \"results\": [\n"}
+,{"stream_name":"stdout","time":6572.868544072,"data":"    {\n"}
+,{"stream_name":"stdout","time":6572.86854942,"data":"      \"seed\": 7,\n"}
+,{"stream_name":"stdout","time":6572.868553791,"data":"      \"temperature\": 0.481182,\n"}
+,{"stream_name":"stdout","time":6572.868559163,"data":"      \"plantdoc_auroc\": 0.972737,\n"}
+,{"stream_name":"stdout","time":6572.868564449,"data":"      \"cassava_auroc\": 0.991907\n"}
+,{"stream_name":"stdout","time":6572.868569149,"data":"    },\n"}
+,{"stream_name":"stdout","time":6572.868578295,"data":"    {\n"}
+,{"stream_name":"stdout","time":6572.868582635,"data":"      \"seed\": 42,\n"}
+,{"stream_name":"stdout","time":6572.868587565,"data":"      \"temperature\": 0.508966,\n"}
+,{"stream_name":"stdout","time":6572.868593558,"data":"      \"plantdoc_auroc\": 0.959527,\n"}
+,{"stream_name":"stdout","time":6572.868599158,"data":"      \"cassava_auroc\": 0.962071\n"}
+,{"stream_name":"stdout","time":6572.868605008,"data":"    },\n"}
+,{"stream_name":"stdout","time":6572.8686108,"data":"    {\n"}
+,{"stream_name":"stdout","time":6572.86861528,"data":"      \"seed\": 123,\n"}
+,{"stream_name":"stdout","time":6572.86861978,"data":"      \"temperature\": 0.52833,\n"}
+,{"stream_name":"stdout","time":6572.86862454,"data":"      \"plantdoc_auroc\": 0.931959,\n"}
+,{"stream_name":"stdout","time":6572.868629266,"data":"      \"cassava_auroc\": 0.991784\n"}
+,{"stream_name":"stdout","time":6572.86863405,"data":"    }\n"}
+,{"stream_name":"stdout","time":6572.868638734,"data":"  ],\n"}
+,{"stream_name":"stdout","time":6572.868643472,"data":"  \"plantdoc_auroc_mean\": 0.954741,\n"}
+,{"stream_name":"stdout","time":6572.868649026,"data":"  \"plantdoc_auroc_sd\": 0.020806,\n"}
+,{"stream_name":"stdout","time":6572.868653531,"data":"  \"cassava_auroc_mean\": 0.981921,\n"}
+,{"stream_name":"stdout","time":6572.868658611,"data":"  \"cassava_auroc_sd\": 0.01719\n"}
+,{"stream_name":"stdout","time":6572.868663804,"data":"}\n"}
+,{"stream_name":"stderr","time":6581.210998939,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":6581.211041607,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":6581.522306355,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":6581.522363927,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":6582.390957351,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":6583.489815557,"data":"[NbConvertApp] Writing 301366 bytes to __results__.html\n"}
+]

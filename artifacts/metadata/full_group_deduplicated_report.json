@@ -1,0 +1,42 @@
+{
+  "phase": "full_group_deduplicated_sensitivity",
+  "seed": 42,
+  "n_images": 54305,
+  "groups_considered": 938,
+  "cross_split_components": 159,
+  "affected_images_total": 636,
+  "excluded_by_split": {
+    "train": 413,
+    "validation": 108,
+    "test": 115
+  },
+  "clean_split_sizes": {
+    "train": 43031,
+    "validation": 5322,
+    "test": 5316
+  },
+  "cross_split_component_size_distribution": {
+    "2": 113,
+    "3": 14,
+    "4": 10,
+    "5": 8,
+    "7": 4,
+    "8": 2,
+    "9": 1,
+    "10": 1,
+    "17": 1,
+    "19": 1,
+    "21": 1,
+    "48": 2,
+    "72": 1
+  },
+  "near_phash_pairs_hamming_le_4": 894,
+  "protocol": "all connected cross-split components formed from exact MD5, exact pHash, and pHash Hamming distance <=4 were excluded; EfficientNet-B0; seed 42; six epochs",
+  "test_metrics": {
+    "n_images": 5316,
+    "accuracy": 0.997555,
+    "balanced_accuracy": 0.996402,
+    "macro_f1": 0.996661
+  },
+  "elapsed_sec": 10045.41
+}

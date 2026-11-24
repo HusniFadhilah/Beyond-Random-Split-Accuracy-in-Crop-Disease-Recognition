@@ -1,0 +1,33 @@
+{
+  "phase": "multi_seed_external_ood",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "protocol": "same stratified seed-42 partition; each seed independently trained; validation-only temperature fitting; negative temperature-scaled max confidence",
+  "results": [
+    {
+      "seed": 7,
+      "temperature": 0.481182,
+      "plantdoc_auroc": 0.972737,
+      "cassava_auroc": 0.991907
+    },
+    {
+      "seed": 42,
+      "temperature": 0.508966,
+      "plantdoc_auroc": 0.959527,
+      "cassava_auroc": 0.962071
+    },
+    {
+      "seed": 123,
+      "temperature": 0.52833,
+      "plantdoc_auroc": 0.931959,
+      "cassava_auroc": 0.991784
+    }
+  ],
+  "plantdoc_auroc_mean": 0.954741,
+  "plantdoc_auroc_sd": 0.020806,
+  "cassava_auroc_mean": 0.981921,
+  "cassava_auroc_sd": 0.01719
+}

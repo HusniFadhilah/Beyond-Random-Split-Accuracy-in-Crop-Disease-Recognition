@@ -22,6 +22,16 @@
     "nvidia_smi_cuda_report": "12.6; driver-supported value, not an independently measured PyTorch runtime version",
     "system_memory": "24,605,328 kB (approximately 24.6 GB decimal)"
   },
+  "current_end_to_end_benchmark": {
+    "platform": "Kaggle Kernel",
+    "gpu": "NVIDIA Tesla T4",
+    "pytorch": "2.11.0+cu130",
+    "torch_cuda": "13.0",
+    "cudnn": 92700,
+    "protocol": "random 224x224 RGB inputs; batch size 32; 20 warm-up iterations; 100 CUDA-event timed iterations",
+    "report": "artifacts/metadata/end_to_end_gpu_inference_report.json",
+    "provenance_note": "This is a separate current-runtime benchmark and is not time-matched to the archived Phase 58 training run."
+  },
   "execution_log": "artifacts/metadata/phase58_training_curves.log",
   "provenance_note": "The separate inspection is not independently time-matched to the archived Phase 58 log. Hardware values are therefore not represented as if captured by that original log.",
   "detailed_provenance": "provenance/COMPUTE_ENVIRONMENT_PROVENANCE.md"
