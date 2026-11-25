@@ -1,0 +1,34 @@
+[{"stream_name":"stdout","time":21.951806883,"data":"Downloading: \"https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth\" to /root/.cache/torch/hub/checkpoints/efficientnet_b0_rwightman-7f5810bc.pth\n"}
+,{"stream_name":"stderr","time":22.241643241,"data":"\r  0%|          | 0.00/20.5M [00:00\u003c?, ?B/s]\r 43%|████▎     | 8.75M/20.5M [00:00\u003c00:00, 91.6MB/s]\r100%|██████████| 20.5M/20.5M [00:00\u003c00:00, 136MB/s] \n"}
+,{"stream_name":"stdout","time":3156.779370398,"data":"{\n"}
+,{"stream_name":"stdout","time":3156.779437831,"data":"  \"phase\": \"multi_seed_external_ood\",\n"}
+,{"stream_name":"stdout","time":3156.779445345,"data":"  \"seeds\": [\n"}
+,{"stream_name":"stdout","time":3156.7794505,"data":"    7,\n"}
+,{"stream_name":"stdout","time":3156.779455438,"data":"    42,\n"}
+,{"stream_name":"stdout","time":3156.779460105,"data":"    123\n"}
+,{"stream_name":"stdout","time":3156.779464164,"data":"  ],\n"}
+,{"stream_name":"stdout","time":3156.779468292,"data":"  \"protocol\": \"same stratified seed-42 partition; each seed independently trained; validation-only temperature fitting; negative temperature-scaled max confidence\",\n"}
+,{"stream_name":"stdout","time":3156.779473098,"data":"  \"results\": [\n"}
+,{"stream_name":"stdout","time":3156.779477163,"data":"    {\n"}
+,{"stream_name":"stdout","time":3156.779481241,"data":"      \"seed\": 42,\n"}
+,{"stream_name":"stdout","time":3156.779491016,"data":"      \"temperature\": 0.509107,\n"}
+,{"stream_name":"stdout","time":3156.779494701,"data":"      \"plantdoc_auroc\": 0.959528,\n"}
+,{"stream_name":"stdout","time":3156.779497841,"data":"      \"plantdoc_ci95\": [\n"}
+,{"stream_name":"stdout","time":3156.779500746,"data":"        0.938322,\n"}
+,{"stream_name":"stdout","time":3156.779503526,"data":"        0.977221\n"}
+,{"stream_name":"stdout","time":3156.7795063,"data":"      ],\n"}
+,{"stream_name":"stdout","time":3156.779509175,"data":"      \"cassava_auroc\": 0.962068,\n"}
+,{"stream_name":"stdout","time":3156.779512368,"data":"      \"cassava_ci95\": [\n"}
+,{"stream_name":"stdout","time":3156.77951523,"data":"        0.959536,\n"}
+,{"stream_name":"stdout","time":3156.779518094,"data":"        0.964474\n"}
+,{"stream_name":"stdout","time":3156.779538609,"data":"      ]\n"}
+,{"stream_name":"stdout","time":3156.779558694,"data":"    }\n"}
+,{"stream_name":"stdout","time":3156.779563883,"data":"  ]\n"}
+,{"stream_name":"stdout","time":3156.779568601,"data":"}\n"}
+,{"stream_name":"stderr","time":3164.573706503,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3164.573734392,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3164.862989313,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3164.863020514,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3165.717437478,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3166.761752989,"data":"[NbConvertApp] Writing 305464 bytes to __results__.html\n"}
+]

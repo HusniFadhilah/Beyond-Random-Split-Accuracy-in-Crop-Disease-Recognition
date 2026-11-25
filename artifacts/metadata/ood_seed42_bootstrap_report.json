@@ -1,0 +1,25 @@
+{
+  "phase": "multi_seed_external_ood",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "protocol": "same stratified seed-42 partition; each seed independently trained; validation-only temperature fitting; negative temperature-scaled max confidence",
+  "results": [
+    {
+      "seed": 42,
+      "temperature": 0.509107,
+      "plantdoc_auroc": 0.959528,
+      "plantdoc_ci95": [
+        0.938322,
+        0.977221
+      ],
+      "cassava_auroc": 0.962068,
+      "cassava_ci95": [
+        0.959536,
+        0.964474
+      ]
+    }
+  ]
+}

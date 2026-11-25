@@ -10,6 +10,8 @@ This repository contains the executed experiment code, the configuration used fo
 - `artifacts/metadata/` — downloaded JSON results and execution logs.
 - `artifacts/figures/` — figures used in the manuscript.
 - `artifacts/metadata/phase21_paired_output/phase21_per_sample_predictions.json` — retained per-sample prediction output where available.
+- `artifacts/metadata/phase21_paired_macro_f1_bootstrap_report.json` — paired 5,000-replicate macro-F1 bootstrap intervals for the frozen-feature model-family comparison.
+- `artifacts/metadata/ood_seed42_bootstrap_report.json` — 2,000-replicate sample-level AUROC intervals conditional on the seed-42 checkpoint.
 - `artifacts/metadata/*.pth` — retained model checkpoints.
 - `manuscript/` — manuscript source and bibliography for the earlier preflight source.
 - `manuscript/jbcs/` — the latest JBCS manuscript source, compiled PDF, bibliography, and figures.

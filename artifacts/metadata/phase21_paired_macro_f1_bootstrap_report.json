@@ -1,0 +1,59 @@
+{
+  "phase": "phase21_paired_macro_f1_bootstrap",
+  "n_test": 5431,
+  "bootstrap_replicates": 5000,
+  "seed": 20261124,
+  "statistic": "macro-F1 recomputed on the same resampled test indices for every model",
+  "models": {
+    "resnet50": {
+      "point_estimate": 0.9707824858311661,
+      "bootstrap_mean": 0.9704788291604758,
+      "ci95_percentile": [
+        0.9636856644018267,
+        0.976602933673866
+      ]
+    },
+    "mobilenet_v3_large": {
+      "point_estimate": 0.9701555356230029,
+      "bootstrap_mean": 0.9699131997002969,
+      "ci95_percentile": [
+        0.9633348493837248,
+        0.9758457494772651
+      ]
+    },
+    "efficientnet_b0": {
+      "point_estimate": 0.9714241517098627,
+      "bootstrap_mean": 0.9711528178235299,
+      "ci95_percentile": [
+        0.9648382025656437,
+        0.9768034383302302
+      ]
+    }
+  },
+  "paired_differences": {
+    "resnet50_minus_mobilenet_v3_large": {
+      "point_difference": 0.0006269502081631684,
+      "bootstrap_mean": 0.0005656294601790307,
+      "ci95_percentile": [
+        -0.00710327283086839,
+        0.007980458381145169
+      ]
+    },
+    "resnet50_minus_efficientnet_b0": {
+      "point_difference": -0.0006416658786966289,
+      "bootstrap_mean": -0.0006739886630541767,
+      "ci95_percentile": [
+        -0.00803653735249274,
+        0.0062627717234629895
+      ]
+    },
+    "mobilenet_v3_large_minus_efficientnet_b0": {
+      "point_difference": -0.0012686160868597973,
+      "bootstrap_mean": -0.0012396181232332071,
+      "ci95_percentile": [
+        -0.008396555642623923,
+        0.005778148783644011
+      ]
+    }
+  }
+}
