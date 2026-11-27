@@ -258,6 +258,14 @@ ocol-
 
 Overfull \hbox (16.51762pt too wide) in paragraph at lines 333--342
  [][] 
+
+Underfull \hbox (badness 1028) in paragraph at lines 345--346
+\TU/LiberationSerif(0)/m/n/10 small JPEG change refers to the original paired e
+xperi-
+
+Underfull \hbox (badness 1117) in paragraph at lines 345--346
+\TU/LiberationSerif(0)/m/n/10 The additional experiment with sample-level predi
+ctions
 [10]
 Underfull \hbox (badness 1325) in paragraph at lines 365--366
 []\TU/LiberationSerif(0)/m/n/10 The corruption-aware single-run model had clean
@@ -273,10 +281,6 @@ Underfull \hbox (badness 1902) in paragraph at lines 393--393
 Underfull \hbox (badness 1527) in paragraph at lines 394--395
 \TU/LiberationSerif(0)/m/n/10 The primary EfficientNet-B0 experiment produced n
 ear-
-
-Underfull \hbox (badness 1552) in paragraph at lines 396--397
-\TU/LiberationSerif(0)/m/n/10 scores distinguish the datasets. They do not esta
-blish
 
 Underfull \hbox (badness 3623) in paragraph at lines 400--400
 []\TU/LiberationSerif(0)/b/n/12 Calibration and corruption-specific ro-
@@ -304,11 +308,11 @@ Underfull \hbox (badness 1360) in paragraph at lines 58--63
 Underfull \hbox (badness 1194) in paragraph at lines 58--63
 \TU/LiberationSerif(0)/m/it/10 chine Learning\TU/LiberationSerif(0)/m/n/10 , vo
 lume 70, pages 1321–1330.  [][]doi:
-
+[13]
 Underfull \hbox (badness 1509) in paragraph at lines 73--79
 []\TU/LiberationSerif(0)/m/n/10 Hughes, D. P. and Salathé, M. (2015).  An open 
 ac-
-[13]
+
 Underfull \hbox (badness 4872) in paragraph at lines 96--101
 []\TU/LiberationSerif(0)/m/n/10 Kumar, P. P. and Priyamvada, B. V. (2025).  En-
 
@@ -395,7 +399,7 @@ TU/LiberationSerif(0)/m/it/10 Engi-
 Underfull \hbox (badness 2393) in paragraph at lines 244--250
 \TU/LiberationSerif(0)/m/it/10 neering Applications of Artificial Intelligence\
 TU/LiberationSerif(0)/m/n/10 .  [][]doi:
-
+[14]
 Underfull \hbox (badness 2990) in paragraph at lines 252--257
 []\TU/LiberationSerif(0)/m/n/10 Xu, M., Yoon, S., Fuentes, A., Yang, J., and Pa
 rk,
@@ -414,7 +418,7 @@ im-
 Underfull \hbox (badness 4518) in paragraph at lines 259--264
 \TU/LiberationSerif(0)/m/n/10 age disease recognition.  \TU/LiberationSerif(0)/
 m/it/10 Crop Protection\TU/LiberationSerif(0)/m/n/10 .  [][]doi:
-[14]) [15] (./main.aux)
+) [15] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
