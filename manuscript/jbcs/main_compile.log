@@ -201,17 +201,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--198
 Underfull \hbox (badness 4859) in paragraph at lines 225--226
 \TU/LiberationSerif(0)/m/n/10 A separate inference benchmark compared ResNet-50
 ,
-
-Underfull \hbox (badness 1107) in paragraph at lines 228--229
-\TU/LiberationSerif(0)/m/n/10 marize run-to-run variation. The three-seed analy
-sis is
 [6]
 Underfull \hbox (badness 10000) in paragraph at lines 263--263
 []\TU/LiberationSerif(0)/b/n/12 Recognition performance, calibration,
-
-Underfull \hbox (badness 1158) in paragraph at lines 264--265
-\TU/LiberationSerif(0)/m/n/10 original single-seed OOD AUROCs were 0.962139 and
-
 [7]
 Underfull \hbox (badness 1226) in paragraph at lines 290--291
 []\TU/LiberationSerif(0)/m/n/10 At confidence thresholds 0.50, 0.80, 0.90, 0.95
@@ -238,7 +230,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
 Underfull \hbox (badness 10000) in paragraph at lines 290--291
 \TU/LiberationSerif(0)/m/n/10 [0.997937,0.999860], [0.998114,1.000000], and
-
+[8]
 Underfull \hbox (badness 7221) in paragraph at lines 302--302
 []\TU/LiberationSerif(0)/b/n/12 OOD evaluation and model/data effi-
 
@@ -248,11 +240,11 @@ Underfull \hbox (badness 1975) in paragraph at lines 303--304
 Underfull \hbox (badness 1112) in paragraph at lines 303--304
 \TU/LiberationSerif(0)/m/n/10 only temperature fitting and validation macro-F1 
 check-
-[8]
+[9]
 Underfull \hbox (badness 2941) in paragraph at lines 305--306
 \TU/LiberationSerif(0)/m/n/10 for MobileNetV3-Large, and [0.964838, 0.976803] f
 or
-[9] [10]
+[10]
 Underfull \hbox (badness 5475) in paragraph at lines 326--327
 \TU/LiberationSerif(0)/m/n/10 per image of 2.9255 ms for ResNet-50, 0.6602 ms
 
