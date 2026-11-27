@@ -251,17 +251,17 @@ Underfull \hbox (badness 5475) in paragraph at lines 326--327
 Underfull \hbox (badness 1292) in paragraph at lines 326--327
 \TU/LiberationSerif(0)/m/n/10 369.692 MiB, respectively. These results are prot
 ocol-
-
+[10]
 Overfull \hbox (16.51762pt too wide) in paragraph at lines 333--342
  [][] 
-[10]
+
 Underfull \hbox (badness 1325) in paragraph at lines 365--366
 []\TU/LiberationSerif(0)/m/n/10 The corruption-aware single-run model had clean
 -test
 
-Underfull \hbox (badness 2150) in paragraph at lines 388--388
-[]\TU/LiberationSerif(0)/b/n/8 Figure 10. |\TU/LiberationSerif(0)/m/n/8 Synthet
-ic corruption robustness diagnostic. Basic and
+Underfull \hbox (badness 1769) in paragraph at lines 388--388
+[]\TU/LiberationSerif(0)/b/n/8 Figure 10. |\TU/LiberationSerif(0)/m/n/8 Robustn
+ess to synthetic image corruptions. Basic and
 
 Underfull \hbox (badness 1902) in paragraph at lines 393--393
 []\TU/LiberationSerif(0)/b/n/12 Benchmark performance, leakage, and
@@ -269,10 +269,10 @@ Underfull \hbox (badness 1902) in paragraph at lines 393--393
 Underfull \hbox (badness 1527) in paragraph at lines 394--395
 \TU/LiberationSerif(0)/m/n/10 The primary EfficientNet-B0 experiment produced n
 ear-
-[11]
+
 Underfull \hbox (badness 3623) in paragraph at lines 400--400
 []\TU/LiberationSerif(0)/b/n/12 Calibration and corruption-specific ro-
-[12] (./main.bbl
+[11] [12] (./main.bbl
 Underfull \hbox (badness 1270) in paragraph at lines 4--8
 \TU/LiberationSerif(0)/m/n/10 disease detection using deep learning.  \TU/Liber
 ationSerif(0)/m/it/10 International
@@ -280,7 +280,7 @@ ationSerif(0)/m/it/10 International
 Underfull \hbox (badness 1609) in paragraph at lines 4--8
 \TU/LiberationSerif(0)/m/it/10 Journal of Research Publication and Reviews\TU/L
 iberationSerif(0)/m/n/10 .  [][]doi:
-[13]
+
 Underfull \hbox (badness 2213) in paragraph at lines 38--43
 \TU/LiberationSerif(0)/m/n/10 learning in plant leaf disease recognition.  \TU/
 LiberationSerif(0)/m/it/10 Applied
@@ -296,7 +296,7 @@ Underfull \hbox (badness 1360) in paragraph at lines 58--63
 Underfull \hbox (badness 1194) in paragraph at lines 58--63
 \TU/LiberationSerif(0)/m/it/10 chine Learning\TU/LiberationSerif(0)/m/n/10 , vo
 lume 70, pages 1321–1330.  [][]doi:
-
+[13]
 Underfull \hbox (badness 1509) in paragraph at lines 73--79
 []\TU/LiberationSerif(0)/m/n/10 Hughes, D. P. and Salathé, M. (2015).  An open 
 ac-
@@ -343,7 +343,7 @@ iberationSerif(0)/m/n/10 .  [][]doi:
 Underfull \hbox (badness 1412) in paragraph at lines 210--215
 []\TU/LiberationSerif(0)/m/n/10 Singh, D., Jain, N., Jain, P., Kayal, P., Kumaw
 at, S.,
-[14]
+
 Underfull \hbox (badness 1661) in paragraph at lines 224--229
 []\TU/LiberationSerif(0)/m/n/10 Singh, N. (2024).  Advancing plant disease dete
 ction:
@@ -387,7 +387,7 @@ TU/LiberationSerif(0)/m/it/10 Engi-
 Underfull \hbox (badness 2393) in paragraph at lines 244--250
 \TU/LiberationSerif(0)/m/it/10 neering Applications of Artificial Intelligence\
 TU/LiberationSerif(0)/m/n/10 .  [][]doi:
-
+[14]
 Underfull \hbox (badness 2990) in paragraph at lines 252--257
 []\TU/LiberationSerif(0)/m/n/10 Xu, M., Yoon, S., Fuentes, A., Yang, J., and Pa
 rk,
