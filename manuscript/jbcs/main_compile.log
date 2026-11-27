@@ -123,10 +123,6 @@ LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
 
 Overfull \hbox (66.0pt too wide) in paragraph at lines 80--80
 [][]  
-
-Underfull \hbox (badness 1014) in paragraph at lines 89--90
-\TU/LiberationSerif(0)/m/n/10 binations of rotation, shift, and zoom augmentati
-on im-
 [1]
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 []\TU/LiberationSerif(0)/m/n/10 The broader applied literature includes both
@@ -145,7 +141,7 @@ Underfull \hbox (badness 1178) in paragraph at lines 108--109
 [2]
 Underfull \hbox (badness 4872) in paragraph at lines 126--126
 []\TU/LiberationSerif(0)/b/n/12 Explainability and application-oriented
-[3]
+
 Underfull \hbox (badness 2529) in paragraph at lines 137--138
 \TU/LiberationSerif(0)/m/n/10 conventional fixed-split EfficientNet-B0 full fin
 e-tuning
@@ -161,7 +157,7 @@ s, seed-
 Underfull \hbox (badness 1033) in paragraph at lines 140--141
 []\TU/LiberationSerif(0)/m/n/10 PlantVillage served as the in-domain reference.
  The
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 153--153
 []\TU/LiberationSerif(0)/m/n/9 Fully fine-tuned EfficientNet-B0, seed 42,
 
@@ -201,10 +197,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--198
 Underfull \hbox (badness 4859) in paragraph at lines 225--226
 \TU/LiberationSerif(0)/m/n/10 A separate inference benchmark compared ResNet-50
 ,
+
+Underfull \hbox (badness 1342) in paragraph at lines 228--229
+\TU/LiberationSerif(0)/m/n/10 aligned predictions, paired macro-F1 bootstrap in
+tervals
 [6]
 Underfull \hbox (badness 10000) in paragraph at lines 263--263
 []\TU/LiberationSerif(0)/b/n/12 Recognition performance, calibration,
-[7]
+[7] [8]
 Underfull \hbox (badness 1226) in paragraph at lines 290--291
 []\TU/LiberationSerif(0)/m/n/10 At confidence thresholds 0.50, 0.80, 0.90, 0.95
 , and
@@ -230,21 +230,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
 Underfull \hbox (badness 10000) in paragraph at lines 290--291
 \TU/LiberationSerif(0)/m/n/10 [0.997937,0.999860], [0.998114,1.000000], and
-[8]
+
 Underfull \hbox (badness 7221) in paragraph at lines 302--302
 []\TU/LiberationSerif(0)/b/n/12 OOD evaluation and model/data effi-
 
 Underfull \hbox (badness 1975) in paragraph at lines 303--304
 \TU/LiberationSerif(0)/m/n/10 The PlantDoc and Cassava AUROCs of 0.962139 and
 
-Underfull \hbox (badness 1112) in paragraph at lines 303--304
-\TU/LiberationSerif(0)/m/n/10 only temperature fitting and validation macro-F1 
-check-
+Underfull \hbox (badness 1259) in paragraph at lines 303--304
+\TU/LiberationSerif(0)/m/n/10 confidence. The additional three-seed experiment 
+used
 [9]
 Underfull \hbox (badness 2941) in paragraph at lines 305--306
 \TU/LiberationSerif(0)/m/n/10 for MobileNetV3-Large, and [0.964838, 0.976803] f
 or
-[10]
+
 Underfull \hbox (badness 5475) in paragraph at lines 326--327
 \TU/LiberationSerif(0)/m/n/10 per image of 2.9255 ms for ResNet-50, 0.6602 ms
 
@@ -254,7 +254,7 @@ ocol-
 
 Overfull \hbox (16.51762pt too wide) in paragraph at lines 333--342
  [][] 
-
+[10]
 Underfull \hbox (badness 1325) in paragraph at lines 365--366
 []\TU/LiberationSerif(0)/m/n/10 The corruption-aware single-run model had clean
 -test
@@ -272,7 +272,7 @@ ear-
 [11]
 Underfull \hbox (badness 3623) in paragraph at lines 400--400
 []\TU/LiberationSerif(0)/b/n/12 Calibration and corruption-specific ro-
-[12] [13] (./main.bbl
+[12] (./main.bbl
 Underfull \hbox (badness 1270) in paragraph at lines 4--8
 \TU/LiberationSerif(0)/m/n/10 disease detection using deep learning.  \TU/Liber
 ationSerif(0)/m/it/10 International
@@ -280,7 +280,7 @@ ationSerif(0)/m/it/10 International
 Underfull \hbox (badness 1609) in paragraph at lines 4--8
 \TU/LiberationSerif(0)/m/it/10 Journal of Research Publication and Reviews\TU/L
 iberationSerif(0)/m/n/10 .  [][]doi:
-
+[13]
 Underfull \hbox (badness 2213) in paragraph at lines 38--43
 \TU/LiberationSerif(0)/m/n/10 learning in plant leaf disease recognition.  \TU/
 LiberationSerif(0)/m/it/10 Applied
@@ -327,7 +327,7 @@ s-
 Underfull \hbox (badness 1028) in paragraph at lines 124--129
 \TU/LiberationSerif(0)/m/n/10 dataset training.  \TU/LiberationSerif(0)/m/it/10
  Scientific Reports\TU/LiberationSerif(0)/m/n/10 , 16:10925.  [][]doi:
-[14]
+
 Underfull \hbox (badness 4391) in paragraph at lines 204--208
 []\TU/LiberationSerif(0)/m/n/10 Simhadri, L. (2025).  Plant disease detection u
 sing
@@ -343,7 +343,7 @@ iberationSerif(0)/m/n/10 .  [][]doi:
 Underfull \hbox (badness 1412) in paragraph at lines 210--215
 []\TU/LiberationSerif(0)/m/n/10 Singh, D., Jain, N., Jain, P., Kayal, P., Kumaw
 at, S.,
-
+[14]
 Underfull \hbox (badness 1661) in paragraph at lines 224--229
 []\TU/LiberationSerif(0)/m/n/10 Singh, N. (2024).  Advancing plant disease dete
 ction:
