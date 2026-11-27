@@ -12,6 +12,11 @@ This repository contains the executed experiment code, the configuration used fo
 - `artifacts/metadata/phase21_paired_output/phase21_per_sample_predictions.json` — retained per-sample prediction output where available.
 - `artifacts/metadata/phase21_paired_macro_f1_bootstrap_report.json` — paired 5,000-replicate macro-F1 bootstrap intervals for the frozen-feature model-family comparison.
 - `artifacts/metadata/ood_seed42_bootstrap_report.json` — 2,000-replicate sample-level AUROC intervals conditional on the seed-42 checkpoint.
+- `artifacts/metadata/multi_seed_external_ood_hierarchical_bootstrap_report.json` — per-seed, pooled, and hierarchical seed-by-sample AUROC intervals.
+- `artifacts/metadata/phash_threshold_sensitivity_report.json` — retrained sensitivity results for near-pHash Hamming thresholds 0, 2, 4, and 8.
+- `artifacts/metadata/primary_macro_f1_ece_selective_bootstrap_report.json` — primary-model macro-F1, ECE, and selective-prediction bootstrap intervals.
+- `artifacts/metadata/full_dedup_macro_f1_bootstrap_report.json` — exact-deduplication test macro-F1 bootstrap interval.
+- `artifacts/metadata/corruption_paired_macro_f1_bootstrap_report.json` — paired corruption-aware versus basic macro-F1 intervals.
 - `artifacts/metadata/*.pth` — retained model checkpoints.
 - `manuscript/` — manuscript source and bibliography for the earlier preflight source.
 - `manuscript/jbcs/` — the latest JBCS manuscript source, compiled PDF, bibliography, and figures.

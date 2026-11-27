@@ -1,0 +1,13 @@
+{
+  "phase": "full_dedup_per_sample_uncertainty",
+  "n_test": 5426,
+  "bootstrap_replicates": 5000,
+  "seed": 20261126,
+  "macro_f1": {
+    "point": 0.9972264796237359,
+    "ci95": [
+      0.9952867336851583,
+      0.9988584836547699
+    ]
+  }
+}

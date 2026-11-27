@@ -1,0 +1,84 @@
+[{"stream_name":"stdout","time":59.688040109,"data":"Downloading: \"https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth\" to /root/.cache/torch/hub/checkpoints/efficientnet_b0_rwightman-7f5810bc.pth\n"}
+,{"stream_name":"stderr","time":59.982036964,"data":"\r  0%|          | 0.00/20.5M [00:00\u003c?, ?B/s]\r 30%|██▉       | 6.12M/20.5M [00:00\u003c00:00, 64.0MB/s]\r100%|██████████| 20.5M/20.5M [00:00\u003c00:00, 132MB/s] \n"}
+,{"stream_name":"stdout","time":5836.239021185,"data":"{\n"}
+,{"stream_name":"stdout","time":5836.239063943,"data":"  \"phase\": \"multi_seed_external_ood_hierarchical_bootstrap\",\n"}
+,{"stream_name":"stdout","time":5836.239071317,"data":"  \"seeds\": [\n"}
+,{"stream_name":"stdout","time":5836.239076619,"data":"    7,\n"}
+,{"stream_name":"stdout","time":5836.239081256,"data":"    42,\n"}
+,{"stream_name":"stdout","time":5836.239086201,"data":"    123\n"}
+,{"stream_name":"stdout","time":5836.239090823,"data":"  ],\n"}
+,{"stream_name":"stdout","time":5836.239097319,"data":"  \"protocol\": \"same stratified seed-42 partition; validation macro-F1 checkpoint selection; validation-only temperature fitting; negative temperature-scaled max confidence; pooled bootstrap resamples observations across seed score arrays; hierarchical bootstrap resamples seeds and then observations within each seed\",\n"}
+,{"stream_name":"stdout","time":5836.239104233,"data":"  \"results\": [\n"}
+,{"stream_name":"stdout","time":5836.239109053,"data":"    {\n"}
+,{"stream_name":"stdout","time":5836.239114169,"data":"      \"seed\": 7,\n"}
+,{"stream_name":"stdout","time":5836.239119602,"data":"      \"temperature\": 0.481309,\n"}
+,{"stream_name":"stdout","time":5836.239124551,"data":"      \"plantdoc_auroc\": 0.972756,\n"}
+,{"stream_name":"stdout","time":5836.239129292,"data":"      \"plantdoc_ci95\": [\n"}
+,{"stream_name":"stdout","time":5836.239134317,"data":"        0.958468,\n"}
+,{"stream_name":"stdout","time":5836.239139542,"data":"        0.984607\n"}
+,{"stream_name":"stdout","time":5836.239144148,"data":"      ],\n"}
+,{"stream_name":"stdout","time":5836.239149094,"data":"      \"cassava_auroc\": 0.991935,\n"}
+,{"stream_name":"stdout","time":5836.239154016,"data":"      \"cassava_ci95\": [\n"}
+,{"stream_name":"stdout","time":5836.239158425,"data":"        0.990377,\n"}
+,{"stream_name":"stdout","time":5836.239163546,"data":"        0.993348\n"}
+,{"stream_name":"stdout","time":5836.239168557,"data":"      ]\n"}
+,{"stream_name":"stdout","time":5836.239172885,"data":"    },\n"}
+,{"stream_name":"stdout","time":5836.239177786,"data":"    {\n"}
+,{"stream_name":"stdout","time":5836.23918264,"data":"      \"seed\": 42,\n"}
+,{"stream_name":"stdout","time":5836.239187599,"data":"      \"temperature\": 0.508976,\n"}
+,{"stream_name":"stdout","time":5836.239192074,"data":"      \"plantdoc_auroc\": 0.959536,\n"}
+,{"stream_name":"stdout","time":5836.239196535,"data":"      \"plantdoc_ci95\": [\n"}
+,{"stream_name":"stdout","time":5836.239200685,"data":"        0.938344,\n"}
+,{"stream_name":"stdout","time":5836.239206039,"data":"        0.97723\n"}
+,{"stream_name":"stdout","time":5836.23921023,"data":"      ],\n"}
+,{"stream_name":"stdout","time":5836.239214493,"data":"      \"cassava_auroc\": 0.962071,\n"}
+,{"stream_name":"stdout","time":5836.239218992,"data":"      \"cassava_ci95\": [\n"}
+,{"stream_name":"stdout","time":5836.239223735,"data":"        0.959539,\n"}
+,{"stream_name":"stdout","time":5836.239228063,"data":"        0.964477\n"}
+,{"stream_name":"stdout","time":5836.239232205,"data":"      ]\n"}
+,{"stream_name":"stdout","time":5836.239236588,"data":"    },\n"}
+,{"stream_name":"stdout","time":5836.23924159,"data":"    {\n"}
+,{"stream_name":"stdout","time":5836.239257772,"data":"      \"seed\": 123,\n"}
+,{"stream_name":"stdout","time":5836.239262506,"data":"      \"temperature\": 0.528392,\n"}
+,{"stream_name":"stdout","time":5836.23926651,"data":"      \"plantdoc_auroc\": 0.931952,\n"}
+,{"stream_name":"stdout","time":5836.239270317,"data":"      \"plantdoc_ci95\": [\n"}
+,{"stream_name":"stdout","time":5836.23927443,"data":"        0.903512,\n"}
+,{"stream_name":"stdout","time":5836.239277899,"data":"        0.958293\n"}
+,{"stream_name":"stdout","time":5836.239281341,"data":"      ],\n"}
+,{"stream_name":"stdout","time":5836.239284547,"data":"      \"cassava_auroc\": 0.991784,\n"}
+,{"stream_name":"stdout","time":5836.239288528,"data":"      \"cassava_ci95\": [\n"}
+,{"stream_name":"stdout","time":5836.239292232,"data":"        0.99055,\n"}
+,{"stream_name":"stdout","time":5836.239295798,"data":"        0.992909\n"}
+,{"stream_name":"stdout","time":5836.239299377,"data":"      ]\n"}
+,{"stream_name":"stdout","time":5836.239302525,"data":"    }\n"}
+,{"stream_name":"stdout","time":5836.239305669,"data":"  ],\n"}
+,{"stream_name":"stdout","time":5836.239309609,"data":"  \"bootstrap_ci95\": {\n"}
+,{"stream_name":"stdout","time":5836.239313052,"data":"    \"plantdoc_pooled_ci95\": [\n"}
+,{"stream_name":"stdout","time":5836.23931692,"data":"      0.941144,\n"}
+,{"stream_name":"stdout","time":5836.239320549,"data":"      0.963795\n"}
+,{"stream_name":"stdout","time":5836.239323637,"data":"    ],\n"}
+,{"stream_name":"stdout","time":5836.239326897,"data":"    \"cassava_pooled_ci95\": [\n"}
+,{"stream_name":"stdout","time":5836.239330465,"data":"      0.97851,\n"}
+,{"stream_name":"stdout","time":5836.239333663,"data":"      0.980477\n"}
+,{"stream_name":"stdout","time":5836.239337424,"data":"    ],\n"}
+,{"stream_name":"stdout","time":5836.239340571,"data":"    \"plantdoc_hierarchical_ci95\": [\n"}
+,{"stream_name":"stdout","time":5836.239344274,"data":"      0.930746,\n"}
+,{"stream_name":"stdout","time":5836.23934757,"data":"      0.974009\n"}
+,{"stream_name":"stdout","time":5836.239350866,"data":"    ],\n"}
+,{"stream_name":"stdout","time":5836.239354262,"data":"    \"cassava_hierarchical_ci95\": [\n"}
+,{"stream_name":"stdout","time":5836.239357495,"data":"      0.962224,\n"}
+,{"stream_name":"stdout","time":5836.239360694,"data":"      0.992367\n"}
+,{"stream_name":"stdout","time":5836.239364872,"data":"    ]\n"}
+,{"stream_name":"stdout","time":5836.23936854,"data":"  },\n"}
+,{"stream_name":"stdout","time":5836.239372436,"data":"  \"plantdoc_auroc_mean\": 0.954748,\n"}
+,{"stream_name":"stdout","time":5836.239376514,"data":"  \"plantdoc_auroc_sd\": 0.020819,\n"}
+,{"stream_name":"stdout","time":5836.239380447,"data":"  \"cassava_auroc_mean\": 0.98193,\n"}
+,{"stream_name":"stdout","time":5836.23938461,"data":"  \"cassava_auroc_sd\": 0.017199\n"}
+,{"stream_name":"stdout","time":5836.2393885,"data":"}\n"}
+,{"stream_name":"stderr","time":5842.393862432,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5842.393888072,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5842.600465717,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5842.600493859,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5843.342149056,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5844.221678247,"data":"[NbConvertApp] Writing 316264 bytes to __results__.html\n"}
+]

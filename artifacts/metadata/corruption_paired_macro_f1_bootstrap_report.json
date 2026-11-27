@@ -1,0 +1,52 @@
+{
+  "phase": "paired_corruption_macro_f1_bootstrap",
+  "bootstrap_replicates": 5000,
+  "seed": 20261126,
+  "comparisons": {
+    "clean": {
+      "basic_macro_f1": 0.9954138415054995,
+      "aware_macro_f1": 0.9959043124462653,
+      "difference_aware_minus_basic": 0.0004904709407658192,
+      "difference_ci95": [
+        -0.0020384462144955374,
+        0.003081688458290615
+      ]
+    },
+    "jpeg": {
+      "basic_macro_f1": 0.965503610729607,
+      "aware_macro_f1": 0.9861398541237787,
+      "difference_aware_minus_basic": 0.020636243394171694,
+      "difference_ci95": [
+        0.014095930937284076,
+        0.027512069898563838
+      ]
+    },
+    "motion_blur": {
+      "basic_macro_f1": 0.44391124240692403,
+      "aware_macro_f1": 0.9015538985932551,
+      "difference_aware_minus_basic": 0.45764265618633104,
+      "difference_ci95": [
+        0.44024434463582957,
+        0.4756484796774116
+      ]
+    },
+    "occlusion": {
+      "basic_macro_f1": 0.9746328368971106,
+      "aware_macro_f1": 0.975532887229966,
+      "difference_aware_minus_basic": 0.000900050332855451,
+      "difference_ci95": [
+        -0.0043098101091582075,
+        0.0058428919222631125
+      ]
+    },
+    "color_shift": {
+      "basic_macro_f1": 0.7233766045733013,
+      "aware_macro_f1": 0.635896727701526,
+      "difference_aware_minus_basic": -0.08747987687177528,
+      "difference_ci95": [
+        -0.10337670589771046,
+        -0.07151288095636173
+      ]
+    }
+  }
+}

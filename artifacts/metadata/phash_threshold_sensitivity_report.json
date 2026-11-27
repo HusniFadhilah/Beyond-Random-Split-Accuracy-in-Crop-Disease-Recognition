@@ -1,0 +1,98 @@
+{
+  "phase": "phash_threshold_sensitivity_retraining",
+  "thresholds_hamming_le": [
+    0,
+    2,
+    4,
+    8
+  ],
+  "seed": 42,
+  "protocol": "same stratified split; exact MD5 groups plus exact/near pHash connected components at each threshold; EfficientNet-B0 six epochs; validation macro-F1 checkpoint selection",
+  "results": {
+    "0": {
+      "best_validation_macro_f1": 0.997629,
+      "test_n": 5426,
+      "test_accuracy": 0.998341,
+      "test_balanced_accuracy": 0.997286,
+      "test_macro_f1": 0.99733,
+      "near_phash_pairs": 0,
+      "groups_considered": 44,
+      "cross_split_components": 8,
+      "affected_images_total": 16,
+      "excluded_by_split": {
+        "train": 6,
+        "validation": 5,
+        "test": 5
+      },
+      "clean_split_sizes": {
+        "train": 43438,
+        "validation": 5425,
+        "test": 5426
+      }
+    },
+    "2": {
+      "best_validation_macro_f1": 0.997698,
+      "test_n": 5413,
+      "test_accuracy": 0.997783,
+      "test_balanced_accuracy": 0.996121,
+      "test_macro_f1": 0.996579,
+      "near_phash_pairs": 68,
+      "groups_considered": 112,
+      "cross_split_components": 32,
+      "affected_images_total": 67,
+      "excluded_by_split": {
+        "train": 32,
+        "validation": 17,
+        "test": 18
+      },
+      "clean_split_sizes": {
+        "train": 43412,
+        "validation": 5413,
+        "test": 5413
+      }
+    },
+    "4": {
+      "best_validation_macro_f1": 0.998236,
+      "test_n": 5316,
+      "test_accuracy": 0.997555,
+      "test_balanced_accuracy": 0.996402,
+      "test_macro_f1": 0.996661,
+      "near_phash_pairs": 894,
+      "groups_considered": 938,
+      "cross_split_components": 159,
+      "affected_images_total": 636,
+      "excluded_by_split": {
+        "train": 413,
+        "validation": 108,
+        "test": 115
+      },
+      "clean_split_sizes": {
+        "train": 43031,
+        "validation": 5322,
+        "test": 5316
+      }
+    },
+    "8": {
+      "best_validation_macro_f1": 0.997136,
+      "test_n": 4105,
+      "test_accuracy": 0.997808,
+      "test_balanced_accuracy": 0.996815,
+      "test_macro_f1": 0.997329,
+      "near_phash_pairs": 36710,
+      "groups_considered": 36754,
+      "cross_split_components": 605,
+      "affected_images_total": 11320,
+      "excluded_by_split": {
+        "train": 8641,
+        "validation": 1353,
+        "test": 1326
+      },
+      "clean_split_sizes": {
+        "train": 34803,
+        "validation": 4077,
+        "test": 4105
+      }
+    }
+  },
+  "elapsed_sec": 13611.56
+}

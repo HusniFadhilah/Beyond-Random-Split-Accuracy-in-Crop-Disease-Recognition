@@ -1,0 +1,111 @@
+[{"stream_name":"stdout","time":7744.190916153,"data":"threshold 0 components 8 affected 16\n"}
+,{"stream_name":"stdout","time":7744.401823808,"data":"Downloading: \"https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth\" to /root/.cache/torch/hub/checkpoints/efficientnet_b0_rwightman-7f5810bc.pth\n"}
+,{"stream_name":"stderr","time":7744.667831903,"data":"\r  0%|          | 0.00/20.5M [00:00\u003c?, ?B/s]\r100%|██████████| 20.5M/20.5M [00:00\u003c00:00, 214MB/s]\r100%|██████████| 20.5M/20.5M [00:00\u003c00:00, 214MB/s]\n"}
+,{"stream_name":"stdout","time":9292.370160177,"data":"threshold 2 components 32 affected 67\n"}
+,{"stream_name":"stdout","time":10850.716807898,"data":"threshold 4 components 159 affected 636\n"}
+,{"stream_name":"stdout","time":12390.697500491,"data":"threshold 8 components 605 affected 11320\n"}
+,{"stream_name":"stdout","time":13634.419265786,"data":"{\n"}
+,{"stream_name":"stdout","time":13634.419312262,"data":"  \"phase\": \"phash_threshold_sensitivity_retraining\",\n"}
+,{"stream_name":"stdout","time":13634.419317555,"data":"  \"thresholds_hamming_le\": [\n"}
+,{"stream_name":"stdout","time":13634.419321242,"data":"    0,\n"}
+,{"stream_name":"stdout","time":13634.41932469,"data":"    2,\n"}
+,{"stream_name":"stdout","time":13634.419327956,"data":"    4,\n"}
+,{"stream_name":"stdout","time":13634.41933124,"data":"    8\n"}
+,{"stream_name":"stdout","time":13634.419334654,"data":"  ],\n"}
+,{"stream_name":"stdout","time":13634.419338048,"data":"  \"seed\": 42,\n"}
+,{"stream_name":"stdout","time":13634.419341566,"data":"  \"protocol\": \"same stratified split; exact MD5 groups plus exact/near pHash connected components at each threshold; EfficientNet-B0 six epochs; validation macro-F1 checkpoint selection\",\n"}
+,{"stream_name":"stdout","time":13634.419349492,"data":"  \"results\": {\n"}
+,{"stream_name":"stdout","time":13634.419352982,"data":"    \"0\": {\n"}
+,{"stream_name":"stdout","time":13634.419357048,"data":"      \"best_validation_macro_f1\": 0.997629,\n"}
+,{"stream_name":"stdout","time":13634.419360764,"data":"      \"test_n\": 5426,\n"}
+,{"stream_name":"stdout","time":13634.419364175,"data":"      \"test_accuracy\": 0.998341,\n"}
+,{"stream_name":"stdout","time":13634.419367708,"data":"      \"test_balanced_accuracy\": 0.997286,\n"}
+,{"stream_name":"stdout","time":13634.419371223,"data":"      \"test_macro_f1\": 0.99733,\n"}
+,{"stream_name":"stdout","time":13634.419374635,"data":"      \"near_phash_pairs\": 0,\n"}
+,{"stream_name":"stdout","time":13634.419378101,"data":"      \"groups_considered\": 44,\n"}
+,{"stream_name":"stdout","time":13634.419381513,"data":"      \"cross_split_components\": 8,\n"}
+,{"stream_name":"stdout","time":13634.419385258,"data":"      \"affected_images_total\": 16,\n"}
+,{"stream_name":"stdout","time":13634.419388691,"data":"      \"excluded_by_split\": {\n"}
+,{"stream_name":"stdout","time":13634.419392116,"data":"        \"train\": 6,\n"}
+,{"stream_name":"stdout","time":13634.419395556,"data":"        \"validation\": 5,\n"}
+,{"stream_name":"stdout","time":13634.419399014,"data":"        \"test\": 5\n"}
+,{"stream_name":"stdout","time":13634.419402428,"data":"      },\n"}
+,{"stream_name":"stdout","time":13634.419405787,"data":"      \"clean_split_sizes\": {\n"}
+,{"stream_name":"stdout","time":13634.419409259,"data":"        \"train\": 43438,\n"}
+,{"stream_name":"stdout","time":13634.419412787,"data":"        \"validation\": 5425,\n"}
+,{"stream_name":"stdout","time":13634.419416233,"data":"        \"test\": 5426\n"}
+,{"stream_name":"stdout","time":13634.419419646,"data":"      }\n"}
+,{"stream_name":"stdout","time":13634.419423033,"data":"    },\n"}
+,{"stream_name":"stdout","time":13634.419435844,"data":"    \"2\": {\n"}
+,{"stream_name":"stdout","time":13634.419438857,"data":"      \"best_validation_macro_f1\": 0.997698,\n"}
+,{"stream_name":"stdout","time":13634.419441779,"data":"      \"test_n\": 5413,\n"}
+,{"stream_name":"stdout","time":13634.419444567,"data":"      \"test_accuracy\": 0.997783,\n"}
+,{"stream_name":"stdout","time":13634.419447371,"data":"      \"test_balanced_accuracy\": 0.996121,\n"}
+,{"stream_name":"stdout","time":13634.419450156,"data":"      \"test_macro_f1\": 0.996579,\n"}
+,{"stream_name":"stdout","time":13634.419452833,"data":"      \"near_phash_pairs\": 68,\n"}
+,{"stream_name":"stdout","time":13634.419455541,"data":"      \"groups_considered\": 112,\n"}
+,{"stream_name":"stdout","time":13634.419458249,"data":"      \"cross_split_components\": 32,\n"}
+,{"stream_name":"stdout","time":13634.419461027,"data":"      \"affected_images_total\": 67,\n"}
+,{"stream_name":"stdout","time":13634.419463921,"data":"      \"excluded_by_split\": {\n"}
+,{"stream_name":"stdout","time":13634.419466707,"data":"        \"train\": 32,\n"}
+,{"stream_name":"stdout","time":13634.419469432,"data":"        \"validation\": 17,\n"}
+,{"stream_name":"stdout","time":13634.419472228,"data":"        \"test\": 18\n"}
+,{"stream_name":"stdout","time":13634.419474964,"data":"      },\n"}
+,{"stream_name":"stdout","time":13634.419477627,"data":"      \"clean_split_sizes\": {\n"}
+,{"stream_name":"stdout","time":13634.419480366,"data":"        \"train\": 43412,\n"}
+,{"stream_name":"stdout","time":13634.419483067,"data":"        \"validation\": 5413,\n"}
+,{"stream_name":"stdout","time":13634.419485806,"data":"        \"test\": 5413\n"}
+,{"stream_name":"stdout","time":13634.419488496,"data":"      }\n"}
+,{"stream_name":"stdout","time":13634.419491144,"data":"    },\n"}
+,{"stream_name":"stdout","time":13634.419493911,"data":"    \"4\": {\n"}
+,{"stream_name":"stdout","time":13634.419497006,"data":"      \"best_validation_macro_f1\": 0.998236,\n"}
+,{"stream_name":"stdout","time":13634.419499769,"data":"      \"test_n\": 5316,\n"}
+,{"stream_name":"stdout","time":13634.419502551,"data":"      \"test_accuracy\": 0.997555,\n"}
+,{"stream_name":"stdout","time":13634.419505264,"data":"      \"test_balanced_accuracy\": 0.996402,\n"}
+,{"stream_name":"stdout","time":13634.419507998,"data":"      \"test_macro_f1\": 0.996661,\n"}
+,{"stream_name":"stdout","time":13634.41951066,"data":"      \"near_phash_pairs\": 894,\n"}
+,{"stream_name":"stdout","time":13634.41951342,"data":"      \"groups_considered\": 938,\n"}
+,{"stream_name":"stdout","time":13634.419516151,"data":"      \"cross_split_components\": 159,\n"}
+,{"stream_name":"stdout","time":13634.419518856,"data":"      \"affected_images_total\": 636,\n"}
+,{"stream_name":"stdout","time":13634.419521569,"data":"      \"excluded_by_split\": {\n"}
+,{"stream_name":"stdout","time":13634.419524323,"data":"        \"train\": 413,\n"}
+,{"stream_name":"stdout","time":13634.419527122,"data":"        \"validation\": 108,\n"}
+,{"stream_name":"stdout","time":13634.419529812,"data":"        \"test\": 115\n"}
+,{"stream_name":"stdout","time":13634.419532509,"data":"      },\n"}
+,{"stream_name":"stdout","time":13634.419535166,"data":"      \"clean_split_sizes\": {\n"}
+,{"stream_name":"stdout","time":13634.419537887,"data":"        \"train\": 43031,\n"}
+,{"stream_name":"stdout","time":13634.419540587,"data":"        \"validation\": 5322,\n"}
+,{"stream_name":"stdout","time":13634.419543297,"data":"        \"test\": 5316\n"}
+,{"stream_name":"stdout","time":13634.41954595,"data":"      }\n"}
+,{"stream_name":"stdout","time":13634.419548584,"data":"    },\n"}
+,{"stream_name":"stdout","time":13634.419553998,"data":"    \"8\": {\n"}
+,{"stream_name":"stdout","time":13634.419556724,"data":"      \"best_validation_macro_f1\": 0.997136,\n"}
+,{"stream_name":"stdout","time":13634.419614324,"data":"      \"test_n\": 4105,\n"}
+,{"stream_name":"stdout","time":13634.419619935,"data":"      \"test_accuracy\": 0.997808,\n"}
+,{"stream_name":"stdout","time":13634.419622769,"data":"      \"test_balanced_accuracy\": 0.996815,\n"}
+,{"stream_name":"stdout","time":13634.419625544,"data":"      \"test_macro_f1\": 0.997329,\n"}
+,{"stream_name":"stdout","time":13634.419628317,"data":"      \"near_phash_pairs\": 36710,\n"}
+,{"stream_name":"stdout","time":13634.419631003,"data":"      \"groups_considered\": 36754,\n"}
+,{"stream_name":"stdout","time":13634.419633735,"data":"      \"cross_split_components\": 605,\n"}
+,{"stream_name":"stdout","time":13634.41963643,"data":"      \"affected_images_total\": 11320,\n"}
+,{"stream_name":"stdout","time":13634.419639158,"data":"      \"excluded_by_split\": {\n"}
+,{"stream_name":"stdout","time":13634.419641884,"data":"        \"train\": 8641,\n"}
+,{"stream_name":"stdout","time":13634.419644612,"data":"        \"validation\": 1353,\n"}
+,{"stream_name":"stdout","time":13634.419647347,"data":"        \"test\": 1326\n"}
+,{"stream_name":"stdout","time":13634.419650039,"data":"      },\n"}
+,{"stream_name":"stdout","time":13634.41965265,"data":"      \"clean_split_sizes\": {\n"}
+,{"stream_name":"stdout","time":13634.419655357,"data":"        \"train\": 34803,\n"}
+,{"stream_name":"stdout","time":13634.41965806,"data":"        \"validation\": 4077,\n"}
+,{"stream_name":"stdout","time":13634.419660803,"data":"        \"test\": 4105\n"}
+,{"stream_name":"stdout","time":13634.41966347,"data":"      }\n"}
+,{"stream_name":"stdout","time":13634.419666065,"data":"    }\n"}
+,{"stream_name":"stdout","time":13634.419668681,"data":"  },\n"}
+,{"stream_name":"stdout","time":13634.419671363,"data":"  \"elapsed_sec\": 13611.56\n"}
+,{"stream_name":"stdout","time":13634.419674143,"data":"}\n"}
+,{"stream_name":"stderr","time":13644.195828087,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":13644.195862592,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":13644.53816667,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":13644.538196116,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":13645.533080536,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":13646.75183178,"data":"[NbConvertApp] Writing 316112 bytes to __results__.html\n"}
+]

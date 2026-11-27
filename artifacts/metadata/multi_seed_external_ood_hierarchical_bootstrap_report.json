@@ -1,0 +1,75 @@
+{
+  "phase": "multi_seed_external_ood_hierarchical_bootstrap",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "protocol": "same stratified seed-42 partition; validation macro-F1 checkpoint selection; validation-only temperature fitting; negative temperature-scaled max confidence; pooled bootstrap resamples observations across seed score arrays; hierarchical bootstrap resamples seeds and then observations within each seed",
+  "results": [
+    {
+      "seed": 7,
+      "temperature": 0.481309,
+      "plantdoc_auroc": 0.972756,
+      "plantdoc_ci95": [
+        0.958468,
+        0.984607
+      ],
+      "cassava_auroc": 0.991935,
+      "cassava_ci95": [
+        0.990377,
+        0.993348
+      ]
+    },
+    {
+      "seed": 42,
+      "temperature": 0.508976,
+      "plantdoc_auroc": 0.959536,
+      "plantdoc_ci95": [
+        0.938344,
+        0.97723
+      ],
+      "cassava_auroc": 0.962071,
+      "cassava_ci95": [
+        0.959539,
+        0.964477
+      ]
+    },
+    {
+      "seed": 123,
+      "temperature": 0.528392,
+      "plantdoc_auroc": 0.931952,
+      "plantdoc_ci95": [
+        0.903512,
+        0.958293
+      ],
+      "cassava_auroc": 0.991784,
+      "cassava_ci95": [
+        0.99055,
+        0.992909
+      ]
+    }
+  ],
+  "bootstrap_ci95": {
+    "plantdoc_pooled_ci95": [
+      0.941144,
+      0.963795
+    ],
+    "cassava_pooled_ci95": [
+      0.97851,
+      0.980477
+    ],
+    "plantdoc_hierarchical_ci95": [
+      0.930746,
+      0.974009
+    ],
+    "cassava_hierarchical_ci95": [
+      0.962224,
+      0.992367
+    ]
+  },
+  "plantdoc_auroc_mean": 0.954748,
+  "plantdoc_auroc_sd": 0.020819,
+  "cassava_auroc_mean": 0.98193,
+  "cassava_auroc_sd": 0.017199
+}
